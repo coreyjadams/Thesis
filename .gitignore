@@ -1,1 +1,10 @@
 yale_phd_thesis_template
+*.lof
+*.log
+*.lot
+*.toc
+*.fls
+*.fdb_latexmk
+*.gz
+*.aux
+*.dvi
