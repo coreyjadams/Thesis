@@ -1,20 +1,18 @@
 {
-	"folders":
-	[
-		{
-			"path": ".",
-      "file_exclude_patterns": ["*.aux",
-                                "*.log",
-                                "*.fls",
-                                "*.fdb_latexmk",
-                                "*.lot",
-                                "*.toc",
-                                "*.lof",
-                                "*.dvi",
-                                "*.bbl",
-                                "*.blg",
-                                "*.gitignore"
-                                ]
-		}
-	]
+    "folders":
+    [{
+        "path": ".",
+        "file_exclude_patterns": ["*.aux","*.log",
+                                  "*.fls",
+                                  "*.fdb_latexmk",
+                                  "*.lot",
+                                  "*.toc",
+                                  "*.lof",
+                                  "*.dvi",
+                                  "*.bbl",
+                                  "*.bst",
+                                  "*.blg",
+                                  "*.gitignore"
+                                 ]
+    }]
 }

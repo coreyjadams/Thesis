@@ -6,44 +6,203 @@ This chapter will describe the Short Baseline Neutrino Program, and the anomalie
 
 Over the past two decades, experimental hints of beyond the Standard Model neutrino physics have appeared in several distinct subfields of neutrino experiments.  Taken together, the constitute hints at oscillation physics on mass splitting scale that is inconsistent with the known oscillations models.  This section will briefly summarize the current anomalies in this area of neutrino oscillations, known as Short Baseline oscillation physics.
 
+A more thorough analysis of the global, experimental picture of neutrino oscillations is given by oscillation analyses such as Kopp et. al \cite{Kopp:2013vaa}, Giunti et. al \cite{Giunti:2013aea}.  Though there is tension in the experimental evidence, there is indication that anomalous neutrino oscillation is occurring at short baselines.
+
+
 \subsection{LSND}
+
+In 1995, the Liquid Scintillator Neutrino Detector at Los Alamos National Laboratory published the results of it's first search for \numubar to \nuebar oscillations \cite{Athanassopoulos:1995iw}.  The detector was a liquid scintillator detector making observations of electron anti neutrinos through the inverse beta decay reaction on carbon.  The origin of the neutrinos was a decay at rest pion source, producing neutrinos in the range of 20 to 50 MeV.  In the inverse beta decay reaction signature is a prompt positron emission, followed by a 2.2 MeV gamma from neutron capture.   LSND observed 89.7 $\pm$ 22.4 $\pm$ 6.0 \nuebar candidate events above background over five years of data taking, corresponding to a significance of 3.8 $\sigma$.
+
+
+\begin{figure}[t!]
+    \centering
+    \begin{subfigure}[t]{0.5\textwidth}
+        \centering
+        \includegraphics[height=3in]{sbn_figures/lsnd_beam_excess}
+    \end{subfigure}%
+    ~ 
+    \begin{subfigure}[t]{0.5\textwidth}
+        \centering
+        \includegraphics[height=3in]{sbn_figures/lsnd_allowed_region_by_lsnd.pdf}
+    \end{subfigure}
+    \caption{ (Left) Excess of candidate \nuebar events observed by LSND, plotted as a function of L/E of the reconstructed neutrino. (Right) Allowed region of oscillation parameters when fit against a 2 neutrino mixing model.}
+   \label{fig:lsnd_beam_excess}
+\end{figure}
+
+As seen in Figure~\ref{fig:lsnd_beam_excess}, the LSND excess is inconsistent with the three neutrino oscillation paradigm.  Instead, it hints at oscillations at L/E of $\sim$ 0.5 and a mass splitting of $\sim$ 1 eV$^2$.  For comparison, the  solar and atmospheric mass splittings are in the ranges of $7\times10^{-5}\text{ eV~}^2$ and $2\times10^{-2}\text{ eV~}^2$, respectively.
 
 \subsection{Reactor Experiments}
 
+Many experiments have measured the flux of neutrinos from nuclear reactors over many years.  However, a recent reevaluation \cite{Huber:2011wv} \cite{Mueller:2011nm} of the expected neutrino flux from reactors has led to an observed deficit in historical measurements, as seen in Figure~\ref{fig:reactor_deficit} \cite{Mention:2011rk}.  This deficit, at the level of 6 to 7\%, is consistent with an oscillation of reaction \nuebar into an unobserved sterile state.
+
+Some concern over the so called Reactor Deficit has been raised over the fact that before the recalculation was completed, all experiments were in agreement with the existing theoretical prediction.  However, experimental results from the Daya Bay collaboration \cite{An:2015nua}, done in a blind analysis, support the experimental evidence of the reactor neutrino deficit (See Figure~\ref{fig:daya_bay_reactor_flux}).
+
+\begin{figure}[tb]
+  \centering
+  \includegraphics[]{sbn_figures/reactor_flux.pdf}
+  \caption{Measurements of the reactor neutrino flux indicate a deficit when compared with theoretical predictions.  It's plausible that the deficit is evidence of anomalous neutrino oscillations.}
+  \label{fig:reactor_deficit}
+\end{figure}
+
+\begin{figure}[tb]
+  \centering
+  \includegraphics[]{sbn_figures/daya_bay_flux_deficit.pdf}
+  \caption{The Daya Bay experiment performed a blind measurement of the reactor flux and their location and found excellent agreement with previous experimental data.  This was performed after the flux recalculations.}
+  \label{fig:daya_bay_reactor_flux}
+\end{figure}
+
 \subsection{Source Experiments}
+
+For measurement of Solar Neutrinos, the experiments GALLEX and SAGE both used radioactive sources as a neutrino source for calibration.
+
+\cite{Abdurashitov:1998ne} \cite{Hampel:1997fc}
 
 \subsection{\MB}
 
+Most recently, the \MB collaboration published evidence for an excess of electron neutrino candidate events in both neutrino and anti neutrino mode at Fermilab's Booster Neutrino Beam \cite{Aguilar-Arevalo:2013pmq}.  Their results, shown in Figure~\ref{fig:mb_stacked_rates}, clearly indicate an excess of candidate events.  Despite the significance of the results (3.4 $\sigma$ for Neutrino Mode, 2.8 $\sigma$ in Anti-Neutrino Mode), the \MB results are particularly controversial.
+
+First, the detector technology of \MB is a Cherenkov type detector, meaning that it distinguishes particles based upon their Cherenkov signature observed by PMTs at the outer surface of the detector.  Since electrons and photons both produce similar electromagnetic cascades, \MB is unable to distinguish between electron and photon events.  For the electron neutrino analysis in Figure~\ref{fig:mb_stacked_rates}, this implies that the excess can not be attributed as electron neutrinos without further investigation, and therefore isn't conclusively inconsistent with the standard three neutrino oscillation model.  It's worth mentioning, however, that the excess is significant enough to warrant \uboone's investigation, discussed in detail below.
+
+Second, the \MB oscillation result is inconsistent with anticipated 3+1 model sterile neutrino oscillation signals.  As seen in Figure~\ref{fig:mb_stacked_rates}, the observed excess can not simultaneously be interpreted as electron neutrinos from muon neutrino oscillations (through a sterile state) while agreeing with the sterile neutrino oscillation model.
+
+Despite the controversy, when taken with consideration into consideration with other results such as LSND (at the same L/E as \MB), and the reactor and source anomalies, there is intriguing evidence of physics beyond the Standard Model in the neutrino sector.
+
+
+\begin{figure}[tb]
+  \centering
+  \includegraphics[]{sbn_figures/miniboone_beam_excess.pdf}
+  \caption{Caption here}
+  \label{fig:mb_beam_excess}
+\end{figure}
+
+\begin{figure}[tb]
+  \centering
+  \includegraphics[]{sbn_figures/miniboone_stacked_rates.pdf}
+  \caption{Caption here}
+  \label{fig:mb_stacked_rates}
+\end{figure}
+
 \subsection{Global Fits}
+
+With many hints at beyond the standard model neutrino oscillations, analyses have been performed to bring together the various hints (and null results) in an attempt to constrain allowed phase space in sterile neutrino oscillations.  In particular, a viable explanation of the anomalies using sterile neutrinos must be in agreement across multiple signatures of oscillations, for a 3+1 model.  Ignoring CP violating terms (which are not observable in short baseline experiments), the mixing matrix for a 3+1 model is given as:
+
+% \begin{matrix}
+  
+% \end{matrix}
+
+\begin{enumerate}
+  \item{ \em Electron Neutrino Disappearance:} An electron neutrino can oscillation into an unobservable, sterile neutrino state with amplitude given as
+  \begin{align}
+  P(\nue \rightarrow \slash{\nue}) &= sin^2(2 \theta_{ee})\times sin(m)),
+   \\
+  sin^2(2 \theta_{ee}) &\equiv 4 |U_{e4}|^2 (1 - |U_{e4}|^2) \approx 4 |U_{e4}|^2.
+  \end{align}
+  This is the oscillation regime that governs, for example, the reactor neutrino anomaly.
+  \item { \em Muon Neutrino Disappearance: } In a nearly identical fashion as above, a muon type neutrino can oscillate into a sterile stage with amplitude 
+  \begin{align}
+  P(\numu \rightarrow \slash{\numu}) &= sin^2(2 \theta_{\mu\mu})\times sin(m)),
+   \\
+  sin^2(2 \theta_{\mu\mu}) &\equiv 4 |U_{\mu4}|^2 (1 - |U_{\mu4}|^2) \approx 4 |U_{\mu 4}|^2.
+  \end{align}
+  Intriguingly, there has been no observed signal of muon neutrino disappearance consistent with the same anomalies that hint towards sterile neutrino oscillations, despite searches by MINOS \cite{minos} and \MB+SciBooNE \cite{miniboone_sciboone}.
+
+  \item { \em Electron (and Anti-Electron) Appearance:} Given that a sterile neutrino can have mixing parameter that connect to both electron and muon type neutrinos, it is possible to have an oscillation of muon neutrinos into electron neutrinos.
+  \begin{align}
+  P(\numu \rightarrow \nue) &= sin^2(2 \theta_{\mu e})\times sin(m)),
+   \\
+  sin^2(2 \theta_{\mu e}) &\equiv 4 |U_{\mu4}|^2|U_{e4}|^2 \approx \frac{1}{4} sin^2(2 \theta_{ee}) sin^2(2 \theta_{\mu \mu}).
+  \end{align}
+  As seen in \cite{giunti_constraint,other_constraint}, limits on the oscillation amplitude from electron neutrino and muon neutrino disappearance can place upper bounds on the amplitude of muon to electron neutrino oscillation.
+\end{enumerate}
+
+Taken together, the global data can be combined as in \cite{kopp_best_fit,giunti_best_fit} and seen in Figures~\ref{fig:kopp_best_fit, fig:giunti_best_fit}.  In the best fit by Kopp et. al, there is no strongly allowed region though the tension between signals and null results is high.  In the best fit by Giunti et. al, there is an allowed region though the \MB anomaly is not included in this fit (for the inconsistencies mentioned above).
+
 
 \section{FermiLab's Short Baseline Neutrino Program}
 
-To address the anomalies described above, Fermilab is pursuing a program of short baseline neutrino experiments along it's Booster Neutrino Beam.  The first experiment, \uboone, started operations in 2015 and is designed to resolve the \MB anomaly.  Subsequently, two other detectors will join \uboone along the Booster Beam at 100m and 660m.  This section will describe the detectors, their design goals, 
+With all of the above anomalies and hints of beyond the standard model, it is essential to address the sterile neutrino question and resolve the \MB anomaly.  To address these hints, Fermilab is pursuing a program of short baseline neutrino experiments along it's Booster Neutrino Beam.  The first experiment, \uboone, started operations in 2015 and is designed to definitively lay to rest the \MB anomaly.  Subsequently, two other detectors will join \uboone along the Booster Beam at 100m and 660m.  This section will describe the detectors, and present the physics potential of Fermilab's Short Baseline Program with focus on the flagship measurement, electron neutrino appearance.
 
-\section{\uboone}
+\subsection{\uboone}
 
-\uboone is the largest \lartpc built in the United States to date, and the second largest in the world.  Originally proposed in 2007, it was designed to not just 
+\uboone is the largest \lartpc built in the United States to date, and the second largest in the world.  Originally proposed in 2007, it was designed to confirm or rule out the \MB low energy excess.
 
 Details of the \uboone detector.  PMT systems, low energy excess search.
 
-\section{Future \lartpcs}
+\subsection{Future \lartpcs}
 
-\subsection{SBND}
+\subsubsection{SBND}
 
 Details of SBND, PMTS, proximity to beam, flux window, etc.
 
-\subsection{\icarus}
+\subsubsection{\icarus}
 
 More of the same
 
 \section{Physics Program}
 
-What physics the SBN can do: sterile searches, try to rule out things, precision cross sections.
+The Short Baseline Neutrino program has an aggressive agenda to probe anomalous oscillation signals, and to follow up on \uboone's Low Energy Excess analysis.  It's worth noting that \nue appearance is not the only physics analysis that will be performed by the SBN Program.  This thesis will focus on \nue appearance, however to resolve questions of sterile neutrinos the SBN program will also have to observe:
+
+\begin{itemize}
+
+\item {\bf \numu Disapperance}  As mentioned above, the channels of \nue appearance and \numu disappearance are intricately connected in models of sterile neutrino oscillations.  So, for any measurement of \nue appearance at the SBN Program to be interpreted in a 3+1 model of oscillations, it should be accompanied by an amount of \numu disappearance consistent with the level of \nue appearance.  Much more about \numu disappearance is available in the SBN Program Proposal \cite{Antonello:2015lea} 
+
+\item {\bf Neutral Current Disappearance (Active flavor Disapperance)}  Just as the \nue and \numu oscillation signals are connected if a sterile neutrino is present, the total active flavor content of the beam (\nue + \numu + \nutau) should be modulated by the presence of a sterile neutrino in a consistent way.  \lartpc technology allows measurement of the total neutral current interaction rate using channels such as Neutral Current $\pi^0$ production.
+
+\end{itemize}
+
+Also of interest is the suite of cross section measurements that the SBN Program can perform, particularly with the SBND experiment (the near detector).  In the event that \uboone observes the \MB anomaly to be an unexpected beam background or cross section, SBND can probe this result with nearly two orders of magnitude faster collection of events than \uboone.
 
 \section{Simulation and Monte Carlo Predictions of Event rates}
 
-How to simulate the events in the detectors, the flux and cross section models.
+For the calculation and study of the physics sensitivity of the Short Baseline Program, a Monte Carlo Simulation predicts the event rate at each detector in the beamline.  The procedure of the simulation is:
 
-\subsection{Simulated event reconstruction}
+\begin{enumerate}
 
-Smearing and other attempts to mimic real reconstruction.  Electron photon separation, cosmics and dirt events for completeness.  Event rate distributions.
+  \item {\bf Booster Beam Monte Carlo} The first stage in the simulation is the Monte Carlo simulation of the Booster Neutrino Beam production. This is a geant4 based simulation that follows 8 GeV protons through interactions on the BNB beryllium target. The hadrons produced in the interaction are focus by the horn and decay, in flight, to neutrinos, which are then propagated to a window in front of a detector. It is at this stage of the simulation that we include a series of reweighting variables for each neutrino to estimate the systematic uncertainty on the flux at each detector, as well as the correlations between detectors (additional information in Section~\ref{section:flux_uncert}).
+
+  \item {\bf \textsc{Genie} Neutrino Interactions} The output of the beam Monte Carlo is a file of neutrinos at the detector containing information about the flavor, momentum, and position, as well as the parentage from the beam source, for each neutrino. The interactions of these neutrinos are simulated with the genie software which outputs a series of particles exiting the argon nucleus \cite{Andreopoulos:2009rq}. 
+
+  \item {\bf \textsc{Geant4} Simulation of Particles} The particles which exit the argon nucleus, as generated by genie, are then propagated through the liquid argon using a \textsc{Geant} \cite{Agostinelli:2002hh} simulation built in to the LArSoft framework \cite{Church:2013hea}. In particular this helps estimate the containment of electromagnetic showers, interaction location of photons from \pizero production and $\Delta$ resonances, as well as containment of minimally ionizing particles such as muons and charged pions.
+
+  \item {\bf Monte Carlo Truth Based Information}  After the geant simulation of the neutrino interaction we extract the event information using the Monte Carlo truth information. Estimated reconstruction efficiencies and energy resolutions are applied at this stage, as well as simulated event selections based on expected detector performance.  See Section~\ref{subsection:event_reco} for more detail.
+
+\end{enumerate}
+
+
+\subsection{Background Classification}
+
+For the study of the Short Baseline Neutrino Program's sensitivity to anomalous appearance of electron neutrinos, it is essential to have a comprehensive estimate of the various backgrounds with realistic distributions.  The most important sources of background to electron neutrino appearance are:
+
+\begin{enumerate}
+
+  \item {\bf Intrinsic \nue } - the Booster Beam, while primarily composed of muon neutrinos, has contamination of electron neutrinos that account for about 0.5\% of the beam.  While this is a small contamination, it is the same order of magnitude as the best fit oscillation parameters for possible sterile neutrino hints. This means that, compared to any possible signal, the intrinsic electron neutrinos in the beam are a large background and must be carefully quantified.
+
+  \item {\bf Other electron producing backgrounds} - Since neutrinos are only detectable from their final state particles, any interaction that produces an electron that appears to originate in the detector can be misidentified as an electron neutrino interaction. Sources are:
+
+  \begin{enumerate}
+
+    \item {\em Neutrino Electron Scattering}  - neutrinos can scatter off both the nucleus and the orbiting electrons in an atom. An interaction off an electron ejects the electron at high energy. Experimentally, the signature of this interaction is a very forward going electron and nothing else in the event, which mimics a \nue charged current interaction. Fortunately, these events have a very low interaction rate compared to scattering off of a nucleus and are a secondary background.  The forward angle and relatively high energy also make them a removable background.
+
+    \item {\em Electrons from Photons (Compton Scattering, Neutrino Induced)} - The photons produced in the detector (or entering the detector) can produce a single high energy electron through Compton scattering. It's expected that, without cuts, these backgrounds can be large and in the same energy region as a signal search. However, analysis cuts can greatly reduce this background.
+  
+  \end{enumerate}
+
+  \item {\bf Photon Misidentification} - Since electromagnetic showers are induced by either photons or electrons, there is the possibility that the calorimetric separation of photons from electrons will introduce some photons into the electron event sample. Quantifying the failure rate of the calorimetric cut is an active R\&D effort of liquid argon experiments. There are also extremely powerful topological cuts that can be applied to reject photons.  For the SBN program, sources of photons can be:
+
+  \begin{enumerate}
+
+    \item {\em Neutral Current Photon Production}: Neutral current neutrino interactions can produce a nuclear resonance that in turn produces a number of high energy photons in the final state. For one example, $\nu_{\mu} + n \rightarrow \nu_{\mu} + \Delta^0 $, and the $\Delta^0$ resonance can decay to a neutral pion. The $\Delta^0$ resonance could also emit a single photon when it decays. Further, resonant neutrino interactions that produce charged pions can lead to a neutral pion leaving the nucleus due to charge exchange effects in nuclear reinteractions. Enumerating and measuring the sources of neutral current photon production is extremely important to the SBN program and the role of the near detector, SBND, and test beam experiments here is great.
+
+    \item {\em Cosmic Photons} : As mentioned above, cosmic induced photons in the TPC have the potential to be incorrectly tagged as electrons. This is a background that will be very tightly constrained from off-beam backgrounds, but estimates from simulation are included here.
+  \end{enumerate}
+
+  \item {\bf \numu Charge Current Misidentification} - The last item considered as a possible background are misidentified charged current interactions from muon neutrinos. The rate at which this happens is poorly know and needs to be measured, but there are some scenarios that could lead to this occurring. For example, in an event near the boundary of the TPC where a \pizero is produced along with the primary muon, if the muon exits and one photon converts outside the TPC there will be one electromagnetic shower seen and the track of the muon will be impossible to tag as a muon or charged pion. Though somewhat contrived, this example only serves to illustrate that this background should be considered. Here, events are included from \numu CC interactions if there is a single photon in the detector and the primary muon exits with less than one meter in the detector.
+
+\end{enumerate}
+
+
+\subsection{Simulated Event Reconstruction}
+\label{subsection:event_reco}
+
+
+Smearing and other attempts to mimic real reconstruction.  Electron photon separation, cosmics and dirt events for completeness.

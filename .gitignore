@@ -1,4 +1,7 @@
 yale_phd_thesis_template
+*.bbl
+*.blg
+*.out
 *.lof
 *.log
 *.lot
