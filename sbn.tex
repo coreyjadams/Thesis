@@ -83,24 +83,31 @@ Despite the controversy, when taken with consideration into consideration with o
 \end{figure}
 
 \subsection{Global Fits}
+\label{sec:global_fits}
 
 With many hints at beyond the standard model neutrino oscillations, analyses have been performed to bring together the various hints (and null results) in an attempt to constrain allowed phase space in sterile neutrino oscillations.  In particular, a viable explanation of the anomalies using sterile neutrinos must be in agreement across multiple signatures of oscillations, for a 3+1 model.  Ignoring CP violating terms (which are not observable in short baseline experiments), the mixing matrix for a 3+1 model is given as:
 
-% \begin{matrix}
-  
-% \end{matrix}
+\begin{equation*}
+\mathbf{U} = \left(
+\begin{array}{cccc}
+U_{e1} & U_{e2} & U_{e3} & U_{e4}  \\
+U_{\mu1} & U_{\mu2} & U_{\mu3} & U_{\mu4}  \\
+U_{\tau1} & U_{\tau2} & U_{\tau3} & U_{\tau4}  \\
+U_{s1} & U_{s2} & U_{s3} & U_{s4}  \\
+\end{array} \right)
+\end{equation*}
 
 \begin{enumerate}
   \item{ \em Electron Neutrino Disappearance:} An electron neutrino can oscillation into an unobservable, sterile neutrino state with amplitude given as
   \begin{align}
-  P(\nue \rightarrow \slash{\nue}) &= sin^2(2 \theta_{ee})\times sin(m)),
+  P(\nue \rightarrow \nu_{\cancel{e}}) &\approx sin^2(2 \theta_{ee})\times sin(1.27 \frac{\Delta m^2 L}{E} \frac{[eV^2][m]}{[MeV]})),
    \\
   sin^2(2 \theta_{ee}) &\equiv 4 |U_{e4}|^2 (1 - |U_{e4}|^2) \approx 4 |U_{e4}|^2.
   \end{align}
   This is the oscillation regime that governs, for example, the reactor neutrino anomaly.
   \item { \em Muon Neutrino Disappearance: } In a nearly identical fashion as above, a muon type neutrino can oscillate into a sterile stage with amplitude 
   \begin{align}
-  P(\numu \rightarrow \slash{\numu}) &= sin^2(2 \theta_{\mu\mu})\times sin(m)),
+  P(\numu \rightarrow \nu_{\cancel{\mu}}) &= sin^2(2 \theta_{\mu\mu})\times sin(1.27 \frac{\Delta m^2 L}{E} \frac{[eV^2][m]}{[MeV]})),
    \\
   sin^2(2 \theta_{\mu\mu}) &\equiv 4 |U_{\mu4}|^2 (1 - |U_{\mu4}|^2) \approx 4 |U_{\mu 4}|^2.
   \end{align}
@@ -108,7 +115,7 @@ With many hints at beyond the standard model neutrino oscillations, analyses hav
 
   \item { \em Electron (and Anti-Electron) Appearance:} Given that a sterile neutrino can have mixing parameter that connect to both electron and muon type neutrinos, it is possible to have an oscillation of muon neutrinos into electron neutrinos.
   \begin{align}
-  P(\numu \rightarrow \nue) &= sin^2(2 \theta_{\mu e})\times sin(m)),
+  P(\numu \rightarrow \nue) &= sin^2(2 \theta_{\mu e})\times sin(1.27 \frac{\Delta m^2 L}{E} \frac{[eV^2][m]}{[MeV]})),
    \\
   sin^2(2 \theta_{\mu e}) &\equiv 4 |U_{\mu4}|^2|U_{e4}|^2 \approx \frac{1}{4} sin^2(2 \theta_{ee}) sin^2(2 \theta_{\mu \mu}).
   \end{align}
@@ -124,7 +131,7 @@ With all of the above anomalies and hints of beyond the standard model, it is es
 
 \subsection{\uboone}
 
-\uboone is the largest \lartpc built in the United States to date, and the second largest in the world.  Originally proposed in 2007, it was designed to confirm or rule out the \MB low energy excess.
+\uboone is the largest \lartpc in the United States, and the second largest in the world.  Originally proposed in 2007, it was designed to confirm or rule out the \MB low energy excess.
 
 Details of the \uboone detector.  PMT systems, low energy excess search.
 
@@ -171,38 +178,161 @@ For the calculation and study of the physics sensitivity of the Short Baseline P
 
 \subsection{Background Classification}
 
-For the study of the Short Baseline Neutrino Program's sensitivity to anomalous appearance of electron neutrinos, it is essential to have a comprehensive estimate of the various backgrounds with realistic distributions.  The most important sources of background to electron neutrino appearance are:
+For the study of the Short Baseline Neutrino Program's sensitivity to anomalous appearance of electron neutrinos, it is essential to have a comprehensive estimate of the various backgrounds with realistic distributions based on expected reconstruction ability.  Primarily, the \nue appearance background consists of 3 broad categories: intrinsic \nue's from the beam, mis-identified electromagnetic showers produced by the beam (primarily from \numu), and cosmic induced backgrounds coincidental with the beam spill.
 
 \begin{enumerate}
 
-  \item {\bf Intrinsic \nue } - the Booster Beam, while primarily composed of muon neutrinos, has contamination of electron neutrinos that account for about 0.5\% of the beam.  While this is a small contamination, it is the same order of magnitude as the best fit oscillation parameters for possible sterile neutrino hints. This means that, compared to any possible signal, the intrinsic electron neutrinos in the beam are a large background and must be carefully quantified.
+  \item {\bf Intrinsic \nue } - the Booster Beam, while primarily composed of muon neutrinos, has contamination of electron neutrinos that account for about 0.5\% of the beam.  While this is a small contamination, it is the same order of magnitude as the best fit oscillation parameters for possible sterile neutrino hints. This means that, compared to any possible signal, the intrinsic electron neutrinos in the beam are a large background and must be carefully quantified.  An 80\% reconstruction efficiency is applied to these events, and an electromagnetic shower energy of 200MeV is set as a threshold for event selection.  This is to ensure good selection and reconstruction in the data, and has a moderate impact at lower energies on the efficiency (~30\% loss in the 200 to 350 MeV bin) with small impacts (~5\%) at higher energies.
 
-  \item {\bf Other electron producing backgrounds} - Since neutrinos are only detectable from their final state particles, any interaction that produces an electron that appears to originate in the detector can be misidentified as an electron neutrino interaction. Sources are:
 
-  \begin{enumerate}
 
-    \item {\em Neutrino Electron Scattering}  - neutrinos can scatter off both the nucleus and the orbiting electrons in an atom. An interaction off an electron ejects the electron at high energy. Experimentally, the signature of this interaction is a very forward going electron and nothing else in the event, which mimics a \nue charged current interaction. Fortunately, these events have a very low interaction rate compared to scattering off of a nucleus and are a secondary background.  The forward angle and relatively high energy also make them a removable background.
-
-    \item {\em Electrons from Photons (Compton Scattering, Neutrino Induced)} - The photons produced in the detector (or entering the detector) can produce a single high energy electron through Compton scattering. It's expected that, without cuts, these backgrounds can be large and in the same energy region as a signal search. However, analysis cuts can greatly reduce this background.
-  
-  \end{enumerate}
-
-  \item {\bf Photon Misidentification} - Since electromagnetic showers are induced by either photons or electrons, there is the possibility that the calorimetric separation of photons from electrons will introduce some photons into the electron event sample. Quantifying the failure rate of the calorimetric cut is an active R\&D effort of liquid argon experiments. There are also extremely powerful topological cuts that can be applied to reject photons.  For the SBN program, sources of photons can be:
+  \item {\bf Neutral Current Photon Misidentification} - The photons produced in the detector by neutral current processes can produce an electromagnetic shower similar to electron neutrinos.  An example of a reaction that produces high energy photons is an interaction with neutral pions in the final state, as well as radiative decays from nucleon resonances. It's expected that, without cuts, these backgrounds can be large and in the same energy region as a signal search. However, analysis cuts can greatly reduce this background.
 
   \begin{enumerate}
 
-    \item {\em Neutral Current Photon Production}: Neutral current neutrino interactions can produce a nuclear resonance that in turn produces a number of high energy photons in the final state. For one example, $\nu_{\mu} + n \rightarrow \nu_{\mu} + \Delta^0 $, and the $\Delta^0$ resonance can decay to a neutral pion. The $\Delta^0$ resonance could also emit a single photon when it decays. Further, resonant neutrino interactions that produce charged pions can lead to a neutral pion leaving the nucleus due to charge exchange effects in nuclear reinteractions. Enumerating and measuring the sources of neutral current photon production is extremely important to the SBN program and the role of the near detector, SBND, and test beam experiments here is great.
+    \item{\em Two photon cut:} In an event with candidate electromagnetic showers, the presence of multiple showers indicates there could be neutral pion production in the neutrino interaction.  See, for example, Figure~\ref{fig:argo_pi0} for an ArgoNeuT event with multiple showers.  For this analysis, if a second found is found with energy greater than 100 MeV, the event is rejected from the electron neutrino sample.  The energy cut, 100 MeV, is lower than the threshold for candidate electron showers because the second photon does not need accurate reconstruction, it just needs to be identified.
 
-    \item {\em Cosmic Photons} : As mentioned above, cosmic induced photons in the TPC have the potential to be incorrectly tagged as electrons. This is a background that will be very tightly constrained from off-beam backgrounds, but estimates from simulation are included here.
+    \item{\em Photon Conversion Gap:} In events where the neutrino interaction produces high energy photons, it can at times also product hadronic activity at the vertex.  If more than 50 MeV of energy is observed at the vertex, and a gap between the electromagnetic shower and the vertex is detected with more than 3 centimeters (in \uboone, this is up to 30 wires), the event is rejected.
+
+    \item{\em dE/dx Cut:} In this study, for events passing the previous two cuts, and 94\% rejection was applied.  This accounts for the expected resolution, in the SBN detectors, of the calorimetric based cut on the ionization of the first few centimeters of a shower.  For more about the power of the dE/dx cut in data, see Section~\ref{sec:e_gamma_sep}
+
   \end{enumerate}
+
+
+  \item {\bf Neutrino Electron Scattering}  - neutrinos can scatter off both the nucleus and the orbiting electrons in an atom. An interaction off an electron ejects the electron at high energy. Experimentally, the signature of this interaction is a very forward going electron and nothing else in the event, which mimics a \nue charged current interaction. Fortunately, these events have a very low interaction rate compared to scattering off of a nucleus and are a secondary background.  The forward angle and relatively high energy also make them a removable background.
 
   \item {\bf \numu Charge Current Misidentification} - The last item considered as a possible background are misidentified charged current interactions from muon neutrinos. The rate at which this happens is poorly know and needs to be measured, but there are some scenarios that could lead to this occurring. For example, in an event near the boundary of the TPC where a \pizero is produced along with the primary muon, if the muon exits and one photon converts outside the TPC there will be one electromagnetic shower seen and the track of the muon will be impossible to tag as a muon or charged pion. Though somewhat contrived, this example only serves to illustrate that this background should be considered. Here, events are included from \numu CC interactions if there is a single photon in the detector and the primary muon exits with less than one meter in the detector.
+  
+  \item {\bf Cosmic Photons} - Cosmic induced photons in the TPC have the potential to be incorrectly tagged as electrons. This is a background that will be very tightly constrained from off-beam backgrounds, but estimates from simulation are included here.
+
+  \item{\bf ``Dirt'' Events} - Neutrinos can interact with the material surrounding the active volume of the detector as well.  Though this is not, strictly speak, ``dirt'', events where detector external neutrino interactions travel into the TPC and deposit energy can cause a background to the \nue appearance analysis.  In particular, photon production external to the TPC can generate a high energy photon that travels into the TPC and doesn't ionize the argon until it has entered the TPC for some distance.  This background will be constrained with both simulation and data, however, preliminary estimates are included.  Additionally, strong cuts can be made with fiducial volumes.
 
 \end{enumerate}
 
 
-\subsection{Simulated Event Reconstruction}
+\subsection{Simulated Event Reconstruction and Analysis cuts}
 \label{subsection:event_reco}
 
+In order to perform the best estimate of the physics sensitivity of the SBN program, an estimate of reconstruction effects must be incorporated into the event rates.  Additionally, some analysis cuts to reduce cosmic and ``dirt'' events are included.
 
-Smearing and other attempts to mimic real reconstruction.  Electron photon separation, cosmics and dirt events for completeness.
+The simplest cut is the fiducial volume cut applied in all three detectors.  Events with a vertex found to be outside of the fiducial volume are rejected, and the volume is set as:
+\begin{itemize}
+\item{\bf X:} The drift direction has a cut of 25cm from each edge, which reduces ``dirt'' backgrounds significantly.
+\item{\bf Y:} The vertical direction also has a cut of 25cm from each edge, which reduces ``dirt'' backgrounds significantly.
+\item{\bf Z:} The beam direction has an upstream cut of 30cm, to reject events that are entering the detector from the front.  There is a downstream cut of 50cm to aid in detection of electromagnetic showers.
+\end{itemize}
+
+To simulate calorimetric energy reconstruction, the incoming neutrino energy in each Monte Carlo event is estimated by summing the energy of the lepton (or the $\gamma$ the faking an electron) and all charged hadrons above observation thresholds present in the final state.  The observation thresholds are defined by requiring that the kinetic energy of each hadron be sufficient that it cross at least 2 wires, and are guided by \argoneut data.  For protons, for example, the threshold is 20 MeV. 
+
+The event rate distributions, and the tables of event rates, are shown in Figure~\ref{fig:sbn_event_rates_no_signal} and Table~\ref{tab:sbn_event_rates_no_signal}.
+
+\begin{figure}[]
+    \centering
+    \begin{subfigure}[]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{sbn_figures/nominal_nue_appearance_nosig_SBND_110m}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{sbn_figures/nominal_nue_appearance_nosig_MicroBooNE_470m}
+    \end{subfigure}
+    \\
+    \begin{subfigure}[]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{sbn_figures/nominal_nue_appearance_nosig_ICARUS-T600_600m}
+    \end{subfigure}
+    \caption{The predicted event rates for the SBN program in all three detectors, assuming 2.2e20 Protons on Target delivered each year.  For this analysis, \uboone is assumed to have 6 years of running (its original 3 + 3 with the SBN program)}.
+   \label{fig:sbn_event_rates_no_signal}
+\end{figure}
+
+\section{Simulation of an Oscillation Signal}
+
+To predict a sensitivity of an experimental program, a model must be used to generate a sample of events that are signal events.  In this case, as mentioned in Section~\ref{sec:global_fits}, the two neutrino oscillation probability formula is used to transmute muon neutrinos into electron neutrinos.  To do this practically, a ``fully oscillated'' sample of Monte Carlo is generated where every \numu has been changed to a \nue, and then the sample of \nue's is propagated through the GENIE event generator and the rest of the simulation.
+
+Each electron neutrino, formerly muon neutrino, is ``reconstructed'' in the same manner as the electron neutrino candidates in the background sample, with identical cuts.
+
+Later, a sensitivity curve will be shown as a function of ($\Delta_m^2,\text{sin}^2 2 \theta$).  This refers to physical parameters of neutrino oscillation, where $\Delta m^2$ is the mass splitting, squared, between known neutrinos and a supposed sterile state.  Sin${}^2 2 \theta$ represents the amplitude of the oscillation and is a combination of matrix elements from the neutrino mixing matrix above.  For a fixed pair of ($\Delta_m^2,\text{sin}^2 2 \theta$), each transmuted electron neutrino in the ``fully oscillated'' sample is scaled according to the formula 
+
+\begin{equation}
+% \centering
+P(\numu \rightarrow \nue) = sin^2(2 \theta_{\mu e})\times sin(1.27 \frac{\Delta m^2 L}{E} \frac{[eV^2][m]}{[MeV]})),
+\end{equation}
+where L and E are known from the Monte Carlo as the distance the neutrino has traveled since the decay of it's parent particle, and the true energy of the neutrino.  Because the neutrino beam is broad band, peaked near 1 GeV but with substantial flux down to several hundred MeV and out to 3 GeV, the oscillation probabilities at each detector are smeared and the predicted signal can cover a broad spectrum of neutrino energies (see )
+% tables were made with the help of http://www.tablesgenerator.com/
+
+\begin{figure}[tb]
+  \centering
+  \includegraphics[width=\textwidth]{sbn_figures/osc_prob.pdf}
+  \caption{Oscillation Probability bands as a function of distance from the proton target for the SBN program.  Shown are the bands for two of the global best fit results.}
+  \label{fig:osc_prob}
+\end{figure}
+
+\begin{table}[]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{r|cccccccccll}
+\multicolumn{1}{l|}{} & \multicolumn{1}{l}{$\mu\rightarrow\nu_e$} & \multicolumn{1}{l}{$K^{\pm}\rightarrow \nu_e$} & \multicolumn{1}{l}{$K^0 \rightarrow \nue$} & \multicolumn{1}{l}{$\nu + e^-$} & \multicolumn{1}{l}{NC~$\pi^0$} & \multicolumn{1}{l}{$\Delta \rightarrow N\gamma$} & \multicolumn{1}{l}{$\nu_{\mu}$~CC} & \multicolumn{1}{l}{Dirt} & \multicolumn{1}{l}{Cosmic} & Signal               & Total \\ \hline
+\textbf{0.20-0.35}    & 45                          & 16                          & 6                           & 3                        & 56                         & 0                          & 10                         & 47                       & 7                          & 13                   & 189   \\
+\textbf{0.35-0.50}    & 71                          & 40                          & 12                          & 5                        & 33                         & 1                          & 10                         & 13                       & 1                          & 28                   & 186   \\
+\textbf{0.50-0.65}    & 76                          & 56                          & 15                          & 5                        & 14                         & 2                          & 6                          & 3                        & 1                          & 64                   & 176   \\
+\textbf{0.65-0.80}    & 77                          & 57                          & 14                          & 7                        & 8                          & 2                          & 4                          & 1                        & 0                          & 82                   & 169   \\
+\textbf{0.80-0.95}    & 69                          & 58                          & 11                          & 9                        & 5                          & 2                          & 4                          & 1                        & 0                          & 73                   & 157   \\
+\textbf{0.95-1.10}    & 58                          & 61                          & 11                          & 5                        & 3                          & 1                          & 3                          & 0                        & 0                          & 57                   & 142   \\
+\textbf{1.10-1.30}    & 61                          & 82                          & 16                          & 3                        & 3                          & 1                          & 3                          & 0                        & 0                          & 48                   & 170   \\
+\textbf{1.30-1.50}    & 44                          & 67                          & 17                          & 1                        & 4                          & 0                          & 3                          & 0                        & 0                          & 25                   & 136   \\
+\textbf{1.50-1.75}    & 37                          & 67                          & 18                          & 1                        & 4                          & 0                          & 2                          & 0                        & 0                          & 13                   & 129   \\
+\textbf{1.75-2.00}    & 24                          & 58                          & 19                          & 1                        & 2                          & 0                          & 2                          & 0                        & 0                          & 5                    & 106   \\
+\textbf{2.00-3.00}    & 30                          & 121                         & 39                          & 1                        & 5                          & 0                          & 4                          & 0                        & 0                          & 4                    & 201   \\ \hline
+Total                 & 593                         & 684                         & 177                         & 39                       & 137                        & 8                          & 50                         & 65                       & 10                         & \multicolumn{1}{c}{} &      
+\end{tabular}
+\end{table}
+
+
+\begin{table}[]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{r|cccccccccll}
+\multicolumn{1}{l|}{bins} & \multicolumn{1}{l}{$\mu\rightarrow\nu_e$} & \multicolumn{1}{l}{$K^{\pm}\rightarrow \nu_e$} & \multicolumn{1}{l}{$K^0 \rightarrow \nue$} & \multicolumn{1}{l}{$\nu + e^-$} & \multicolumn{1}{l}{NC~$\pi^0$} & \multicolumn{1}{l}{$\Delta \rightarrow N\gamma$} & \multicolumn{1}{l}{$\nu_{\mu}$~CC} & \multicolumn{1}{l}{Dirt} & \multicolumn{1}{l}{Cosmic} & Signal & Total \\ \hline
+\textbf{0.20-0.35}        & 21                          & 10                          & 4                           & 3                        & 29                         & 0                          & 7                          & 34                       & 6                          & 2      & 113   \\
+\textbf{0.35-0.50}        & 38                          & 20                          & 6                           & 2                        & 18                         & 1                          & 6                          & 9                        & 2                          & 10     & 101   \\
+\textbf{0.50-0.65}        & 45                          & 26                          & 6                           & 2                        & 8                          & 1                          & 4                          & 2                        & 1                          & 16     & 94    \\
+\textbf{0.65-0.80}        & 42                          & 32                          & 8                           & 1                        & 4                          & 1                          & 3                          & 0                        & 1                          & 16     & 92    \\
+\textbf{0.80-0.95}        & 38                          & 36                          & 8                           & 1                        & 2                          & 1                          & 2                          & 0                        & 0                          & 12     & 90    \\
+\textbf{0.95-1.10}        & 33                          & 37                          & 7                           & 0                        & 2                          & 0                          & 2                          & 0                        & 0                          & 9      & 81    \\
+\textbf{1.10-1.30}        & 35                          & 44                          & 9                           & 0                        & 2                          & 0                          & 2                          & 0                        & 0                          & 7      & 92    \\
+\textbf{1.30-1.50}        & 26                          & 38                          & 9                           & 0                        & 1                          & 0                          & 2                          & 0                        & 0                          & 4      & 76    \\
+\textbf{1.50-1.75}        & 23                          & 41                          & 10                          & 0                        & 2                          & 0                          & 2                          & 0                        & 0                          & 2      & 78    \\
+\textbf{1.75-2.00}        & 14                          & 31                          & 8                           & 0                        & 2                          & 0                          & 2                          & 0                        & 0                          & 1      & 56    \\
+\textbf{2.00-3.00}        & 18                          & 72                          & 17                          & 0                        & 5                          & 0                          & 4                          & 0                        & 0                          & 1      & 115   \\ \hline
+Total                     & 331                         & 388                         & 91                          & 10                       & 75                         & 5                          & 34                         & 46                       & 11                         &        &      
+\end{tabular}
+\end{table}
+
+\begin{table}[]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{r|cccccccccll}
+\multicolumn{1}{l|}{bins} & \multicolumn{1}{l}{$\mu\rightarrow\nu_e$} & \multicolumn{1}{l}{$K^{\pm}\rightarrow \nu_e$} & \multicolumn{1}{l}{$K^0 \rightarrow \nue$} & \multicolumn{1}{l}{$\nu + e^-$} & \multicolumn{1}{l}{NC~$\pi^0$} & \multicolumn{1}{l}{$\Delta \rightarrow N\gamma$} & \multicolumn{1}{l}{$\nu_{\mu}$~CC} & \multicolumn{1}{l}{Dirt} & \multicolumn{1}{l}{Cosmic} & Signal & Total \\ \hline
+\hline
+\textbf{0.20-0.35}        & 585                         & 151                         & 59                          & 59                       & 504                        & 1                          & 112                        & 23                       & 3                          & 62     & 1496  \\
+\textbf{0.35-0.50}        & 938                         & 282                         & 99                          & 137                      & 299                        & 13                         & 95                         & 10                       & 1                          & 81     & 1874  \\
+\textbf{0.50-0.65}        & 1076                        & 417                         & 134                         & 20                       & 120                        & 21                         & 58                         & 5                        & 0                          & 58     & 1851  \\
+\textbf{0.65-0.80}        & 961                         & 579                         & 155                         & 19                       & 54                         & 23                         & 37                         & 2                        & 0                          & 41     & 1831  \\
+\textbf{0.80-0.95}        & 769                         & 622                         & 158                         & 32                       & 33                         & 13                         & 22                         & 1                        & 0                          & 24     & 1651  \\
+\textbf{0.95-1.10}        & 619                         & 641                         & 172                         & 51                       & 22                         & 7                          & 14                         & 1                        & 0                          & 14     & 1528  \\
+\textbf{1.10-1.30}        & 607                         & 866                         & 210                         & 32                       & 28                         & 4                          & 13                         & 1                        & 0                          & 9      & 1761  \\
+\textbf{1.30-1.50}        & 391                         & 817                         & 167                         & 26                       & 33                         & 1                          & 12                         & 1                        & 0                          & 4      & 1449  \\
+\textbf{1.50-1.75}        & 339                         & 864                         & 186                         & 7                        & 51                         & 1                          & 21                         & 0                        & 0                          & 2      & 1468  \\
+\textbf{1.75-2.00}        & 203                         & 660                         & 168                         & 0                        & 25                         & 0                          & 25                         & 0                        & 0                          & 1      & 1083  \\
+\textbf{2.00-3.00}        & 231                         & 1360                        & 267                         & 7                        & 84                         & 1                          & 77                         & 0                        & 0                          & 1      & 2026  \\ \hline
+Total                     & 6721                        & 7260                        & 1776                        & 389                      & 1252                       & 86                         & 486                        & 44                       & 5                          &        &      
+\end{tabular}
+\end{table}
+
+
+
+
