@@ -1,13 +1,36 @@
 \chapter{Systematic Uncertainties in the Short Baseline Neutrino Program}
 
-Why constrain systematics, and which ones are most important.  
+In the previous chapter, the motivation for the Fermilab Short Baseline Neutrino program was presented and the expected event rates were shown, as well as the methods of calculating an expected signal from a 3+1 model.  However, the most detailed simulation (or data analysis, for that matter) is not consequential without a robust calculation of systematic uncertainties.
+
+In this chapter, the systematic uncertainties for the Short Baseline are discussed.  Of particular importance are the uncertainties from the flux and neutrino interactions.  The flux for the Booster Neutrino Beam, while among the best known neutrino beam fluxes, still has residual uncertainties of up to 15\% \cite{miniboone_flux_paper}.  Similarly, the uncertainty in the model of neutrino interactions has a 10 to 15\% normalization uncertainty for the quasi-elastic and resonant events that are most important to the oscillation searches.  Considering that the amplitude of any sterile neutrino oscillation effect is very small, with oscillation probabilities that peak at 1\% or less, constraining the systematic uncertainties in the Short Baseline Program is absolutely essential.
+
+The strength of the Short Baseline Program's oscillation search comes, ultimately, from two factors:  the \lartpc technology allows excellent event identification and background rejections, and the near detector, SBND, allows for large cancellation of systematic uncertainties.  In this chapter, the method for quantifying the cancellation of systematic uncertainties is presented.
+
 
 \section{General Framework for quantification of uncertainties}
+
+In this analysis, the uncertainties that matter are the systematic uncertainties on the final distribution of event rates.  Since the goal is to produce a sensitivity calculation for an expected signal, the numerical value of the sensitivity can be calculated with a $\chi^2$ calculation:
+
+\begin{equation}
+\begin{centering}
+\chi^2(\Delta m^2, \text{sin}^2 2 \theta ) = \sum_{i,j} [N^{null}_i - N^{osc}_i(\Delta m^2, \text{sin}^2 2 \theta ) ] \times E^{-1}_{i,j} \times [N^{null}_j - N^{osc}_j(\Delta m^2, \text{sin}^2 2 \theta ) ],
+\end{centering}
+\end{equation}
+
+where $N^{null}_i$ is the expected event rate in the $i^{th}$ analysis bin with no oscillation signal, and $N^{osc}_i(\Delta m^2, \text{sin}^2 2 \theta )$ is the expected event rate in the $i^{th}$ analysis bin if there is an oscillation signal from a 3+1 model with the specified mass splitting and amplitude.  In the \nue appearance analysis, this is simplified to 
+\begin{equation}
+\begin{centering}
+N^{null}_i - N^{osc}_i(\Delta m^2, \text{sin}^2 2 \theta ) = S_i(\Delta m^2, \text{sin}^2 2 \theta )
+\end{centering}
+\end{equation}
+where S is the expected signal events from the specified parameters in the $i^{th}$ bin.
+
+$E_{i,j}$ in the $\chi^2$ computation is the covariance matrix, a statistical tool to encode correlated uncertainties.  In practice, the computation of the covariance matrix is the most challenging aspect of the $chi^2$ calculation.
 
 Multiverse analysis, drawing from physical distributions and propagating to the end distributions.  Reweighting method.
 
 \section{Determination of Covariance Matrices}
-
+\label{sec:covariance_matrix}
 Covariance formula, etc. Correlation matrix, discussion of the meaning of the correlation matrix.  Correlations between detectors within the same event sample, also nue to numu correlations.
 
 \section{Uncertainties from Neutrino Flux}

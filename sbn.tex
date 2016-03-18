@@ -248,9 +248,9 @@ The event rate distributions, and the tables of event rates, are shown in Figure
 
 \section{Simulation of an Oscillation Signal}
 
-To predict a sensitivity of an experimental program, a model must be used to generate a sample of events that are signal events.  In this case, as mentioned in Section~\ref{sec:global_fits}, the two neutrino oscillation probability formula is used to transmute muon neutrinos into electron neutrinos.  To do this practically, a ``fully oscillated'' sample of Monte Carlo is generated where every \numu has been changed to a \nue, and then the sample of \nue's is propagated through the GENIE event generator and the rest of the simulation.
+To predict a sensitivity of an experimental program, a model must be used to generate a sample of events that are signal events.  In this case, as mentioned in Section~\ref{sec:global_fits}, the two neutrino oscillation probability formula is used to transmute muon neutrinos into electron neutrinos.  While the 3+1 model is not the only viable or interesting method to simulate a signal, it is the most straightforward to compare to other experiments.  
 
-Each electron neutrino, formerly muon neutrino, is ``reconstructed'' in the same manner as the electron neutrino candidates in the background sample, with identical cuts.
+To build a signal sample, a ``fully oscillated'' sample of Monte Carlo is generated where every \numu has been changed to a \nue, and then the sample of \nue's is propagated through the GENIE event generator and the rest of the simulation.  Each electron neutrino, formerly muon neutrino, is ``reconstructed'' in the same manner as the electron neutrino candidates in the background sample, with identical cuts.  
 
 Later, a sensitivity curve will be shown as a function of ($\Delta_m^2,\text{sin}^2 2 \theta$).  This refers to physical parameters of neutrino oscillation, where $\Delta m^2$ is the mass splitting, squared, between known neutrinos and a supposed sterile state.  Sin${}^2 2 \theta$ represents the amplitude of the oscillation and is a combination of matrix elements from the neutrino mixing matrix above.  For a fixed pair of ($\Delta_m^2,\text{sin}^2 2 \theta$), each transmuted electron neutrino in the ``fully oscillated'' sample is scaled according to the formula 
 
@@ -258,7 +258,7 @@ Later, a sensitivity curve will be shown as a function of ($\Delta_m^2,\text{sin
 % \centering
 P(\numu \rightarrow \nue) = sin^2(2 \theta_{\mu e})\times sin(1.27 \frac{\Delta m^2 L}{E} \frac{[eV^2][m]}{[MeV]})),
 \end{equation}
-where L and E are known from the Monte Carlo as the distance the neutrino has traveled since the decay of it's parent particle, and the true energy of the neutrino.  Because the neutrino beam is broad band, peaked near 1 GeV but with substantial flux down to several hundred MeV and out to 3 GeV, the oscillation probabilities at each detector are smeared and the predicted signal can cover a broad spectrum of neutrino energies (see )
+where L and E are known from the Monte Carlo as the distance the neutrino has traveled since the decay of it's parent particle, and the true energy of the neutrino.  Because the neutrino beam is broad band, peaked near 1 GeV but with substantial flux down to several hundred MeV and out to 3 GeV, the oscillation probabilities at each detector are smeared and the predicted signal can cover a broad spectrum of neutrino energies (see Figure~\ref{fig:osc_prob} )
 % tables were made with the help of http://www.tablesgenerator.com/
 
 \begin{figure}[tb]
@@ -270,10 +270,11 @@ where L and E are known from the Monte Carlo as the distance the neutrino has tr
 
 \begin{table}[]
 \centering
-\caption{My caption}
+\small
+\caption{Background Rates, broken out by analysis bin and origin, for the SBND experiment for 6.6e20 POT. The signal is from the Giunti {\em et al.} best fit point}
 \label{my-label}
 \begin{tabular}{r|cccccccccll}
-\multicolumn{1}{l|}{} & \multicolumn{1}{l}{$\mu\rightarrow\nu_e$} & \multicolumn{1}{l}{$K^{\pm}\rightarrow \nu_e$} & \multicolumn{1}{l}{$K^0 \rightarrow \nue$} & \multicolumn{1}{l}{$\nu + e^-$} & \multicolumn{1}{l}{NC~$\pi^0$} & \multicolumn{1}{l}{$\Delta \rightarrow N\gamma$} & \multicolumn{1}{l}{$\nu_{\mu}$~CC} & \multicolumn{1}{l}{Dirt} & \multicolumn{1}{l}{Cosmic} & Signal               & Total \\ \hline
+\multicolumn{1}{l|}{Bins [GeV]} & \multicolumn{1}{l}{$\mu\rightarrow\nu_e$} & \multicolumn{1}{l}{$K^{\pm}\rightarrow \nu_e$} & \multicolumn{1}{l}{$K^0 \rightarrow \nue$} & \multicolumn{1}{l}{$\nu + e^-$} & \multicolumn{1}{l}{NC~$\pi^0$} & \multicolumn{1}{l}{$\Delta \rightarrow N\gamma$} & \multicolumn{1}{l}{$\nu_{\mu}$~CC} & \multicolumn{1}{l}{Dirt} & \multicolumn{1}{l}{Cosmic} & Signal               & Total \\ \hline
 \textbf{0.20-0.35}    & 45                          & 16                          & 6                           & 3                        & 56                         & 0                          & 10                         & 47                       & 7                          & 13                   & 189   \\
 \textbf{0.35-0.50}    & 71                          & 40                          & 12                          & 5                        & 33                         & 1                          & 10                         & 13                       & 1                          & 28                   & 186   \\
 \textbf{0.50-0.65}    & 76                          & 56                          & 15                          & 5                        & 14                         & 2                          & 6                          & 3                        & 1                          & 64                   & 176   \\
@@ -292,10 +293,11 @@ Total                 & 593                         & 684                       
 
 \begin{table}[]
 \centering
-\caption{My caption}
+\small
+\caption{Background Rates, broken out by analysis bin and origin, for the \uboone experiment for 6.6e20 POT. The signal is from the Giunti {\em et al.} best fit point}
 \label{my-label}
 \begin{tabular}{r|cccccccccll}
-\multicolumn{1}{l|}{bins} & \multicolumn{1}{l}{$\mu\rightarrow\nu_e$} & \multicolumn{1}{l}{$K^{\pm}\rightarrow \nu_e$} & \multicolumn{1}{l}{$K^0 \rightarrow \nue$} & \multicolumn{1}{l}{$\nu + e^-$} & \multicolumn{1}{l}{NC~$\pi^0$} & \multicolumn{1}{l}{$\Delta \rightarrow N\gamma$} & \multicolumn{1}{l}{$\nu_{\mu}$~CC} & \multicolumn{1}{l}{Dirt} & \multicolumn{1}{l}{Cosmic} & Signal & Total \\ \hline
+\multicolumn{1}{l|}{Bins [GeV]} & \multicolumn{1}{l}{$\mu\rightarrow\nu_e$} & \multicolumn{1}{l}{$K^{\pm}\rightarrow \nu_e$} & \multicolumn{1}{l}{$K^0 \rightarrow \nue$} & \multicolumn{1}{l}{$\nu + e^-$} & \multicolumn{1}{l}{NC~$\pi^0$} & \multicolumn{1}{l}{$\Delta \rightarrow N\gamma$} & \multicolumn{1}{l}{$\nu_{\mu}$~CC} & \multicolumn{1}{l}{Dirt} & \multicolumn{1}{l}{Cosmic} & Signal & Total \\ \hline
 \textbf{0.20-0.35}        & 21                          & 10                          & 4                           & 3                        & 29                         & 0                          & 7                          & 34                       & 6                          & 2      & 113   \\
 \textbf{0.35-0.50}        & 38                          & 20                          & 6                           & 2                        & 18                         & 1                          & 6                          & 9                        & 2                          & 10     & 101   \\
 \textbf{0.50-0.65}        & 45                          & 26                          & 6                           & 2                        & 8                          & 1                          & 4                          & 2                        & 1                          & 16     & 94    \\
@@ -312,12 +314,13 @@ Total                     & 331                         & 388                   
 \end{table}
 
 \begin{table}[]
+% \begin{adjustbox}{width=q\textwidth}{
 \centering
-\caption{My caption}
+\small
+\caption{Background Rates, broken out by analysis bin and origin, for the \icarus experiment for 6.6e20 POT. The signal is from the Giunti {\em et al.} best fit point}
 \label{my-label}
 \begin{tabular}{r|cccccccccll}
-\multicolumn{1}{l|}{bins} & \multicolumn{1}{l}{$\mu\rightarrow\nu_e$} & \multicolumn{1}{l}{$K^{\pm}\rightarrow \nu_e$} & \multicolumn{1}{l}{$K^0 \rightarrow \nue$} & \multicolumn{1}{l}{$\nu + e^-$} & \multicolumn{1}{l}{NC~$\pi^0$} & \multicolumn{1}{l}{$\Delta \rightarrow N\gamma$} & \multicolumn{1}{l}{$\nu_{\mu}$~CC} & \multicolumn{1}{l}{Dirt} & \multicolumn{1}{l}{Cosmic} & Signal & Total \\ \hline
-\hline
+\multicolumn{1}{l|}{Bins [Gev]} & \multicolumn{1}{l}{$\mu\rightarrow\nu_e$} & \multicolumn{1}{l}{$K^{\pm}\rightarrow \nu_e$} & \multicolumn{1}{l}{$K^0 \rightarrow \nue$} & \multicolumn{1}{l}{$\nu + e^-$} & \multicolumn{1}{l}{NC~$\pi^0$} & \multicolumn{1}{l}{$\Delta \rightarrow N\gamma$} & \multicolumn{1}{l}{$\nu_{\mu}$~CC} & \multicolumn{1}{l}{Dirt} & \multicolumn{1}{l}{Cosmic} & Signal & Total \\ \hline
 \textbf{0.20-0.35}        & 585                         & 151                         & 59                          & 59                       & 504                        & 1                          & 112                        & 23                       & 3                          & 62     & 1496  \\
 \textbf{0.35-0.50}        & 938                         & 282                         & 99                          & 137                      & 299                        & 13                         & 95                         & 10                       & 1                          & 81     & 1874  \\
 \textbf{0.50-0.65}        & 1076                        & 417                         & 134                         & 20                       & 120                        & 21                         & 58                         & 5                        & 0                          & 58     & 1851  \\
@@ -331,8 +334,8 @@ Total                     & 331                         & 388                   
 \textbf{2.00-3.00}        & 231                         & 1360                        & 267                         & 7                        & 84                         & 1                          & 77                         & 0                        & 0                          & 1      & 2026  \\ \hline
 Total                     & 6721                        & 7260                        & 1776                        & 389                      & 1252                       & 86                         & 486                        & 44                       & 5                          &        &      
 \end{tabular}
+% \end{adjustbox}
 \end{table}
-
 
 
 
