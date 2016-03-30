@@ -25,15 +25,15 @@ N^{null}_i - N^{osc}_i(\Delta m^2, \text{sin}^2 2 \theta ) = S_i(\Delta m^2, \te
 \end{equation}
 where S is the expected signal events from the specified parameters in the $i^{th}$ bin.
 
-$E_{i,j}$ in the $\chi^2$ computation is the covariance matrix, a statistical tool to encode correlated uncertainties.  In practice, the computation of the covariance matrix is the most challenging aspect of the $chi^2$ calculation because it requires careful determination of how the uncertainties under study are correlated.  For this work, the correlations of uncertainties are quantified with the ``multiple universe'' method \footnote{Nothing to do with the cosmological idea of the multiverse}.  Much more will be said about the computation and use of the covariance matrix in Section~\ref{sec:covariance_matrix}.
+$E_{i,j}$ in the $\chi^2$ computation is the covariance matrix, a statistical tool to encode correlated uncertainties.  In practice, the computation of the covariance matrix is the most challenging aspect of the $\chi^2$ calculation because it requires careful determination of how the uncertainties under study are correlated.  For this work, the correlations of uncertainties are quantified with the ``multiple universe'' method \footnote{Nothing to do with the cosmological idea of the multiverse}.  Much more will be said about the computation and use of the covariance matrix in Section~\ref{sec:covariance_matrix}.
 
 \subsection{Multiple Universe Error Propagation and Reweighing methods}
 
-In a complex chain of simulation and analysis such as a prediction of event rates in a neutrino detector, it can be challenging to understand the effect of, for example, an uncertainty of hadron production and the neutrino target on the final distribution of events in the detector.  Some intuitive knowledge is of course present: if the amount of neutrino producing particles at the target is under (or over) estimated, the event rates in the final analysis distribution at the detector will also be under (over) estimated.  To precisely quantify the relationship between initial variable underlying the simulation and the final distributions of events, a reweighing scheme with multiple universes is used.
+In a complex chain of simulation and analysis such as a prediction of event rates in a neutrino detector, it can be challenging to understand the effect of, for example, an uncertainty of hadron production at the proton target on the final distribution of neutrino events in the detector.  Some intuitive knowledge is of course present: if the amount of neutrino producing particles generated at the target by proton interactions is under (or over) estimated, the event rates in the final analysis distribution at the detector will also be under (over) estimated.  To precisely quantify the relationship between initial variable underlying the simulation and the final distributions of events, a reweighing scheme with multiple universes is used.
 
 \subsubsection{Reweighing Events}
 
-As a concrete example, 
+As a an example, 
 
 
 
@@ -57,20 +57,99 @@ and in each universe where an underlying physical parameter has been varied:
 \end{equation}
 
 With these vectors, it's possible to calculate deviation from the nominal values due to the underlying uncertainties in an analysis bin:
-\begin{equation*}
+\begin{equation}
 \begin{centering}
-\sigma^i = \frac{1}{M}\sum_{\text{All Univ.}~m} \left( N^i_{\text{Nom.}} - N^i_{\text{Univ.~m}}\right)^2
+\sigma^i = \sqrt{\frac{1}{M}\sum_{\text{All Univ.}~m}^{M} \left( N^i_{\text{Nom.}} - N^i_{\text{Univ.~m}}\right)^2}
 \end{centering}
-\end{equation*}
+\label{eq:bin_uncert}
+\end{equation}
 
-Covariance formula, etc. Correlation matrix, discussion of the meaning of the correlation matrix.  Correlations between detectors within the same event sample, also nue to numu correlations.
+This measurement of the uncertainty in this way gives an estimate of the uncertainty in single detector experiments, where bin to bin correlations are ignored.  In other words, $\sigma^i$ is the uncertainty in the $i^{th}$ analysis bin when the existence of all the other bins, in any detector, are ignored.  See Figures~\ref{fig:sys_flux_uncert_fracUncert}, \ref{fig:sys_xsec_uncert_fracUncert} for this measurement due to flux and cross section uncertainties, below.  In a practical sense, this measurement of the uncertainty is not useful for the computation of sensitivities or significances of a signal, but only provides an easily interpreted measure of the uncertainty of a single detector experiment.
+
+A more useful statical tool is the covariance matrix, $E$, defined at each bin as
+\begin{equation}
+\begin{centering}
+E^{i,j} = \frac{1}{M}\sum_{\text{All Univ.}~m}^{M} \left[ N^i_{\text{Nom.}} - N^i_{\text{Univ.~m}}\right] \times \left[ N^j_{\text{Nom.}} - N^j_{\text{Univ.~m}}\right].
+\end{centering}
+\label{eq:cov_mat}
+\end{equation}
+
+Covariance matrices that arise from uncertainty sources that are uncorrelated are separable, in the sense that for a complete analysis the final covariance matrix can be constructed as the sum of the matrices from each source.  In this analysis, a covariance matrix is calculated for the flux and cross section uncertainties for beam intrinsic events, and the matrix is estimated for the backgrounds from ``Dirt'' and cosmic induced events, as well as detector systematics.
+\begin{equation}
+\begin{centering}
+E = E_{\text{Stat.}} + E_{\text{Flux}} + E_{\text{Cross Section}} + E_{\text{Dirt}} + E_{\text{Cosmic}} + E_{\text{Det. Syst.}}
+\end{centering}
+\end{equation}
+
+The covariance matrix is more easily visualized in the form of some of it's transforms, the fractional covariance matrix
+\begin{equation}
+\begin{centering}
+F^{i,j} \equiv \frac{E^{i,j}}{N^{i} N^{j}}
+\end{centering}
+\end{equation}
+and the correlation matrix
+\begin{equation}
+\begin{centering}
+C^{i,j} \equiv \frac{ E^{i,j} }{ \sqrt{E^{i,i}} \sqrt{E^{j,j}} }.
+\end{centering}
+\end{equation}
+
+See Figures~\ref{fig:syst_flux_fracmatrix}, \ref{fig:syst_xsec_fracmatrix} for examples of the fractional covariance matrix, and Figures~\ref{fig:syst_flux_corrmatrix}, \ref{fig:syst_xsec_corrmatrix} for examples of the correlation matrix.  The fractional error matrix shows which analysis bins have the largest systematic uncertainty, though because it is relative it can be deceiving: bins with high systematic uncertainties might not be important bins in the analysis. 
+
+The correlation matrix is an excellent visualization of the power of the covariance matrix technique.  It is limited to between -1 (full anticorrelation) and 1 (full correlation), and each entry at bin $(i,j)$ displays how correlated the $i^{th}$ bin is to the $j^{th}$ bin.  This is the vital information that allows correlated uncertainties in a multi detector experiment to cancel: a deviation at the far detector becomes significant (even if it is within the nominal uncertainty at that bin given by Eq. \ref{eq:bin_uncert}) if the deviation is not seen at a near detector {\bf and} the correlation between near and far is large.  The correlation matrices show the magnitude of exactly that correlation, while the covariance matrix (\ref{eq:cov_mat}) is the mathematical tool that carries correlation information to the $\chi^2$ calculation.
+
 
 \section{Uncertainties from Neutrino Flux}
 
 \label{section:flux_uncert}
 
+As might be expected, the neutrino flux is highly correlated across the three detectors in the Booster Neutrino Beam.
+
+\begin{figure}[]
+    \centering
+    \includegraphics[width=\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_flux_6_ecalo2_nu_vePhot0.05_gap3_fracUncert}
+    \caption{The predicted event rates for the SBN program in all three detectors, assuming 2.2e20 Protons on Target delivered each year.  For this analysis, \uboone is assumed to have 6 years of running (its original 3 + 3 with the SBN program)}.
+   \label{fig:sys_flux_uncert_fracUncert}
+\end{figure}
+
+\begin{figure}[]
+    \centering
+    \includegraphics[width=\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_flux_6_ecalo2_nu_vePhot0.05_gap3_fracMatHist}
+    \caption{The predicted event rates for the SBN program in all three detectors, assuming 2.2e20 Protons on Target delivered each year.  For this analysis, \uboone is assumed to have 6 years of running (its original 3 + 3 with the SBN program)}.
+   \label{fig:syst_flux_fracmatrix}
+\end{figure}
+\begin{figure}[]
+    \centering
+    \includegraphics[width=\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_flux_6_ecalo2_nu_vePhot0.05_gap3_corrMatHist}
+    \caption{The predicted event rates for the SBN program in all three detectors, assuming 2.2e20 Protons on Target delivered each year.  For this analysis, \uboone is assumed to have 6 years of running (its original 3 + 3 with the SBN program)}.
+   \label{fig:syst_flux_corrmatrix}
+\end{figure}
+
+
+
 Detailed discussion of the origins of the flux uncertainties.  The physical parameters that we have to constrain, and where the uncertainty ranges come from.  Dead-reckoned uncertainties in the event rates for each uncertainty, if possible, and dead-reckoned total uncertainty at each detector.
+\cite{AguilarArevalo:2008yp}
 
 \section{Uncertainties from Neutrino Interactions}
+
+\begin{figure}[]
+    \centering
+    \includegraphics[width=\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_xsec_0_ecalo2_nu_vePhot0.05_gap3_fracUncert}
+    \caption{The predicted event rates for the SBN program in all three detectors, assuming 2.2e20 Protons on Target delivered each year.  For this analysis, \uboone is assumed to have 6 years of running (its original 3 + 3 with the SBN program)}.
+   \label{fig:sys_xsec_uncert_fracUncert}
+\end{figure}
+
+\begin{figure}[]
+    \centering
+    \includegraphics[width=\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_xsec_0_ecalo2_nu_vePhot0.05_gap3_fracMatHist}
+    \caption{The predicted event rates for the SBN program in all three detectors, assuming 2.2e20 Protons on Target delivered each year.  For this analysis, \uboone is assumed to have 6 years of running (its original 3 + 3 with the SBN program)}.
+   \label{fig:syst_xsec_fracmatrix}
+\end{figure}
+\begin{figure}[]
+    \centering
+    \includegraphics[width=\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_xsec_0_ecalo2_nu_vePhot0.05_gap3_corrMatHist}
+    \caption{The predicted event rates for the SBN program in all three detectors, assuming 2.2e20 Protons on Target delivered each year.  For this analysis, \uboone is assumed to have 6 years of running (its original 3 + 3 with the SBN program)}.
+   \label{fig:syst_xsec_corrmatrix}
+\end{figure}
 
 \section{Residual Systematic Uncertainties}
