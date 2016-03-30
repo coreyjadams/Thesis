@@ -25,15 +25,44 @@ N^{null}_i - N^{osc}_i(\Delta m^2, \text{sin}^2 2 \theta ) = S_i(\Delta m^2, \te
 \end{equation}
 where S is the expected signal events from the specified parameters in the $i^{th}$ bin.
 
-$E_{i,j}$ in the $\chi^2$ computation is the covariance matrix, a statistical tool to encode correlated uncertainties.  In practice, the computation of the covariance matrix is the most challenging aspect of the $chi^2$ calculation because it requires careful determination of how the....
+$E_{i,j}$ in the $\chi^2$ computation is the covariance matrix, a statistical tool to encode correlated uncertainties.  In practice, the computation of the covariance matrix is the most challenging aspect of the $chi^2$ calculation because it requires careful determination of how the uncertainties under study are correlated.  For this work, the correlations of uncertainties are quantified with the ``multiple universe'' method \footnote{Nothing to do with the cosmological idea of the multiverse}.  Much more will be said about the computation and use of the covariance matrix in Section~\ref{sec:covariance_matrix}.
+
+\subsection{Multiple Universe Error Propagation and Reweighing methods}
+
+In a complex chain of simulation and analysis such as a prediction of event rates in a neutrino detector, it can be challenging to understand the effect of, for example, an uncertainty of hadron production and the neutrino target on the final distribution of events in the detector.  Some intuitive knowledge is of course present: if the amount of neutrino producing particles at the target is under (or over) estimated, the event rates in the final analysis distribution at the detector will also be under (over) estimated.  To precisely quantify the relationship between initial variable underlying the simulation and the final distributions of events, a reweighing scheme with multiple universes is used.
+
+\subsubsection{Reweighing Events}
+
+As a concrete example, 
 
 
-PICK UP HERE
 
 Multiverse analysis, drawing from physical distributions and propagating to the end distributions.  Reweighting method.
 
 \section{Determination of Covariance Matrices}
 \label{sec:covariance_matrix}
+
+Using the methods described above for applying weights on an event-by-event basis, it's possible to generate a suite of ``Universes''
+of event rate histograms, where the value of each analysis bin can be known in each universe as $N^i_{\text{Univ.} m}.$  In this document, since there are three detectors under consideration, the vector of event rates in each analysis bin, $N$, is a concatenation of the vector of event rates in each detector.  If there are $P$ total analysis bins in each detector, then 
+\begin{equation}
+\begin{centering}
+\vec{N}_{\text{Nom.}} = \left(~N_{\text{Nom.}}^{1,~SBND},~\dots~N_{\text{Nom.}}^{P,~SBND},~N_{\text{Nom.}}^{1,~\uboone}~\dots~N_{\text{Nom.}}^{P,~\uboone},~N_{\text{Nom.}}^{1,~\icarus}~\dots~N_{\text{Nom.}}^{P,~\icarus} ~\right)
+\end{centering}
+\end{equation}
+and in each universe where an underlying physical parameter has been varied:
+\begin{equation}
+\begin{centering}
+\vec{N}_{\text{Univ.}~m} = \left(~N_{\text{Univ.}~m}^{1,~SBND},~\dots~N_{\text{Univ.}~m}^{P,~SBND},~N_{\text{Univ.}~m}^{1,~\uboone}~\dots~N_{\text{Univ.}~m}^{P,~\uboone},~N_{\text{Univ.}~m}^{1,~\icarus}~\dots~N_{\text{Univ.}~m}^{P,~\icarus} ~\right).
+\end{centering}
+\end{equation}
+
+With these vectors, it's possible to calculate deviation from the nominal values due to the underlying uncertainties in an analysis bin:
+\begin{equation*}
+\begin{centering}
+\sigma^i = \frac{1}{M}\sum_{\text{All Univ.}~m} \left( N^i_{\text{Nom.}} - N^i_{\text{Univ.~m}}\right)^2
+\end{centering}
+\end{equation*}
+
 Covariance formula, etc. Correlation matrix, discussion of the meaning of the correlation matrix.  Correlations between detectors within the same event sample, also nue to numu correlations.
 
 \section{Uncertainties from Neutrino Flux}
