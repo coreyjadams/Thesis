@@ -33,17 +33,34 @@ In a complex chain of simulation and analysis such as a prediction of event rate
 
 \subsubsection{Reweighing Events}
 
-As a an example, 
+The the models used in the Monte Carlo simulations of neutrino experiments, there is always a class of parameters that feed the models and simulations:  the neutrino cross sections dictate how many events appear in the detector; the hadron interaction cross section dictates both the amount and variation of hadrons produced in the beam target.  These broad examples are meant to highlight that the Monte Carlo must be based upon not just a physics model but the input parameters to that model.  In the case of hadron production when the protons interact with the target, an assumption must be made about the cross section of that interaction.  While the Monte Carlo is naturally based on the best estimate of the input parameters, it's insufficient to estimate the uncertainty in the simulation without using the uncertainty on the input parameters.
+
+As a concrete example, the beam simulation (originally developed by the \MB collaboration) for the Booster Neutrino Beam uses the Sangford-Wang parameterization to model the double differential pion production cross section for secondary particles at the target.  The parameterization, 
+
+\begin{equation}
+\begin{centering}
+\frac{d^2 \sigma}{dp d\Omega}(p,\theta) = c_1 \left(1 - \frac{p}{p_B - c_9}\right)\text{exp}\left(- c_3 \frac{p^{c_4}}{p^{c_5}_B} - c_6 \theta (p - c_7 p_B \text{cos}^{c_8}\theta) \right),
+\end{centering}
+\end{equation}
+
+is a complicated system with eight free parameters which have been fit against data from the HARP and BNL E901 experiments.  The parameters are also not independent, but instead can have strong correlations.  The knowledge of these parameters is not perfect, and indeed the best fit parameters have imperfect agreement with data (see Figure~\ref{fig:sanford_wang_harp}).  However, the fact that the parameters are correlated allows some freedom to change the fit parameters such that the overall parameterization remains consistent with data.  When the parameters are changed from the nominal value to a different, consistent parameterization, it is a different ``Universe'' for this set of parameters.  It's worth noting that the variation in the cross section that comes about by varying the paremeters is the source of the dashed bands in Figure~\ref{fig:sanford_wang_harp}.
+
+In general, varying underlying physical parameters to a model produces a new result.  Unfortunately, Monte Carlo simulation of neutrino beams and interactions is computationally expensive, and repeating the simulation for every variance of a parameter is not possible.  In this case, a `reweighting scheme' is used.  For the moment, assume in a particular universe the Sanford-Wang parameterization above has been increased by a factor $X$ for a particular neutrino in the simulation.  Rather than reproduce this neutrino, in the computation of the final event distributions the same event is used in the same energy bin, but is given a relative weight of $1 + X$.  This factor can be recomputed for every neutrino that is in the final distribution, leading to an event rate distribution that would have been found if the entire simulation were repeated.
+
+In general, this method of `reweighting' applies new weights to every neutrino in the final analysis for each ``Universe.''  By varying the underlying parameters (in a way that leaves them consistent with constraining data) of a physical model many times, a large sample of universes is obtained, and the event distributions can be computed in each universe.  The parameters, however, can not be tweaked completely at random and instead must be drawn according to a Gaussian distribution (if a single uncertainty) or through more complicated methods if a series of correlated parameters.  \MB, for example, varies the Sanford-Wang parameters together through the Cholesky method.
 
 
-
-Multiverse analysis, drawing from physical distributions and propagating to the end distributions.  Reweighting method.
+\begin{figure}[tb]
+  \centering
+  \includegraphics[width=\textwidth]{systematics_figures/sanford_wang_harp}
+  \caption{The HARP Data (points), and the Sanford-Wang best fit parameterization (solid line).  The dashed lines represent a 68\% uncertainty band on the parameterization model from varying the fit parameters within their correlated uncertainties.  The Figure from \cite{AguilarArevalo:2008yp}.}
+  \label{fig:sanford_wang_harp}
+\end{figure}
 
 \section{Determination of Covariance Matrices}
 \label{sec:covariance_matrix}
 
-Using the methods described above for applying weights on an event-by-event basis, it's possible to generate a suite of ``Universes''
-of event rate histograms, where the value of each analysis bin can be known in each universe as $N^i_{\text{Univ.} m}.$  In this document, since there are three detectors under consideration, the vector of event rates in each analysis bin, $N$, is a concatenation of the vector of event rates in each detector.  If there are $P$ total analysis bins in each detector, then 
+Using the methods described above for applying weights on an event-by-event basis, it's possible to generate a suite of ``Universes'' of event rate histograms, where the value of each analysis bin can be known in each universe as $N^i_{\text{Univ.} m}.$  In this document, since there are three detectors under consideration, the vector of event rates in each analysis bin, $N$, is a concatenation of the vector of event rates in each detector.  If there are $P$ total analysis bins in each detector, then 
 \begin{equation}
 \begin{centering}
 \vec{N}_{\text{Nom.}} = \left(~N_{\text{Nom.}}^{1,~SBND},~\dots~N_{\text{Nom.}}^{P,~SBND},~N_{\text{Nom.}}^{1,~\uboone}~\dots~N_{\text{Nom.}}^{P,~\uboone},~N_{\text{Nom.}}^{1,~\icarus}~\dots~N_{\text{Nom.}}^{P,~\icarus} ~\right)
