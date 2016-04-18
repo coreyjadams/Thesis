@@ -120,53 +120,111 @@ The correlation matrix is an excellent visualization of the power of the covaria
 
 \label{section:flux_uncert}
 
-As might be expected, the neutrino flux is highly correlated across the three detectors in the Booster Neutrino Beam.
+As might be expected, the neutrino flux is highly correlated across the three detectors in the Booster Neutrino Beam.  However, the exact shape of the flux is not identical, especially at the near detector.  Figure~ \ref{sbn_flux} shows the flux at the three detectors, and the ratio of the near detector to both \uboone and \icarus, as well as \uboone to \icarus.
+
+The covariance matrix for the uncertainties from the neutrino flux is built, as described above, using a multi universe approach.  As alluded to in Table~\ref{tab:mb_flux_uncert}, the uncertainties from the neutrino flux are well quantified by \MB.  However, their uncertainty calculations concerned a single detector, while the SBN Program is a multi detector experiment.  To properly quantify the correlated uncertainties between the three detectors, the flux at each detector has to be varied (using the multiple universe reweighting scheme above) consistently: in the $N^{th}$ Universe, the underlying physical parameters that have been changed are changed identically in all three detectors.  The event distributions can be calculated again in each universe, for all three detectors, and from them the covariance distribution is built for the flux uncertainties.
+
+For the results shown here, the following uncertainties are considered in the computation of the flux covariance matrix:
+
+\begin{itemize}
+\item Primary production of $\pi^+$ , $\pi^-$ , $K^+$ , $K^−$ , and $K_L^0$ in p+Be collisions at 8 GeV
+\item Secondary interactions of p, n, $\pi^{\pm}$ in the beryllium target and aluminum horn
+\item Beam focusing with the magnetic horn
+\end{itemize}
+
+Primary hadron production uncertainties, whenever available, are taken directly from the
+measured cross sections which are used to constrain the Monte Carlo. In the case
+of charged pion production, the experimental uncertainties reported by the HARP experiment on
+their measurements are directly used to set the allowed variation within the beamline simulation \cite{Catanesi:2007ab}.
+
+For secondary interactions, the total cross sections are varied for hadrons on Beryllium and Aluminum.  Also, the inelastic and the quasielastic cross sections are varied.  Table~\ref{tab:flux_secondary_int_variations} summarizes allowed variations on hadron-Be and hadron-Al cross sections in the simulation. The total cross section, $\sigma_{\text{~TOT}}$, the inelastic cross section, $\sigma_{\text{~INE}}$ ; and the quasi-elastic cross sections, $\sigma_{\text{~QEL}}$ are varied separately for nucleons and pions interacting with Be and Al. When $\sigma_{\text{INE}}$ and $\sigma_{\text{QEL}}$ are varied, the cross section of the other is changed to hold the total cross section constant.
+
+\begin{table}[h]
+  \caption{Cross section variations for the study of systematic uncertainties from secondary interactions of hadrons in the target area.  The cross section is offset by the amount shown in the table.}
+  \label{tab:flux_secondary_int_variations}
+  \centering
+  \begin{tabular}{l|ccccccc}
+  \hline
+  \hline
+   &  \multicolumn{2}{c}{$\Delta \sigma_{\text{TOT}}$ (mb)} & \multicolumn{2}{c}{$\Delta \sigma_{\text{INE}}$ (mb)} & \multicolumn{2}{c}{$\Delta \sigma_{\text{QEL}}$ (mb)} \\
+   &  Be & Al & Be & Al & Be & Al \\
+  \hline
+   $(p/n)$ - (Be/Al) & $\pm 15.0$ & $\pm 25.0$ & $\pm 5.0$ & $\pm 10.0$ & $\pm 20.0$ & $\pm 45.0$ \\
+   $\pi^{\pm}$ - (Be/Al) & $\pm 11.9$ & $\pm 28.7$ & $\pm 10.0$ & $\pm 20.0$ & $\pm 11.2$ & $\pm 25.9$ \\
+  \hline
+  \end{tabular}
+\end{table}
+
+Beam focusing systematics include uncertainty on the magnitude of the horn current(174 $\pm$ 1 kA) as well as skin depth effects. the horn. The skin depth effect allows the magnetic field, flowing on the surface of the conductor, to penetrate into the interior of the horn conductor.This creates a magnetic field within the conductor that can lead to deflections of charged particles which traverse the conductor, especially at higher energy  when particles which do not penetrate deeply into the conductor. The effect can be approximated by modeling an exponentially decreasing field to a depth of about 1.4 mm. To asses the systematic the field is turned on and off, which leads to an energy dependent effect of 1 to 18\% for particles of < 1 GeV to 2 GeV, respectively \cite{AguilarArevalo:2008yp}.
+
+This work does not include a systematic uncertainty on downstream interactions of hadrons with surrounding material, such as air, concrete, steel, etc.  These effects were studied by the \MB collaboration and found to contribute only a few percent to the \nue and \numu fluxes (1\% to \numu, 2\% to \nue).  Therefore, even a large uncertainty on downstream interaction would make a very small impact on the total uncertainty.
+
+Figure~\ref{fig:sys_flux_uncert_fracUncert} shows the overall level on uncertainty on the event rates of electron neutrino backgrounds coming from flux uncertainties.  As described above, the events selected as \nue's are largely electron neutrinos with some background from neutral current interactions and charged current \numu interactions.  The uncertainties shown in Figure~\ref{fig:sys_flux_uncert_fracUncert} reflect the mixed composition of the background: in a ``Universe'' where the flux has varied, the \nue and \numu fluxes have been changed together and so all components of the background model are varied in a consistent way.
+
+Naturally, the flux covariance matrix only applies to the part of the background that originates with the neutrino beam.  The cosmic background is independent of the flux, and though the ``dirt'' background does correlate with the beam, it is treated independently since the correlation is second order.
 
 \begin{figure}[]
     \centering
-    \includegraphics[width=\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_flux_6_ecalo2_nu_vePhot0.05_gap3_fracUncert}
-    \caption{The predicted event rates for the SBN program in all three detectors, assuming 2.2e20 Protons on Target delivered each year.  For this analysis, \uboone is assumed to have 6 years of running (its original 3 + 3 with the SBN program)}.
+    \includegraphics[width=0.5\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_flux_6_ecalo2_nu_vePhot0.05_gap3_fracUncert}
+    \caption[Fractional Flux Uncertainties]{The systematic uncertainties in the \nue appearance event rates for the SBN program, coming from uncertainties in the neutrino flux.  This includes flux-based uncertainties for both the \nue component, from the \nue flux, and the \numu misidentified component of the background.}
    \label{fig:sys_flux_uncert_fracUncert}
 \end{figure}
 
 \begin{figure}[]
     \centering
-    \includegraphics[width=\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_flux_6_ecalo2_nu_vePhot0.05_gap3_fracMatHist}
-    \caption{The predicted event rates for the SBN program in all three detectors, assuming 2.2e20 Protons on Target delivered each year.  For this analysis, \uboone is assumed to have 6 years of running (its original 3 + 3 with the SBN program)}.
+    \includegraphics[width=0.5\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_flux_6_ecalo2_nu_vePhot0.05_gap3_fracMatHist}
+    \caption[Flux Fractional Covariance Matrix]{The fractional covariance matrix for the flux uncertainties.  The uncertainties are highest in the tails of each detector's distributions.}
    \label{fig:syst_flux_fracmatrix}
 \end{figure}
 \begin{figure}[]
     \centering
-    \includegraphics[width=\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_flux_6_ecalo2_nu_vePhot0.05_gap3_corrMatHist}
-    \caption{The predicted event rates for the SBN program in all three detectors, assuming 2.2e20 Protons on Target delivered each year.  For this analysis, \uboone is assumed to have 6 years of running (its original 3 + 3 with the SBN program)}.
+    \includegraphics[width=0.5\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_flux_6_ecalo2_nu_vePhot0.05_gap3_corrMatHist}
+    \caption[Flux Correlation Matrix]{The correlation matrix for the flux uncertainties. The uncertainties are highly correlated across the three detectors, which is essential to achieving a strong cancellation between detectors. }
    \label{fig:syst_flux_corrmatrix}
 \end{figure}
 
 
 
-Detailed discussion of the origins of the flux uncertainties.  The physical parameters that we have to constrain, and where the uncertainty ranges come from.  Dead-reckoned uncertainties in the event rates for each uncertainty, if possible, and dead-reckoned total uncertainty at each detector.
-\cite{AguilarArevalo:2008yp}
-
 \section{Uncertainties from Neutrino Interactions}
+
+After the flux uncertainty, the largest remaining uncertainty in a multidetector analysis is the uncertainty coming from neutrino interactions.  In particular, the flux and cross section uncertainties combine to form the overall shape uncertainty 
+
+In a multi-detector analysis, comparisons must be performed using a shape only analysis
+unless the uncertainty due to normalization is reliably quantified. For this Short Baseline
+program, the neutrino interaction uncertainties (cross-section uncertainties) are the largest
+uncertainties that affect the normalization of event rates at the three detectors. To study this
+uncertainty, we have attempted to quantify both the absolute magnitude of uncertainty due to
+cross sections as well as the correlations between detectors of these uncertainties.
+The simulation used for analysis in this document were performed using the GENIE event
+generator, and so all cross section uncertainties were quantified within the framework of event
+reweighing that GENIE provides. In particular, we simulated 250 different “cross section uni-
+verses” in which each of the parameters we intended to study was varied at random. The
+variations were made to underlying physical quantities and the variations in those quantities,
+though drawn at random, are consistent with a Gaussian distribution that has a 1σ spread
+equal to the 1σ uncertainty in the underlying physical quantity. Much more detail is available
+from the GENIE manual, chapter 8[? ], on both the underlying physical uncertainties and the
+methodology for propagating them to cross section reweights.
+
 
 \begin{figure}[]
     \centering
-    \includegraphics[width=\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_xsec_0_ecalo2_nu_vePhot0.05_gap3_fracUncert}
-    \caption{The predicted event rates for the SBN program in all three detectors, assuming 2.2e20 Protons on Target delivered each year.  For this analysis, \uboone is assumed to have 6 years of running (its original 3 + 3 with the SBN program)}.
+    \includegraphics[width=0.5\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_xsec_0_ecalo2_nu_vePhot0.05_gap3_fracUncert}
+    \caption{}
    \label{fig:sys_xsec_uncert_fracUncert}
 \end{figure}
 
 \begin{figure}[]
     \centering
-    \includegraphics[width=\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_xsec_0_ecalo2_nu_vePhot0.05_gap3_fracMatHist}
-    \caption{The predicted event rates for the SBN program in all three detectors, assuming 2.2e20 Protons on Target delivered each year.  For this analysis, \uboone is assumed to have 6 years of running (its original 3 + 3 with the SBN program)}.
+    \includegraphics[width=0.5\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_xsec_0_ecalo2_nu_vePhot0.05_gap3_fracMatHist}
+    \caption{}
    \label{fig:syst_xsec_fracmatrix}
 \end{figure}
 \begin{figure}[]
     \centering
-    \includegraphics[width=\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_xsec_0_ecalo2_nu_vePhot0.05_gap3_corrMatHist}
+    \includegraphics[width=0.5\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_xsec_0_ecalo2_nu_vePhot0.05_gap3_corrMatHist}
     \caption{The predicted event rates for the SBN program in all three detectors, assuming 2.2e20 Protons on Target delivered each year.  For this analysis, \uboone is assumed to have 6 years of running (its original 3 + 3 with the SBN program)}.
    \label{fig:syst_xsec_corrmatrix}
 \end{figure}
 
 \section{Residual Systematic Uncertainties}
+
