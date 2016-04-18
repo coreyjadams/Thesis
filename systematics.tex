@@ -9,6 +9,8 @@ The strength of the Short Baseline Program's oscillation search comes, ultimatel
 
 \section{General Framework for quantification of uncertainties}
 
+\label{sec:multi_weight}
+
 In this analysis, the uncertainties that matter are the systematic uncertainties on the final distribution of event rates.  Since the goal is to produce a sensitivity calculation for an expected signal, the numerical value of the sensitivity can be calculated with a $\chi^2$ calculation:
 
 \begin{equation}
@@ -53,7 +55,7 @@ In general, this method of `reweighting' applies new weights to every neutrino i
 \begin{figure}[tb]
   \centering
   \includegraphics[width=\textwidth]{systematics_figures/sanford_wang_harp}
-  \caption{The HARP Data (points), and the Sanford-Wang best fit parameterization (solid line).  The dashed lines represent a 68\% uncertainty band on the parameterization model from varying the fit parameters within their correlated uncertainties.  The Figure from \cite{AguilarArevalo:2008yp}.}
+  \caption[HARP Data and Sanford-Wang Fit]{The HARP Data (points), and the Sanford-Wang best fit parameterization (solid line).  The dashed lines represent a 68\% uncertainty band on the parameterization model from varying the fit parameters within their correlated uncertainties.  The Figure from \cite{AguilarArevalo:2008yp}.}
   \label{fig:sanford_wang_harp}
 \end{figure}
 
@@ -140,7 +142,7 @@ their measurements are directly used to set the allowed variation within the bea
 For secondary interactions, the total cross sections are varied for hadrons on Beryllium and Aluminum.  Also, the inelastic and the quasielastic cross sections are varied.  Table~\ref{tab:flux_secondary_int_variations} summarizes allowed variations on hadron-Be and hadron-Al cross sections in the simulation. The total cross section, $\sigma_{\text{~TOT}}$, the inelastic cross section, $\sigma_{\text{~INE}}$ ; and the quasi-elastic cross sections, $\sigma_{\text{~QEL}}$ are varied separately for nucleons and pions interacting with Be and Al. When $\sigma_{\text{INE}}$ and $\sigma_{\text{QEL}}$ are varied, the cross section of the other is changed to hold the total cross section constant.
 
 \begin{table}[h]
-  \caption{Cross section variations for the study of systematic uncertainties from secondary interactions of hadrons in the target area.  The cross section is offset by the amount shown in the table.}
+  \caption[BNB Secondary Interaction Variations]{Cross section variations for the study of systematic uncertainties from secondary interactions of hadrons in the target area.  The cross section is offset by the amount shown in the table.}
   \label{tab:flux_secondary_int_variations}
   \centering
   \begin{tabular}{l|ccccccc}
@@ -187,44 +189,83 @@ Naturally, the flux covariance matrix only applies to the part of the background
 
 \section{Uncertainties from Neutrino Interactions}
 
-After the flux uncertainty, the largest remaining uncertainty in a multidetector analysis is the uncertainty coming from neutrino interactions.  In particular, the flux and cross section uncertainties combine to form the overall shape uncertainty 
+After the flux uncertainty, the largest remaining uncertainty in a multidetector analysis is the uncertainty coming from neutrino interactions.  In particular, the flux and cross section uncertainties combine to form the overall normalization uncertainty on the event rates.
 
-In a multi-detector analysis, comparisons must be performed using a shape only analysis
-unless the uncertainty due to normalization is reliably quantified. For this Short Baseline
-program, the neutrino interaction uncertainties (cross-section uncertainties) are the largest
-uncertainties that affect the normalization of event rates at the three detectors. To study this
-uncertainty, we have attempted to quantify both the absolute magnitude of uncertainty due to
-cross sections as well as the correlations between detectors of these uncertainties.
-The simulation used for analysis in this document were performed using the GENIE event
-generator, and so all cross section uncertainties were quantified within the framework of event
-reweighing that GENIE provides. In particular, we simulated 250 different “cross section uni-
-verses” in which each of the parameters we intended to study was varied at random. The
-variations were made to underlying physical quantities and the variations in those quantities,
-though drawn at random, are consistent with a Gaussian distribution that has a 1σ spread
-equal to the 1σ uncertainty in the underlying physical quantity. Much more detail is available
-from the GENIE manual, chapter 8[? ], on both the underlying physical uncertainties and the
-methodology for propagating them to cross section reweights.
+The use of the covariance method to compute a $\chi^2$ would be incorrect if the major normalization uncertainties were not all accounted for.  To address this, the systematic uncertainties from the neutrino interactions are also addressed with a covariance matrix.  As the simulation uses GENIE \cite{Andreopoulos:2009rq} to simulate neutrino interactions within argon, the same event generator was used to calculate the systematic uncertainties for cross sections.
+
+At it's core, GENIE is a cross section calculator for neutrino interactions.  It models known interactions by computing cross section splines for a reaction between a specific flavor of neutrino and a nuclear target.  These splines are slow to create, and need to be comprehensive to have accurate results in the simulation.  At runtime, however, GENIE doesn't recompute cross sections for a particular neutrino onto a target if it is already computed, it just accesses the spline for the information.
+
+All of the cross sections that GENIE computes are based on theory or fits to experimental data, and hence the parameters used (in the theory or fits) have some systematic uncertainty associated with them.  By varying these parameters according to their 1 $\sigma$ uncertainty, and recomputing the cross section, a weight can be applied to the event as described above in section Section ~\ref{sec:multi_weight}.
+
+The GENIE framework provides a model for consistent variations of systematic uncertainties.  When, for example, a total cross section is constrained by data and a variation is requested on a subset of that total cross section, the other subsets are adjusted to compensate.  This gives a consistent ``Universe'' across all neutrino interactions when the underlying parameters are adjusted.
+
+Table~\ref{tab:genie_xsec_params} shows the parameters that were varied in the GENIE cross section calculator for this analysis.  In each ``Universe,'' every parameter was varied within it's 1 $\sigma$ Gaussian distribution and the weights for each interaction were calculated, for a total of 250 universes.  Figure~\ref{fig:sys_xsec_uncert_fracUncert} shows the level of uncertainty in the detector's final \nue event rates arising from the cross section uncertainties.  This is, without a multi detector analysis, a very large source of uncertainty on the interaction rates.
+
+{
+\renewcommand{\arraystretch}{1.5}
+\begin{table}[tb]
+  \caption[Genie Cross Section Variations]{Genie Cross Section Variations and their nominal uncertainty, from \cite{Genie_manual}}
+  \label{tab:genie_xsec_params}
+  \centering
+
+  \begin{tabular}{l|lc}
+  \hline
+
+  \hline
+  \textbf{Parameter} & \textbf{Description} & \textbf{Nominal Variation} \\
+  \hline
+     $M_A^{CCQE}$ & Axial Mass for CC Quasi-Elastic & -15\% +25\%  \\
+     $M_A^{CCRES}$ & Axial Mass for CC Resonance Production & $\pm$20\%  \\
+     $M_A^{NCRES}$ & Axial Mass for NC Resonance Production & $\pm$20\%  \\
+     $R_{bkg}^{\nu p, CC 1 \pi}$& Non-resonance Background in CC 1 $\pi$ production & $\pm$ 50\% \\
+     $R_{bkg}^{\nu p, CC 2 \pi}$& Non-resonance Background in CC 2 $\pi$ production & $\pm$ 50\% \\
+     $R_{bkg}^{\nu n, CC 1 \pi}$& Non-resonance Background in CC 1 $\pi$ production & $\pm$ 50\% \\
+     $R_{bkg}^{\nu n, CC 2 \pi}$& Non-resonance Background in CC 2 $\pi$ production & $\pm$ 50\% \\
+     $R_{bkg}^{\nu p, NC 1 \pi}$& Non-resonance Background in NC 1 $\pi$ production & $\pm$ 50\% \\
+     $R_{bkg}^{\nu p, NC 2 \pi}$& Non-resonance Background in NC 2 $\pi$ production & $\pm$ 50\% \\
+     $R_{bkg}^{\nu n, NC 1 \pi}$& Non-resonance Background in NC 1 $\pi$ production & $\pm$ 50\% \\
+     $R_{bkg}^{\nu n, NC 2 \pi}$& Non-resonance Background in NC 2 $\pi$ production & $\pm$ 50\% \\
+     % DIS Nucl. Model & & \\
+  \hline
+
+  \hline
+  \end{tabular}
+\end{table}
+}
 
 
-\begin{figure}[]
+\begin{figure}[h]
     \centering
     \includegraphics[width=0.5\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_xsec_0_ecalo2_nu_vePhot0.05_gap3_fracUncert}
-    \caption{}
+    \caption[\nue Cross Section Uncertainties]{Fractional uncertainties at each detector in the \nue analysis due to neutrino interaction uncertainties.}
    \label{fig:sys_xsec_uncert_fracUncert}
 \end{figure}
 
-\begin{figure}[]
+\begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_xsec_0_ecalo2_nu_vePhot0.05_gap3_fracMatHist}
-    \caption{}
+    \includegraphics[width=\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_xsec_0_ecalo2_nu_vePhot0.05_gap3_fracMatHist}
+    \caption[\nue Cross Section Fractional Covariance Matrix]{The fractional covariance matrix from the cross section uncertainties.}
    \label{fig:syst_xsec_fracmatrix}
 \end{figure}
-\begin{figure}[]
+
+\begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_xsec_0_ecalo2_nu_vePhot0.05_gap3_corrMatHist}
-    \caption{The predicted event rates for the SBN program in all three detectors, assuming 2.2e20 Protons on Target delivered each year.  For this analysis, \uboone is assumed to have 6 years of running (its original 3 + 3 with the SBN program)}.
+    \includegraphics[width=\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_xsec_0_ecalo2_nu_vePhot0.05_gap3_corrMatHist}
+    \caption[\nue Cross Section Correlation Matrix]{The correlation matrix for the cross section uncertainties in the \nue analysis.  As seen by the very high correlation across the analysis bins, the cross section uncertainties are mostly a normalization uncertainty and not a shape uncertainty.}
    \label{fig:syst_xsec_corrmatrix}
 \end{figure}
 
+
+As seen in Figure~\ref{fig:syst_xsec_corrmatrix}, the cross section uncertainties across the detectors (and amongst the analysis bins within a detector) are highly correlated.  The even correlation indicates that the uncertainty is largely a normalization uncertainty, and not indicative of a different uncertainty in the energy dependence of the cross section, for example.  The only regions where the correlation is not as strong is the lowest energy bin to the higher energy bins in each detector.  Since the lowest energy bin has the highest rate of misidentified events, coming from Neutral Current pion producing interactions, it is sensible that this bin is less correlated to the rest.
+
+Despite the very high correlation of cross section uncertainties, there are two caveats to this part of the study of systematic uncertainties in the SBN Program.  First, the uncertainties studied did not include final state interaction variations.  Because this is a Charged Current inclusive analysis, the final state interaction uncertainties should have minimal impact on the final result.  Any analysis that uses an exclusive channel, such as CC \nue 0 pion, would need a very careful study of the neutrino generator model and it's included uncertainties.
+
+Second, the GENIE neutrino generator includes a package for systematic uncertainty study, however this list of channels studied is not expected to be 100\% comprehensive.  Instead, it serves to validate and quantify the level of correlation between the SBN detectors.
+
+Despite these caveats, the conclusion of the cross section analysis is quite strong: whatever systematic uncertainties arise from neutrino interactions, they are very strongly correlated across the 3 detectors.  The quantification of that correlation is encoded in the covariance matrix, Figure~\ref{fig:syst_xsec_fracmatrix}.
+
 \section{Residual Systematic Uncertainties}
 
+After consider
+
+\section{Sensitivity to Anomalous \nue Appearance at the SBN Program}
