@@ -15,6 +15,7 @@ In this analysis, the uncertainties that matter are the systematic uncertainties
 
 \begin{equation}
 \begin{centering}
+\label{eq:chi_sq}
 \chi^2(\Delta m^2, \text{sin}^2 2 \theta ) = \sum_{i,j} [N^{null}_i - N^{osc}_i(\Delta m^2, \text{sin}^2 2 \theta ) ] \times E^{-1}_{i,j} \times [N^{null}_j - N^{osc}_j(\Delta m^2, \text{sin}^2 2 \theta ) ],
 \end{centering}
 \end{equation}
@@ -96,6 +97,7 @@ E^{i,j} = \frac{1}{M}\sum_{\text{All Univ.}~m}^{M} \left[ N^i_{\text{Nom.}} - N^
 Covariance matrices that arise from uncertainty sources that are uncorrelated are separable, in the sense that for a complete analysis the final covariance matrix can be constructed as the sum of the matrices from each source.  In this analysis, a covariance matrix is calculated for the flux and cross section uncertainties for beam intrinsic events, and the matrix is estimated for the backgrounds from ``Dirt'' and cosmic induced events, as well as detector systematics.
 \begin{equation}
 \begin{centering}
+\label{eq:tot_cov_mat}
 E = E_{\text{Stat.}} + E_{\text{Flux}} + E_{\text{Cross Section}} + E_{\text{Dirt}} + E_{\text{Cosmic}} + E_{\text{Det. Syst.}}
 \end{centering}
 \end{equation}
@@ -167,7 +169,7 @@ Naturally, the flux covariance matrix only applies to the part of the background
 
 \begin{figure}[]
     \centering
-    \includegraphics[width=0.5\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_flux_6_ecalo2_nu_vePhot0.05_gap3_fracUncert}
+    \includegraphics[width=0.75\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_flux_6_ecalo2_nu_vePhot0.05_gap3_fracUncert}
     \caption[Fractional Flux Uncertainties]{The systematic uncertainties in the \nue appearance event rates for the SBN program, coming from uncertainties in the neutrino flux.  This includes flux-based uncertainties for both the \nue component, from the \nue flux, and the \numu misidentified component of the background.}
    \label{fig:sys_flux_uncert_fracUncert}
 \end{figure}
@@ -236,21 +238,21 @@ Table~\ref{tab:genie_xsec_params} shows the parameters that were varied in the G
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_xsec_0_ecalo2_nu_vePhot0.05_gap3_fracUncert}
+    \includegraphics[width=0.75\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_xsec_0_ecalo2_nu_vePhot0.05_gap3_fracUncert}
     \caption[\nue Cross Section Uncertainties]{Fractional uncertainties at each detector in the \nue analysis due to neutrino interaction uncertainties.}
    \label{fig:sys_xsec_uncert_fracUncert}
 \end{figure}
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_xsec_0_ecalo2_nu_vePhot0.05_gap3_fracMatHist}
+    \includegraphics[width=0.5\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_xsec_0_ecalo2_nu_vePhot0.05_gap3_fracMatHist}
     \caption[\nue Cross Section Fractional Covariance Matrix]{The fractional covariance matrix from the cross section uncertainties.}
    \label{fig:syst_xsec_fracmatrix}
 \end{figure}
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_xsec_0_ecalo2_nu_vePhot0.05_gap3_corrMatHist}
+    \includegraphics[width=0.5\textwidth]{systematics_figures/matrixFile_nue_ND_100m_uB_T600_onaxis_xsec_0_ecalo2_nu_vePhot0.05_gap3_corrMatHist}
     \caption[\nue Cross Section Correlation Matrix]{The correlation matrix for the cross section uncertainties in the \nue analysis.  As seen by the very high correlation across the analysis bins, the cross section uncertainties are mostly a normalization uncertainty and not a shape uncertainty.}
    \label{fig:syst_xsec_corrmatrix}
 \end{figure}
@@ -266,6 +268,42 @@ Despite these caveats, the conclusion of the cross section analysis is quite str
 
 \section{Residual Systematic Uncertainties}
 
-After consider
+After considering the flux and cross section uncertainties in detail, it is reasonable to ask what is the residual systematic uncertainty on a \nue appearance measurement in the SBN Program.
+
+There are two types of uncertainties that are not studied in great detail yet, correlated and uncorrelated.  Some examples of correlated uncertainties that will be studied in the future, before the final analysis, are
+
+\begin{itemize}
+  \item {\bf Reconstruction Efficiencies} - the three detectors of the SBN Program will all use the same suite of reconstruction tools to build their event rates.  The efficiency will not be perfect, as no set of particle reconstruction software ever is, however the systematic biases introduced by the reconstruction will be correctable through Monte Carlo and well correlated between the detectors.  For the study shown here, reconstruction efficiencies are assumed to be the same across all three detectors.
+  \item{\bf Cosmogenic Backgrounds} - the cosmogenic background, which occurs when a cosmic particle produces an interaction that is mistaken for an electron neutrino, will be mostly correlated between the three detectors.  There is some variance in the building geometries, such as overburdens and cosmic tagging systems (muon detectors external to the cryostat), however the basic cosmic flux at all three detectors will be correlated.  Further, the cosmogenic background can be measured with nearly arbitrary precision with off-beam spills.  That is, since the neutrino beams are pulsed there are clear samples of data with {\bf no} neutrinos, which can be used to measure the amount of cosmogenic misidentification as electron neutrinos.  Under this assumption, the covariance matrix for the cosmic sample is the statistical uncertainty of the cosmic misidentification in the accepted event samples.
+
+\end{itemize}
+
+On the other hand, residual uncorrelated uncertainties include
+
+\begin{itemize}
+  \item {\bf Detector Effects} - The three detectors of the SBN Program, while all LArTPCs, are not identical detectors in the same way that Daya Bay is, for example \cite{daya_bay}.  As described in Section~\ref{sec:sbn_detectors}, the three detectors have some differences.  \uboone is a single drift detector, while \icarus and \sbnd are dual drift TPCs with a cathode in the middle.  Further, the fiducial volumes of the detectors are different, and the ability to contain neutral particles and electromagnetic particles is different due to the different shape of the detectors.
+  \item{\bf ``Dirt'' Backgrounds} - the backgrounds produced by the beam but externally to the detector will, to first order, be uncorrelated between detectors.  The overall rate will fluctuate up or down with the neutrino flux, however the complexity of the surrounding material of the detectors makes the evaluation difficult.  Therefore, to be conservative, a 15\% uncertainty is applied to the ``Dirt'' backgrounds at each detector.  This is assumed to be fully correlated within each detector's analysis bins, but uncorrelated across detectors.
+\end{itemize}
+
+Before a final analysis is released, these systematics uncertainties must be carefully addressed.
 
 \section{Sensitivity to Anomalous \nue Appearance at the SBN Program}
+
+To evaluate the expect sensitivity of the SBN Program, the above covariance matrices are used as shown in Equation~\ref{eq:tot_cov_mat}.  The $\chi^2$ measure of sensitivity is computed as in Equation~\ref{eq:chi_sq}.  The final sensitivity to \nue is shown in Figure~\ref{fig:sbn_final_sensitivity}.  As an alternative view to this sensitivity, the quoted sensitivity in Figure~\ref{fig:sbn_alt_sensitivity} shows the $\sqrt{\chi^2}$ of calculated along the left edge of the LSND 90\% confidence region.
+
+
+\begin{figure}[tb]
+  \centering
+  \includegraphics[width=0.75\textwidth]{systematics_figures/{ND_100m_uB_T600_onaxis_nue_appearance_ecalo2_nu_vePhot0.05_gap3_lessCosmics_xsec_0_flux_6_dirt_cos_sensPlot.pdf}}
+  \caption[SBN Sensitivity]{The SBN Program's quoted sensitivity, under all the assumptions shown above. At the best fit points from \cite{kopp_best_fit} and \cite{giunti_best_fit}, the significance is well above 5 $\sigma$.}
+  \label{fig:sbn_final_sensitivity}
+\end{figure}
+
+
+
+\begin{figure}[tb]
+  \centering
+  \includegraphics[width=\textwidth]{systematics_figures/{nominalSBNSens.pdf}}
+  \caption[SBN Sensitivity Along LSND Edge]{The SBN Sensitivity along the lower edge of the LSND 90\% confidence allowed region.  Because of the low $\text{sin}^22\theta$ values along the LSND regions left edge, this is a region with a very small and difficult to measure signal.  Therefore, it is a good parameter space with which to measure the SBN Sensitivity.}
+  \label{fig:sbn_alt_sensitivity}
+\end{figure}
