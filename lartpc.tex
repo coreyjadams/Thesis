@@ -1,17 +1,67 @@
 \chapter{Liquid Argon Time Projection Chambers}
 
-A chapter to discuss the properties and details of operation of liquid argon TPCS
+\section{Time Projection Chambers}
 
-\xspace
+The Time Projection Chamber, often abbreviated TPC, was a revolutionary particle detector concept proposed in 1974 by David Nygren at Lawrence Berkeley National Lab.  Since then, the TPC has found applications in a broad array of particle physics experiments such as collider experiments at the LHC \cite{Lippmann:2104844,Aamodt:2008zz}, precision measurements of muon properties \cite{Luo:2015oca}, dark matter experiments \cite{Akerib:2012ys,Aprile:2011dd} and more.  The abundance of uses for the TPC technology stems from the versatile and robust ability of a TPC to track charged particles.
 
-\section{LAr-TPCs in General}
+In general, a Time Projection Chamber is a chamber filled with some  relatively neutral and inert material.  Commonly, noble gases and liquids are used though this is not required.  An electric field is applied to the entire medium, and in some cases a magnetic field is applied as well.  The electric field is generally applied by using a high voltage cathode as one surface of the detector.  The opposing surface, the anode, is typically instrumented with readout equipment.
 
-\subsection{Origin}
+Time Projection Chambers are designed to observe electrically charged particles.  In particular, a high energy charged particle (such as an electron, muon, pion, proton, etc.) can travel through the detector medium and will ionize the substance as it passes through, leaving a trail of electrons and ions.  The applied electric field, emanating from the cathode, serves to separate the electrons from the ions and move the electrons towards the anode of the detector.  The drifted electrons form the basis of the measurement of the particle.  In particular, they appear as a projection of the original track onto the anode of the detector, and the distance from the anode is determined by the time it took for the electrons to drift.  Hence the name, Time Projection Chamber.  Far more detail is given in the description of liquid argon TPCs, below \ref{sec:lartpc_design}
 
-\subsection{Design}
+\section{History and Liquid Argon Time Projection Chamber Concepts}
 
-\subsection{Electron/Photon Separation}
+The Liquid Argon Time Projection Chamber (LArTPC) was initially proposed in 1977 by Carlo Rubbia \cite{Rubbia:1977zz}, who later led the development of the ICARUS detector and preceding R\&D programs.  At the time of it's concept, neutrino physics was dominated by bubble chamber detectors like Gargamelle, renowned for it's remarkable resolution of particle topologies.  Initially, the LArTPC was proposed as a way to combine high spatial resolution detectors with calorimetry measuring detectors in a way that is scalable to massive detectors.  As the field of neutrino physics approaches the largest LArTPC to date with DUNE \cite{DUNE}, it's worthwhile to recall the original advantages of the LArTPC technology as laid out in 1977 \cite{Rubbia:1977zz}:
 
-\section{\argoneut}
+\begin{itemize}
 
-\subsection{ArgoNeuT Specifics}
+\item{\bf ``It is dense''} : The relative high density of liquid argon, at 1.4 $g/cm^3$, provides a sufficiently high neutrino interaction rate such that high statistics measurements are feasible.
+
+\item{\bf ``It does not attach electrons and permits long drift times''}: As a long drift time is essential to large scale detectors to both maximize the mass of the detector and minimize the number of readout channels, the fact that argon itself does not attach free electrons is an essential ingredient to LArTPCs.
+
+\item{\bf ``It has a high electron mobility''}: The high mobility makes drifting electrons from particle ionization in a short time a feasible task.
+
+\item{\bf ``It is cheap''}:  A detector can not be scaled to massive sizes unless the fundamental building block of the detector is affordable.
+
+\item{\bf ``It is easy to obtain and purify''}: Purification challenges have largely been overcome for LArTPCs.  In particular, the \uboone experiment has demonstrated a viable way to achieve high purity argon without purging the detector of impurities first.
+
+\item{\bf ``It is inert and can be liquified with liquid nitrogen''}: This makes the cryogenic systems for LArTPCs reasonable to purchase and implement.
+
+\end{itemize}
+
+
+40 years after the original proposal, it is remarkable how relevant the initial advantages remain in the face of an experiment such as DUNE. 
+
+Since the original proposal, some additional advantages of LArTPCs have been noted and are worth mentioning.  For example, the scintillation of Liquid Argon has been successfully characterized and is measurable in coincidence with the drift ionization.  For large detectors, especially surface detectors, this allows the ability to match scintillation light to ionization tracks to reject out of time events such as cosmic particles.  It also allows the implementation of a hardware based trigger to filter neutrino interactions online.  For even modest sized LArTPCs, this can be an essential aspect to control data rates and ease computing requirements.
+
+\section{Design of LArTPCs}
+\label{sec:argoneut_detector}
+
+As mentioned above, the Liquid Argon TPC has a long history of development.  This section presents the details of a modern LArTPC in it's design, given in the context of the \argoneut detector. A comprehensive and detailed description of the \argoneut detector is given in \cite{Anderson:2012vc}
+
+\subsection{\argoneut Time Projection Chamber}
+
+The \argoneut TPC is a rectangular volume of liquid argon that measures 40 cm high (Y direction), 47 cm wide (X direction), and 90 cm long (Z direction).  In total, this corresponds to about 170 liters of Liquid Argon.  As designed, neutrinos from Fermilab's NuMI beam \ref{sec:numi_beam} enter nearly parallel to the Z direction, with a slight downward direction.  On the left side of the detector in the beam direction is the high voltage cathode providing a uniform electric field of 500 V/cm throughout the TPC (corresponding to approximately -23 kV of voltage at the cathode).  Opposite the cathode is the anode, composed of three wire planes, of which only two are instrumented for readout.
+
+In the detector, as a neutrino interacts, it produces outgoing particles, most commonly: muons, protons, neutrons, pions (charged and neutral), photons and electrons.  Naturally, the possible particles produced in a neutrino interaction is much broader than this short list, but this comprises the most frequent particles.  In the case of the electrically charged particles, the particle will ionize the argon atoms as it moves through the detector.  The ionization produced is a statistical quantity, but the average expected ionization depends strongly on the momentum and mass of the particle in question.  In general, particles with higher mass and lower momentum produce larger ionization per unit distance traveled \cite{bethe-bloch}.  The ionization per unit distance, measured most frequently in the units MeV/cm, is a very powerful tool for calorimetric identification of particles.
+
+Neutral particles, such as neutrons and photons, do not ionize the argon atoms as they traverse the detector.  However, these particles can still interact with the argon and produce charged particles visible to the TPC instrumentation.  Neutrons frequently will scatter off of an argon nucleus and produce a recoiling proton, which can be observed in the detector.  Photons can produce electromagnetic showers through Compton scattering and pair production, described more fully in Chapter \ref{chp:electons}.
+
+After the particles from the neutrino interaction have produced ionization in the detector, the electric field separates the ions and electrons from each other.  Naturally, the separation is imperfect and depends on the strength of the electric field, the amount of ionization, as well as the angle of ionization with respect to the field.  This effect, known as recombination of electrons and ions, has been studied in detail in the \argoneut detector \cite{Acciarri:2013met}.  In general, this effect causes a quenching of the observed electrons compared to the true ionizing power of the high energy particles.
+
+%insert dQ/dx vs dE/dx plot here.
+
+Once the electrons have been separated from the ions, they drift towards the readout wires of the TPC.  Though argon itself does not attach electrons, impurities in the argon can do so.  The amount of drifting electrons declines as a function of the distance it has to drift.  This decline is well modeled with an exponential decline, and the decay constant is referred to as the electron ``lifetime.'' Proper calorimetry must take the lifetime of the electrons into account on hit by hit basis to correctly account for the effect of the impurities in the liquid argon.
+
+%insert lifetime plot here.
+
+As alluded to above, the \argoneut detector has three planes of wires at the anode, two of which are instrumented.  The first plane, composed of 225 wires oriented vertically, serves as a shielding plane for the other wires and to provide shaping to the electric field through the TPC.  The three planes are spaced at 4mm between each other.  The second plane, referred to as the ``induction plane,'' contains wires that are set at +60$^o$ to the beam axis.  As electrons cross the shield plane, the approach the induction plane wires.  The wires are biased, however, such that the electrons drift around the individual wires.  The approaching and subsequent passing of electrons induces a current on these wires (hence the name ``induction plane'') and bipolar pulse shape is recorded by the readout electronics for wires that observe electrons.  See figure \ref{fig:pulse_shapes_argoneut} for examples of this pulse.
+
+The final set of wires, dubbed the ``collection plane,'' is biased such that it collects the drifting electrons onto it and they are observed as a pulse of charge by the electronics system.  The collection plane is set at an angle of -60$^o$ to the beam direction.  The two instrumented planes each have wire spacings of 4mm, and sample at 5.05 MHz.  In total, the instrumented planes have 240 wires in each plane.  Naturally, since the wires are at an angle with respect to the TPC axes, not all wires are of the same length.  Most wires, 144 of 240 in each plane, are 46.2 cm long.  The shortest wires are 3.7 cm long.
+
+Each wire measures a signal of electrons as they drift, as a function of time.  When the wires are arrayed in an image in sequential order, such that the x axis is wire number and the y axis is time tick, 2D images are formed such as in figure \ref{fig:argoneut_data}.  As seen in figure \ref{fig:argoneut_projections}, the wire planes represent projections of the 3D data onto a plane that is orthogonal to the wires themselves.
+
+%insert argoneut tpc picture.
+
+%insert wire pulse figure
+
+%insert argoneut projection picture
