@@ -1,1 +1,2010 @@
-{}
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"getSh",
+				"getShowerCaloVector"
+			],
+			[
+				"new",
+				"new_size_y"
+			],
+			[
+				"argon",
+				"argoneut_logo"
+			],
+			[
+				"argo",
+				"argoneut_logo"
+			],
+			[
+				"data",
+				"data_linux"
+			],
+			[
+				"_file",
+				"_file_index"
+			],
+			[
+				"readO",
+				"readoutWindowSize	(geometry.py)"
+			],
+			[
+				"aspect",
+				"aspectratio"
+			],
+			[
+				"loca",
+				"local_windowsize"
+			],
+			[
+				"_this",
+				"_this_block_data"
+			],
+			[
+				"prev_",
+				"prev_window"
+			],
+			[
+				"match",
+				"matched_block"
+			],
+			[
+				"corres",
+				"correlations"
+			],
+			[
+				"winsw",
+				"windows_to_investigate"
+			],
+			[
+				"cor",
+				"correlations"
+			],
+			[
+				"windsi",
+				"windowsize"
+			],
+			[
+				"fix",
+				"fix_medium_angle_tracks	(CorrelatedNoiseFilter.h)"
+			],
+			[
+				"setWid",
+				"setWidgetResizable	(scolltest.py)"
+			],
+			[
+				"windows",
+				"windowsize"
+			],
+			[
+				"wind",
+				"windows_to_investigate"
+			],
+			[
+				"wins",
+				"windows_to_investigate"
+			],
+			[
+				"winds",
+				"windows_to_investigate"
+			],
+			[
+				"targe",
+				"target_block"
+			],
+			[
+				"corec",
+				"correlated_blocks"
+			],
+			[
+				"this",
+				"this_block"
+			],
+			[
+				"dEdx_best",
+				"dEdx_best_median	(ShowerCalo.cxx)"
+			],
+			[
+				"best",
+				"best_dedx"
+			],
+			[
+				"hit_",
+				"hit_indexes"
+			],
+			[
+				"sel",
+				"select"
+			],
+			[
+				"de",
+				"dEdx_median"
+			],
+			[
+				"distan",
+				"distance_bins"
+			],
+			[
+				"targ",
+				"target_block"
+			],
+			[
+				"core",
+				"correlated_blocks"
+			],
+			[
+				"target",
+				"target_plane"
+			],
+			[
+				"coreb",
+				"correlated_blocks"
+			],
+			[
+				"plane",
+				"planeVec"
+			],
+			[
+				"detPr",
+				"detPropFetcher	(NoiseFilterTypes.h)"
+			],
+			[
+				"push",
+				"push_back	(CorrelatedNoiseFilter.cxx)"
+			],
+			[
+				"_core",
+				"_correlatedNoiseWaveforms"
+			],
+			[
+				"_co",
+				"_correlated_noise_steps	(UbooneNoiseFilter.h)"
+			],
+			[
+				"_cor",
+				"_correlatedNoiseWaveforms"
+			],
+			[
+				"block",
+				"block_wire_start"
+			],
+			[
+				"_correlated_noi",
+				"_correlated_noise_blocks"
+			],
+			[
+				"_corre",
+				"_correlated_noise_blocks"
+			],
+			[
+				"_n_tim",
+				"_n_time_ticks_data"
+			],
+			[
+				"harm",
+				"_harmonicNoiseWaveforms"
+			],
+			[
+				"low",
+				"lowVal"
+			],
+			[
+				"_n",
+				"_n_time_ticks_data"
+			],
+			[
+				"harmon",
+				"harmonic_noise"
+			],
+			[
+				"NoiseFil",
+				"NoiseFilterTypes	(UbooneNoiseFilter.h)"
+			],
+			[
+				"_chri",
+				"_chirp_info_by_plane"
+			],
+			[
+				"set_",
+				"set_wire_status_pointer	(CorrelatedNoiseFilter.h)"
+			],
+			[
+				"_chir",
+				"_chirp_info_ptr"
+			],
+			[
+				"corr",
+				"correlation"
+			],
+			[
+				"ub",
+				"ub_noise_filter	(UbooneNoiseFilter.h)"
+			],
+			[
+				"get_co",
+				"get_correlated_filter	(UbooneNoiseFilter.h)"
+			],
+			[
+				"Nois",
+				"NoiseFilterTypes	(UbooneNoiseFilter.h)"
+			],
+			[
+				"Core",
+				"CorrelatedNoiseFilter"
+			],
+			[
+				"_3D",
+				"_3D_start_point"
+			],
+			[
+				"_tur",
+				"_true_start_point	(ShowerCalo.h)"
+			],
+			[
+				"y_b",
+				"y_bins"
+			],
+			[
+				"getMed",
+				"getMedianVector(1"
+			],
+			[
+				"is_",
+				"_is_mc"
+			],
+			[
+				"_tru",
+				"_truth_start_point"
+			],
+			[
+				"_inducd",
+				"_induction_dist	(ShowerCalo.h)"
+			],
+			[
+				"_cold",
+				"_collection_dist	(ShowerCalo.h)"
+			],
+			[
+				"good",
+				"goodHits"
+			],
+			[
+				"x",
+				"x_err"
+			],
+			[
+				"histD",
+				"hist_data_y"
+			],
+			[
+				"photse",
+				"photonSet"
+			],
+			[
+				"eleces",
+				"electronSet"
+			],
+			[
+				"joint",
+				"joint_dEdx"
+			],
+			[
+				"can",
+				"cands"
+			],
+			[
+				"bin_",
+				"bin_edges"
+			],
+			[
+				"elect",
+				"electron_sim"
+			],
+			[
+				"elec",
+				"electronFit"
+			],
+			[
+				"bin",
+				"binwidth"
+			],
+			[
+				"_ind",
+				"_induction_dedx"
+			],
+			[
+				"_induc",
+				"_induction_pitch	(ShowerCalo.h)"
+			],
+			[
+				"recom",
+				"recombFactor"
+			],
+			[
+				"bin_ed",
+				"bin_edges_data"
+			],
+			[
+				"n",
+				"n_fail"
+			],
+			[
+				"cul",
+				"cut_value"
+			],
+			[
+				"ded",
+				"dEdx_median"
+			],
+			[
+				"_cole",
+				"_collection_dedx"
+			],
+			[
+				"dete",
+				"dEdx_meta"
+			],
+			[
+				"modm",
+				"modmean"
+			],
+			[
+				"points",
+				"points_within_dist"
+			],
+			[
+				"c_ele",
+				"c_electons_dedx_meta"
+			],
+			[
+				"dEd",
+				"dEdx_meta_err	(ShowerCalo.h)"
+			],
+			[
+				"is",
+				"isMC	(showerCalo.py)"
+			],
+			[
+				"full",
+				"full_samples	(showerCalo.py)"
+			],
+			[
+				"bin_centers",
+				"bin_centers_sim"
+			],
+			[
+				"bin_ce",
+				"bin_centers_data"
+			],
+			[
+				"sim_b",
+				"sim_bin_width"
+			],
+			[
+				"databin",
+				"data_bin_width"
+			],
+			[
+				"electrons",
+				"electron_sim_module"
+			],
+			[
+				"electda",
+				"electron_data_module"
+			],
+			[
+				"electron_dat",
+				"electron_data_module"
+			],
+			[
+				"thi",
+				"this_lma"
+			],
+			[
+				"dedme",
+				"dEdx_meta"
+			],
+			[
+				"dEdme",
+				"dEdx_median	(ShowerCalo.h)"
+			],
+			[
+				"sd",
+				"second_mean"
+			],
+			[
+				"fir",
+				"first_mean"
+			],
+			[
+				"startp",
+				"startpoint"
+			],
+			[
+				"_oth",
+				"_other_start_point	(ShowerCalo.h)"
+			],
+			[
+				"_3d",
+				"_3D_start_point	(ShowerCalo.h)"
+			],
+			[
+				"oth",
+				"_other_vertex"
+			],
+			[
+				"_ot",
+				"_other_start_point	(ShowerCalo.h)"
+			],
+			[
+				"laru",
+				"larutil::Geometry	(GeometryHelper.h)"
+			],
+			[
+				"yl",
+				"ylabel〔function〕"
+			],
+			[
+				"plot",
+				"plot_dEdx_vs_distance"
+			],
+			[
+				"_col",
+				"_collection_dedx	(ShowerCalo.h)"
+			],
+			[
+				"n_h",
+				"n_good_hits"
+			],
+			[
+				"elce",
+				"electron_module"
+			],
+			[
+				"Recon",
+				"Reconfigure	(muonAna.py)"
+			],
+			[
+				"LArUtil",
+				"LArUtilManager	(muonAna.py)"
+			],
+			[
+				"startih",
+				"startingHit"
+			],
+			[
+				"startin",
+				"startingHit"
+			],
+			[
+				"GetDi",
+				"Get2DDistance	(GeometryHelper.h)"
+			],
+			[
+				"geoH",
+				"geoHelper"
+			],
+			[
+				"lif",
+				"lifetime_corr"
+			],
+			[
+				"_coll",
+				"_collection_dqdx	(ShowerCalo.h)"
+			],
+			[
+				"GetX",
+				"GetXTicksOffset	(DetectorProperties.h)"
+			],
+			[
+				"GetTick",
+				"GetXTicksCoefficient	(DetectorProperties.h)"
+			],
+			[
+				"Det",
+				"DetectorProperties	(CRUHelper.cxx)"
+			],
+			[
+				"proj",
+				"projection_error"
+			],
+			[
+				"laruti",
+				"larutil::Geometry::GetME	(dEdxPfPartAna.cxx)"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Makefile/Make.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Makefile/Make.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 172.0,
+		"last_filter": "figure",
+		"selected_items":
+		[
+			[
+				"figure",
+				"Snippet: figure"
+			],
+			[
+				"snpfi",
+				"Snippet: figure"
+			],
+			[
+				"snipfig",
+				"Snippet: figure"
+			],
+			[
+				"snipf",
+				"Snippet: Figure"
+			],
+			[
+				"item",
+				"Snippet: Itemize"
+			],
+			[
+				"sftp",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"gitstat",
+				"Git: Status"
+			],
+			[
+				"sft",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"stfp",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"git blam",
+				"Git: Blame"
+			],
+			[
+				"git bl",
+				"Git: Blame"
+			],
+			[
+				"packcon",
+				"Package Control: List Packages"
+			],
+			[
+				"packin",
+				"Package Control: List Packages"
+			],
+			[
+				"packag",
+				"Package Control: Install Package"
+			],
+			[
+				"git blame",
+				"Git: Blame"
+			],
+			[
+				"git bla",
+				"Git: Blame"
+			],
+			[
+				"Figu",
+				"Snippet: Figure"
+			],
+			[
+				"figu",
+				"Snippet: figure"
+			],
+			[
+				"enum",
+				"Snippet: Enumerate"
+			],
+			[
+				"ipython",
+				"Open IPython Notebook"
+			],
+			[
+				"ipyh",
+				"Open IPython Notebook"
+			],
+			[
+				"ope",
+				"Open IPython Notebook"
+			],
+			[
+				"open",
+				"Open IPython Notebook"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"table",
+				"Snippet: table"
+			],
+			[
+				"equat",
+				"Snippet: Equation"
+			],
+			[
+				"secti",
+				"Snippet: Section"
+			],
+			[
+				"figur",
+				"Snippet: Figure"
+			],
+			[
+				"equ",
+				"Snippet: Equation"
+			],
+			[
+				"figr",
+				"Snippet: Figure"
+			],
+			[
+				"fig",
+				"Snippet: Figure"
+			],
+			[
+				"git add",
+				"Git: Add Current File"
+			],
+			[
+				"section",
+				"Snippet: Section"
+			],
+			[
+				"Section",
+				"Snippet: Sub Section"
+			],
+			[
+				"sect",
+				"Snippet: Section"
+			],
+			[
+				"git diff",
+				"Git: Diff Current File"
+			],
+			[
+				"Figure",
+				"Snippet: Figure"
+			],
+			[
+				"ma",
+				"Snippet: Matrix"
+			],
+			[
+				"Fig",
+				"Snippet: Figure"
+			],
+			[
+				"packagc",
+				"Package Control: Install Package"
+			],
+			[
+				"git diff cu",
+				"Git: Diff Current File"
+			],
+			[
+				"git dficu",
+				"Git: Diff Current File"
+			],
+			[
+				"else",
+				"Snippet: Try/Except/Else"
+			],
+			[
+				"if",
+				"Snippet: If Condition"
+			],
+			[
+				"sfto",
+				"SFTP: Browse Server…"
+			],
+			[
+				"bro",
+				"SFTP: Browse Server…"
+			],
+			[
+				"git dif",
+				"Git: Diff Current File"
+			],
+			[
+				"gitdif",
+				"Git: Diff Current File"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"diff",
+				"Set Syntax: Diff"
+			],
+			[
+				"sftpr",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"sftpb",
+				"SFTP: Browse Server…"
+			],
+			[
+				"sftpre",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"s",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"git check",
+				"Git: Checkout Current File"
+			],
+			[
+				"gitbal",
+				"Git: Blame"
+			],
+			[
+				"sftpbr",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"sftprem",
+				"SFTP: Edit Remote Mapping…"
+			],
+			[
+				"sftobr",
+				"SFTP: Browse Server…"
+			],
+			[
+				"gitf d",
+				"Git: Diff Current File"
+			],
+			[
+				"git chec",
+				"Git: Checkout Current File"
+			],
+			[
+				"git di",
+				"Git: Diff Current File"
+			],
+			[
+				"clan",
+				"Clang Format: Select Style"
+			],
+			[
+				"clang",
+				"Clang Format: Select Style"
+			],
+			[
+				"gitb",
+				"Git: Blame"
+			],
+			[
+				"brow",
+				"SFTP: Browse Server…"
+			],
+			[
+				"doc",
+				"DocBlockr: Decorate line comment"
+			],
+			[
+				"packli",
+				"Package Control: List Packages"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"git pus",
+				"Git: Push"
+			],
+			[
+				"gitco",
+				"Git: Commit"
+			],
+			[
+				"gitadd",
+				"Git: Add Current File"
+			],
+			[
+				"gitdi",
+				"Git: Diff Current File"
+			],
+			[
+				"gidi",
+				"Git: Diff Current File"
+			],
+			[
+				"form",
+				"SublimeAStyleFormatter: Format Current File"
+			],
+			[
+				"forma",
+				"SublimeAStyleFormatter: Format Current File"
+			],
+			[
+				"format",
+				"SublimeAStyleFormatter: Format Current File"
+			],
+			[
+				"git ad",
+				"Git: Add Current File"
+			],
+			[
+				"packagin",
+				"Package Control: Install Package"
+			],
+			[
+				"gitstau",
+				"Git: Status"
+			],
+			[
+				"sf",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"bros",
+				"SFTP: Browse Server…"
+			],
+			[
+				"git c",
+				"Git: Commit"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"packen",
+				"Package Control: Enable Package"
+			],
+			[
+				"packdi",
+				"Package Control: Disable Package"
+			],
+			[
+				"packagecd",
+				"Package Control: Disable Package"
+			],
+			[
+				"packi",
+				"Package Control: Install Package"
+			],
+			[
+				"git add hu",
+				"Git: Add Selected Hunk"
+			],
+			[
+				"git add hun",
+				"Git: Add Selected Hunk"
+			],
+			[
+				"git addh",
+				"Git: Add Selected Hunk"
+			],
+			[
+				"git difcu",
+				"Git: Diff Current File"
+			],
+			[
+				"git ficu",
+				"Git: Diff Current File"
+			],
+			[
+				"git adh",
+				"Git: Add Selected Hunk"
+			],
+			[
+				"packaen",
+				"Package Control: Enable Package"
+			],
+			[
+				"sublimto",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"sublimelinterto",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"linterth",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"packadi",
+				"Package Control: Disable Package"
+			],
+			[
+				"git",
+				"Git: Status"
+			],
+			[
+				"packconli",
+				"Package Control: List Packages"
+			],
+			[
+				"packain",
+				"Package Control: Install Package"
+			],
+			[
+				"lintt",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"packe",
+				"Package Control: Enable Package"
+			],
+			[
+				"packad",
+				"Package Control: Disable Package"
+			],
+			[
+				"gitbla",
+				"Git: Blame"
+			],
+			[
+				"lintthi",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"packaclin",
+				"Package Control: Install Package"
+			],
+			[
+				"linter",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"sublimelinter",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"packl",
+				"Package Control: List Packages"
+			],
+			[
+				"linterset",
+				"Preferences: SublimeLinter Settings – Default"
+			],
+			[
+				"lint",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"gitdifc",
+				"Git: Diff Current File"
+			],
+			[
+				"",
+				"Convert Case: Title Case"
+			],
+			[
+				"gitdic",
+				"Git: Diff Current File"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"sfpt",
+				"SFTP: Browse Server…"
+			],
+			[
+				"spell",
+				"Google Spell Check"
+			],
+			[
+				"snipg",
+				"Snippet: Figure"
+			],
+			[
+				"snip",
+				"Snippet: figure"
+			],
+			[
+				"snippetg",
+				"Snippet: Figure"
+			],
+			[
+				"paack",
+				"Package Control: Enable Package"
+			],
+			[
+				"latex",
+				"LaTeXTools: Reconfigure and migrate settings"
+			],
+			[
+				"pack remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"packai",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import pyqtgraph",
+			"303-287",
+			"320/32",
+			"380/32",
+			"96*4",
+			"96*5",
+			"384-64",
+			"1/30.",
+			"20*192",
+			"96*8",
+			"96*7",
+			"96*4",
+			"import ROOT",
+			"36*96",
+			"35*96",
+			"from ROOT import *",
+			"import numpy",
+			"a",
+			"a = 3",
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			" import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/cadams/Dropbox/Thesis",
+		"/home/cadams/Dropbox/Thesis/ReferencePapers"
+	],
+	"file_history":
+	[
+		"/home/cadams/Dropbox/Thesis/references.bib",
+		"/home/cadams/Dropbox/Thesis/electrons.tex",
+		"/home/cadams/Dropbox/Thesis/lartpc.tex",
+		"/home/cadams/.bashrc",
+		"/home/cadams/argoneut_06_00_00/srcs/argoneutcode/CCElectrons/nuefcl/standard_sim_t962_nue_electrons.fcl",
+		"/home/cadams/argoneut_06_00_00/srcs/argoneutcode/CMakeLists.txt",
+		"/home/cadams/argoneut_06_00_00/srcs/argoneutcode/T962G4Ana/T962G4Ana_module.cc",
+		"/home/cadams/argoneut_06_00_00/srcs/argoneutcode/CCElectrons/nuefcl/standard_reco_2d_t962_nue.fcl",
+		"/home/cadams/argoneut_06_00_00/srcs/argoneutcode/CCElectrons/nuexml/nudata.list",
+		"/home/cadams/argoneut_06_00_00/srcs/argoneutcode/ups/product_deps",
+		"/home/cadams/argoneut_06_00_00/srcs/argoneutcode/t962util/xml/data.xml",
+		"/home/cadams/larlite/UserDev/DisplayTool/python/evdmanager/geometry.py",
+		"/home/cadams/larlite/core/DataFormat/storage_manager.cxx",
+		"/home/cadams/larlite/core/DataFormat/storage_manager.h",
+		"/home/cadams/larlite/UserDev/argoneut_electrons/analysis/dEdxShowerCaloMaker.cxx",
+		"/home/cadams/larlite/UserDev/argoneut_electrons/analysis/ShowerCalo.h",
+		"/home/cadams/larlite/UserDev/argoneut_electrons/analysis/python/dEdxPlot1D.py",
+		"/home/cadams/larlite/UserDev/argoneut_electrons/dataReleaseMaker.py",
+		"/home/cadams/larlite/core/DataFormat/pfpart.h",
+		"/home/cadams/larlite/core/DataFormat/data_base.h",
+		"/home/cadams/larlite/UserDev/DisplayTool/RawViewer/RawBase.h",
+		"/home/cadams/larlite/UserDev/DisplayTool/python/evdmanager/larlite_manager.py",
+		"/home/cadams/larlite/core/Analysis/ana_processor.h",
+		"/home/cadams/larlite/UserDev/DisplayTool/RawViewer/DrawWire.cxx",
+		"/home/cadams/caffe/Makefile.config",
+		"/home/cadams/caffe/CMakeLists.txt",
+		"/home/cadams/larlite/UserDev/DisplayTool/UbooneNoiseFilter/GNUmakefile",
+		"/home/cadams/larlite/Makefile/GNUmakefile.CORE",
+		"/home/cadams/larlite/UserDev/DisplayTool/GNUmakefile",
+		"/home/cadams/larlite/UserDev/DisplayTool/UbooneNoiseFilter/CorrelatedNoiseFilter.h",
+		"/home/cadams/larlite/UserDev/DisplayTool/UbooneNoiseFilter/NoiseFilterTypes.cxx",
+		"/home/cadams/larlite/UserDev/DisplayTool/setup_evd.sh",
+		"/home/cadams/larlite/UserDev/DisplayTool/UbooneNoiseFilter/CorrelatedNoiseFilter.cxx",
+		"/home/cadams/larlite/UserDev/DisplayTool/UbooneNoiseFilter/NoiseFilterTypes.h",
+		"/home/cadams/larlite/UserDev/DisplayTool/RawViewer/DrawUbSwiz.h",
+		"/home/cadams/larlite/UserDev/DisplayTool/UbooneNoiseFilter/UbooneNoiseFilter.h",
+		"/home/cadams/larlite/UserDev/DisplayTool/RawViewer/GNUmakefile",
+		"/home/cadams/larlite/UserDev/RecoTool/ShowerReco3D/Base/ShowerRecoManager.cxx",
+		"/home/cadams/larlite/UserDev/DisplayTool/UbooneNoiseFilter/LinkDef.h",
+		"/home/cadams/larlite/UserDev/DisplayTool/RawViewer/UbooneNoiseFilter.cxx",
+		"/home/cadams/larlite/UserDev/DisplayTool/RawViewer/CorrelatedNoiseFilter.h",
+		"/home/cadams/larlite/UserDev/DisplayTool/RawViewer/NoiseFilterTypes.h",
+		"/home/cadams/larlite/UserDev/DisplayTool/RawViewer/CorrelatedNoiseFilter.cxx",
+		"/home/cadams/larlite/UserDev/DisplayTool/UbooneNoiseFilter/.gitignore",
+		"/home/cadams/larlite/UserDev/DisplayTool/RawViewer/NoiseFilterTypes.cxx",
+		"/home/cadams/larlite/UserDev/DisplayTool/python/gui/scolltest.py",
+		"/home/cadams/larlite/UserDev/DisplayTool/python/gui/gui.py",
+		"/home/cadams/larlite/UserDev/DisplayTool/python/gui/larlitegui.py",
+		"/home/cadams/larlite/UserDev/DisplayTool/python/evd.py",
+		"/home/cadams/larlite/UserDev/argoneut_electrons/analysis/python/drawLandau.py",
+		"/home/cadams/larlite/UserDev/argoneut_electrons/analysis/python/eventPrinter.py",
+		"/home/cadams/larlite/UserDev/argoneut_electrons/analysis/ShowerCalo.cxx",
+		"/home/cadams/larlite/UserDev/argoneut_electrons/analysis/python/showerCalo.py",
+		"/home/cadams/larlite/UserDev/argoneut_electrons/analysis/dEdxShowerCaloMaker.h",
+		"/home/cadams/larlite/UserDev/argoneut_electrons/analysis/dEdxPfPartAna.h",
+		"/home/cadams/larlite/UserDev/argoneut_electrons/spacepoints/ShowerSPS.cxx",
+		"/home/cadams/larlite/UserDev/argoneut_electrons/analysis/dEdxPfPartAna.cxx",
+		"/home/cadams/larlite/UserDev/argoneut_electrons/utils/ArgoneutParamsAlg.h",
+		"/home/cadams/larlite/UserDev/argoneut_electrons/utils/dEdxGetRoughStartPoint.h",
+		"/home/cadams/larlite/UserDev/argoneut_electrons/utils/dEdxGetRoughStartPoint.cxx",
+		"/home/cadams/larlite/UserDev/argoneut_electrons/vertex/LineIntersectionVertexer.h",
+		"/home/cadams/larlite/UserDev/argoneut_electrons/utils/ArgoneutParamsAlg.cxx",
+		"/home/cadams/larlite/UserDev/argoneut_electrons/matching/CFAlgoMatchStart.h",
+		"/home/cadams/larlite/UserDev/argoneut_electrons/vertex/LineIntersectionVertexer.cxx",
+		"/home/cadams/larlite/UserDev/argoneut_electrons/matching/CFAlgoMatchStart.cxx",
+		"/home/cadams/Dropbox/dEdx_Paper/intro.tex",
+		"/home/cadams/Dropbox/dEdx_Paper/selection.tex",
+		"/home/cadams/Dropbox/dEdx_Paper/preamble.tex",
+		"/home/cadams/Dropbox/dEdx_Paper/reconstruction.tex",
+		"/home/cadams/Dropbox/dEdx_Paper/bibliography.bib",
+		"/data_linux/products/larsoft/xrootd/v3_3_4d/build_xrootd.sh",
+		"/home/cadams/larlite/UserDev/DisplayTool/python/datatypes/endpoint2d.py",
+		"/data_linux/products/larsoft/gccxml/v0_9_20150423/build/Linux64bit+4.4-2.23/Makefile",
+		"/data_linux/products/larsoft/gccxml/v0_9_20150423/build_gccxml.sh",
+		"/data_linux/products/larsoft/gccxml/v0_9_20150423/source/gccxml/GCC/gcc/toplev.h",
+		"/data_linux/products/larsoft/gccxml/v0_9_20150423/source/gccxml/GCC/gcc/toplev.c",
+		"/tmp/sublime-sftp-browse-1463693327/uboone/uboone/app/users/cadams/larlite/UserDev/DisplayTool/python/evd_larsoft.py",
+		"/tmp/sublime-sftp-browse-1463693444/uboone/uboone/app/users/cadams/larlite/UserDev/DisplayTool/python/evdmanager/larsoft_manager.py",
+		"/tmp/sublime-sftp-browse-1463693289/uboone/uboone/app/users/cadams/larlite/UserDev/DisplayTool/python/evdmanager/geometry.py",
+		"/tmp/sublime-sftp-browse-1463693460/uboone/uboone/app/users/cadams/larlite/UserDev/DisplayTool/RawViewer/DrawUbSwiz.h",
+		"/tmp/sublime-sftp-browse-1463692286/uboone/uboone/app/users/cadams/larlite/UserDev/DisplayTool/RawViewer/DrawUbSwiz.cxx",
+		"/tmp/sublime-sftp-browse-1463694204/uboone/uboone/app/users/cadams/larlite/UserDev/DisplayTool/RawViewer/DataFetcher.cxx",
+		"/tmp/sublime-sftp-browse-1463693313/uboone/uboone/app/users/cadams/larlite/UserDev/DisplayTool/python/evdmanager/larlite_manager.py",
+		"/home/cadams/larlite/UserDev/DisplayTool/python/datatypes/wire.py",
+		"/tmp/sublime-sftp-browse-1463693403/uboone/uboone/app/users/cadams/larlite/UserDev/DisplayTool/python/evd.py",
+		"/tmp/sublime-sftp-browse-1463693345/uboone/uboone/app/users/cadams/larlite/UserDev/DisplayTool/python/evd.py",
+		"/home/cadams/larlite/UserDev/argoneut_electrons/analysis/python/dEdxPlot2D.py",
+		"/data_linux/products/art/setup",
+		"/data_linux/products/art/ups_OVERRIDE.cadams-UX303LN",
+		"/data_linux/products/art/ups/v5_2_0/Linux64bit+3.19-2.19/bin/ups",
+		"/data_linux/products/gallery/gcc/v4_9_3a/build_gcc.sh",
+		"/data_linux/products/art/setups",
+		"/data_linux/products/art/setups_layout",
+		"/home/cadams/larlite/UserDev/DisplayTool/python/evdmanager/larsoft_manager.py",
+		"/home/cadams/larlite/UserDev/DisplayTool/RawViewer/UbooneNoiseFilter.h",
+		"/home/cadams/larlite/UserDev/DisplayTool/RawViewer/DrawUbSwiz.cxx",
+		"/home/cadams/larlite/UserDev/DisplayTool/RawViewer/RawBase.cxx",
+		"/data_linux/products/gallery/xrootd/v3_3_4e/build_xrootd.sh",
+		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/LinkDef.h",
+		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawEndpoint.h",
+		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawEndpoint.cxx",
+		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawMatch.h",
+		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawMatch.cxx",
+		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawHit.h",
+		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawHit.cxx",
+		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawCluster.h",
+		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawCluster.cxx",
+		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawShower.h",
+		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawShower.cxx",
+		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawNeutrino.cxx",
+		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawNeutrino.h",
+		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawVertex.h",
+		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawTrack.h",
+		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawTrack.cxx",
+		"/data_linux/products/gallery-buildcfg-1.02.01",
+		"/data_linux/products/gallery-1.02.01-source_MANIFEST.txt",
+		"/data_linux/products/buildFW",
+		"/home/cadams/larlite/UserDev/DisplayTool/RawViewer/LinkDef.h",
+		"/home/cadams/larlite/UserDev/DisplayTool/RawViewer/ChirpFilter.h",
+		"/home/cadams/larlite/core/LArUtil/Geometry.h",
+		"/home/cadams/larlite/core/LArUtil/Geometry.cxx",
+		"/home/cadams/larlite/core/Base/GeoTypes.h",
+		"/home/cadams/larlite/UserDev/Commissioning/CorrelatedNoiseScripts/correlationAna.py",
+		"/data_linux/products/binaries/setup",
+		"/data_linux/products/binaries/ups_OVERRIDE",
+		"/data_linux/products/binaries/ups/v5_2_0/Linux64bit+4.4-2.23/bin/ups",
+		"/home/cadams/larlite/UserDev/argoneut_electrons/analysis/MCShowerAna.cxx",
+		"/home/cadams/larlite/UserDev/DisplayTool/python/datatypes/empty.py"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Anderson",
+			"lartpc_design",
+			"ofstream",
+			"logdirtop",
+			"outdirtop",
+			"AntiNeutrino",
+			"fontsize",
+			"dEdx_best_median",
+			"numpy",
+			"coll_image",
+			"ind_image",
+			"0",
+			"60",
+			"255",
+			"26",
+			"coll_image",
+			"draw",
+			"img",
+			"coll_image",
+			"draw",
+			"coll_image",
+			"argoneut_logo",
+			"coll",
+			"coll_image",
+			"np",
+			"file",
+			"getShowerCaloVector",
+			"coll",
+			"array",
+			"coll_array",
+			"col",
+			"scalarM",
+			"collectionMapper",
+			"_scaled_array",
+			"_scaled_coll_array",
+			"array",
+			"scalarM",
+			"collectionMapper",
+			"ubooneEVDCmap",
+			"collection_map",
+			"scalarM",
+			"ScalarM",
+			"scalarM",
+			"ubooneEVCmap",
+			"coll_map",
+			"collection_cdict",
+			"induction_cdict",
+			"collection_cdict",
+			"ubooneEVDCmap",
+			"_orig_array",
+			"_orig_ind_array",
+			"_orig_array",
+			"_orig_ind_array",
+			"_orig_array",
+			"_orig_coll_array",
+			"showerCalo",
+			"fileIndex",
+			"get_index",
+			"collection_cdict",
+			"4",
+			"151",
+			"030",
+			"00000",
+			"0000",
+			"79100",
+			"47000",
+			"33333",
+			"64500",
+			"076",
+			"022",
+			"_scaled_array",
+			"_orig_array",
+			"storage_manager",
+			"_process",
+			"_wireDrawer",
+			"reader",
+			"image_process",
+			"ana_processor",
+			"reader",
+			"ana_processor",
+			"reader",
+			"ana_processor",
+			"reader",
+			"image_process",
+			"ana_processor",
+			"e_",
+			"electron",
+			"Electron",
+			"electrons",
+			"e_",
+			"eff_mean",
+			"eff_upper",
+			"eff_lower",
+			"electron_eff",
+			"electron_eff_stat_err",
+			"electron_eff",
+			"6827",
+			"confidence_interval",
+			"tot_ctr",
+			"total_ctr",
+			"beam_ctr",
+			"this_ctr",
+			"electrons",
+			"CUDA_DIR",
+			"//",
+			"statuses",
+			"find_correlated_noise_errors",
+			"description",
+			"libub_noise_filter_NoiseFilter",
+			"UbooneNoiseFilter",
+			"get_pedestal_info",
+			"is_chirping",
+			"waveform2",
+			"waveform1",
+			";",
+			"_this_block_data",
+			"_cross_data",
+			"windows_to_investigate",
+			"windowsize",
+			"windowsize[plane]",
+			"rms_minimum",
+			"int",
+			"target_block",
+			"i_block",
+			"target_plane",
+			"i_plane",
+			"l",
+			"CorrelatedNoiseFilter"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 130.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "thesis.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				".xml",
+				"t962util/xml/data.xml"
+			],
+			[
+				"stroage",
+				"core/DataFormat/storage_manager.cxx"
+			],
+			[
+				"storage",
+				"core/DataFormat/storage_manager.h"
+			],
+			[
+				"data_ba",
+				"core/DataFormat/data_base.h"
+			],
+			[
+				"pfpart",
+				"core/DataFormat/pfpart.h"
+			],
+			[
+				"showerca",
+				"UserDev/argoneut_electrons/analysis/ShowerCalo.h"
+			],
+			[
+				"larlite_ma",
+				"UserDev/DisplayTool/python/evdmanager/larlite_manager.py"
+			],
+			[
+				"drawwire",
+				"UserDev/DisplayTool/RawViewer/DrawWire.cxx"
+			],
+			[
+				"geome.py",
+				"UserDev/DisplayTool/python/evdmanager/geometry.py"
+			],
+			[
+				"anapro",
+				"core/Analysis/ana_processor.h"
+			],
+			[
+				"rawbas",
+				"UserDev/DisplayTool/RawViewer/RawBase.h"
+			],
+			[
+				"dedxca",
+				"UserDev/argoneut_electrons/analysis/dEdxShowerCaloMaker.cxx"
+			],
+			[
+				"showerrecoman",
+				"UserDev/RecoTool/ShowerReco3D/Base/ShowerRecoManager.cxx"
+			],
+			[
+				"gui.py",
+				"UserDev/DisplayTool/python/gui/gui.py"
+			],
+			[
+				"evd.py",
+				"UserDev/DisplayTool/python/evd.py"
+			],
+			[
+				"drawlan",
+				"UserDev/argoneut_electrons/analysis/python/drawLandau.py"
+			],
+			[
+				"dedxshowercal",
+				"UserDev/argoneut_electrons/analysis/dEdxShowerCaloMaker.cxx"
+			],
+			[
+				"dedxpfpar",
+				"UserDev/argoneut_electrons/analysis/dEdxPfPartAna.h"
+			],
+			[
+				"showersps",
+				"UserDev/argoneut_electrons/spacepoints/ShowerSPS.cxx"
+			],
+			[
+				"cfalma",
+				"UserDev/argoneut_electrons/matching/CFAlgoMatchStart.h"
+			],
+			[
+				"cfalgomat",
+				"UserDev/argoneut_electrons/matching/CFAlgoMatchStart.cxx"
+			],
+			[
+				"lineinter",
+				"UserDev/argoneut_electrons/vertex/LineIntersectionVertexer.cxx"
+			],
+			[
+				"lineins",
+				"UserDev/argoneut_electrons/vertex/LineIntersectionVertexer.h"
+			],
+			[
+				"dedxgetrou",
+				"UserDev/argoneut_electrons/utils/dEdxGetRoughStartPoint.cxx"
+			],
+			[
+				"dedxrou",
+				"UserDev/argoneut_electrons/utils/dEdxGetRoughStartPoint.h"
+			],
+			[
+				"argopara",
+				"UserDev/argoneut_electrons/utils/ArgoneutParamsAlg.cxx"
+			],
+			[
+				"argon",
+				"UserDev/argoneut_electrons/utils/ArgoneutParamsAlg.h"
+			],
+			[
+				"geomet.py",
+				"UserDev/DisplayTool/python/evdmanager/geometry.py"
+			],
+			[
+				"wire.p",
+				"UserDev/DisplayTool/python/datatypes/wire.py"
+			],
+			[
+				"showercalo",
+				"UserDev/argoneut_electrons/analysis/ShowerCalo.h"
+			],
+			[
+				"showerc",
+				"UserDev/argoneut_electrons/analysis/ShowerCalo.h"
+			],
+			[
+				"nois",
+				"UserDev/DisplayTool/RawViewer/NoiseFilterTypes.h"
+			],
+			[
+				"geomepy",
+				"UserDev/DisplayTool/python/evdmanager/geometry.py"
+			],
+			[
+				"larso",
+				"UserDev/DisplayTool/python/evdmanager/larsoft_manager.py"
+			],
+			[
+				"larsoft",
+				"UserDev/DisplayTool/python/evdmanager/larsoft_manager.py"
+			],
+			[
+				"geomet",
+				"core/LArUtil/Geometry.h"
+			],
+			[
+				"geometry.c",
+				"core/LArUtil/Geometry.cxx"
+			],
+			[
+				"geot",
+				"core/Base/GeoTypes.h"
+			],
+			[
+				"vertex.py",
+				"UserDev/DisplayTool/python/datatypes/vertex.py"
+			],
+			[
+				"showeringp",
+				"UserDev/RecoTool/ClusterRecoUtil/Alg/FindShoweringPoint.cxx"
+			],
+			[
+				"qualitp",
+				"UserDev/argoneut_electrons/analysis/python/qualityPlots.py"
+			],
+			[
+				"mcshower",
+				"core/DataFormat/mcshower.h"
+			],
+			[
+				"dedx1",
+				"UserDev/argoneut_electrons/analysis/python/dEdxPlot1D.py"
+			],
+			[
+				"analysisal",
+				"UserDev/RecoTool/AnalysisAlg/AnalysisAlgConstants.h"
+			],
+			[
+				"calormeta",
+				"UserDev/RecoTool/AnalysisAlg/CalorimetryAlg.h"
+			],
+			[
+				"test.py",
+				"UserDev/argoneut_electrons/analysis/python/test.py"
+			],
+			[
+				"clusterpara",
+				"UserDev/RecoTool/ClusterRecoUtil/Base/ClusterParams.h"
+			],
+			[
+				"startpoint",
+				"UserDev/RecoTool/ClusterRecoUtil/Alg/RefineStartPoints.cxx"
+			],
+			[
+				"clusterpar",
+				"UserDev/RecoTool/ClusterRecoUtil/Base/ClusterParams.h"
+			],
+			[
+				"cruh",
+				"UserDev/RecoTool/ClusterRecoUtil/Base/CRUHelper.cxx"
+			],
+			[
+				"polygon",
+				"UserDev/RecoTool/ClusterRecoUtil/Base/Polygon2D.h"
+			],
+			[
+				"geomehe",
+				"core/LArUtil/GeometryHelper.cxx"
+			],
+			[
+				"verte",
+				"core/DataFormat/vertex.h"
+			],
+			[
+				"larpr",
+				"core/LArUtil/LArProperties.h"
+			],
+			[
+				"geomhe",
+				"core/LArUtil/GeometryHelper.h"
+			],
+			[
+				"geomeh",
+				"core/LArUtil/GeometryHelper.cxx"
+			],
+			[
+				"infr",
+				"UserDev/RecoTool/ClusterRecoUtil/Alg/InformedStartPoint.cxx"
+			],
+			[
+				"protoshoar",
+				"UserDev/RecoTool/ShowerReco3D/ProtoShower/ProtoShowerAlgArgoNeuT.cxx"
+			],
+			[
+				"inform",
+				"UserDev/RecoTool/ClusterRecoUtil/Alg/InformedStartPoint.cxx"
+			],
+			[
+				"geohel",
+				"core/LArUtil/GeometryHelper.h"
+			],
+			[
+				"larprop",
+				"core/LArUtil/LArProperties.h"
+			],
+			[
+				"geometry",
+				"core/LArUtil/Geometry.h"
+			],
+			[
+				"tick",
+				"UserDev/argoneut_electrons/analysis/tickTest.py"
+			],
+			[
+				"cruhe",
+				"UserDev/RecoTool/ClusterRecoUtil/Base/CRUHelper.cxx"
+			],
+			[
+				"cruhelp",
+				"UserDev/RecoTool/ClusterRecoUtil/Base/CRUHelper.cxx"
+			],
+			[
+				"detpro",
+				"core/LArUtil/DetectorProperties.h"
+			],
+			[
+				"clusterparam",
+				"UserDev/RecoTool/ClusterRecoUtil/Base/ClusterParams.h"
+			],
+			[
+				"protshowal",
+				"UserDev/RecoTool/ShowerReco3D/ProtoShower/ProtoShowerAlgBase.h"
+			],
+			[
+				"protshoh",
+				"UserDev/RecoTool/ShowerReco3D/ProtoShower/ProtoShowerHelper.h"
+			],
+			[
+				"informe",
+				"UserDev/RecoTool/ClusterRecoUtil/Alg/InformedStartPoint.cxx"
+			],
+			[
+				"match.p",
+				"UserDev/DisplayTool/python/datatypes/match.py"
+			],
+			[
+				"match",
+				"UserDev/argoneut_electrons/argotool/match.py"
+			],
+			[
+				"ccorelat",
+				"UserDev/Commissioning/CorrelatedNoiseScripts/correlateData.py"
+			],
+			[
+				"protoshowalar",
+				"UserDev/RecoTool/ShowerReco3D/ProtoShower/ProtoShowerAlgArgoNeuT.h"
+			],
+			[
+				"draw",
+				"UserDev/DisplayTool/RawViewer/DrawRaw.cxx"
+			],
+			[
+				"clusterp",
+				"UserDev/RecoTool/ClusterRecoUtil/Base/ClusterParams.h"
+			],
+			[
+				"pxu",
+				"core/LArUtil/PxUtils.h"
+			],
+			[
+				"shower.py",
+				"UserDev/DisplayTool/python/datatypes/shower.py"
+			],
+			[
+				"mcshower.py",
+				"UserDev/DisplayTool/python/datatypes/mcshower.py"
+			],
+			[
+				"geomehh",
+				"core/LArUtil/GeometryHelper.h"
+			],
+			[
+				"mctraj",
+				"core/DataFormat/mctrajectory.h"
+			],
+			[
+				"mcshower.h",
+				"core/DataFormat/mcshower.h"
+			],
+			[
+				"mermange",
+				"UserDev/RecoTool/CMTool/CMToolBase/CMergeManager.cxx"
+			],
+			[
+				"manageba",
+				"UserDev/RecoTool/CMTool/CMToolBase/CMManagerBase.cxx"
+			],
+			[
+				"cmanagebas",
+				"UserDev/RecoTool/CMTool/CMToolBase/CMManagerBase.h"
+			],
+			[
+				"cmmergmana",
+				"UserDev/RecoTool/CMTool/CMToolBase/CMergeManager.h"
+			],
+			[
+				"cbalmera",
+				"UserDev/RecoTool/CMTool/CMTAlgMerge/CBAlgoMergeAll.h"
+			],
+			[
+				"hit.",
+				"UserDev/DisplayTool/python/datatypes/hit.py"
+			],
+			[
+				"basef",
+				"UserDev/argoneut_electrons/utils/BaseFilter.h"
+			],
+			[
+				"basefi",
+				"UserDev/argoneut_electrons/utils/BaseFilter.cxx"
+			],
+			[
+				"hit.py",
+				"UserDev/DisplayTool/python/datatypes/hit.py"
+			],
+			[
+				"larsoftma",
+				"UserDev/DisplayTool/python/evdmanager/larsoft_manager.py"
+			],
+			[
+				"evd_lars",
+				"UserDev/DisplayTool/python/evd_larsoft.py"
+			],
+			[
+				"cluster.py",
+				"UserDev/DisplayTool/python/datatypes/cluster.py"
+			],
+			[
+				"geometryhelp.c",
+				"core/LArUtil/GeometryHelper.cxx"
+			],
+			[
+				"geometry.py",
+				"UserDev/DisplayTool/python/evdmanager/geometry.py"
+			],
+			[
+				"cluster.ph",
+				"UserDev/RecoTool/ClusterRecoUtil/Base/ClusterParams.h"
+			],
+			[
+				"axis3",
+				"UserDev/RecoTool/ShowerReco3D/ModularAlgo/Axis3DModule.cxx"
+			],
+			[
+				"geometrhelp",
+				"core/LArUtil/GeometryHelper.h"
+			],
+			[
+				"protsho",
+				"UserDev/RecoTool/ShowerReco3D/ProtoShower/ProtoShower.h"
+			],
+			[
+				"protshoaar",
+				"UserDev/RecoTool/ShowerReco3D/ProtoShower/ProtoShowerAlgArgoNeuT.cxx"
+			],
+			[
+				"dataf",
+				"core/Base/DataFormatConstants.h"
+			],
+			[
+				"stoage",
+				"core/DataFormat/storage_manager.h"
+			],
+			[
+				"larlitemana",
+				"UserDev/DisplayTool/python/evdmanager/larlite_manager.py"
+			],
+			[
+				"rptosho",
+				"UserDev/RecoTool/ShowerReco3D/ProtoShower/ProtoShowerHelper.h"
+			],
+			[
+				"drawmat",
+				"UserDev/DisplayTool/RecoViewer/DrawMatch.h"
+			],
+			[
+				"mcpart",
+				"core/DataFormat/mcpart.h"
+			],
+			[
+				"drawcluster",
+				"UserDev/DisplayTool/RecoViewer/DrawCluster.cxx"
+			],
+			[
+				"wireb",
+				"UserDev/argoneut_electrons/calo/wireByWireFit.py"
+			],
+			[
+				"viewport.p",
+				"UserDev/DisplayTool/python/gui/viewport.py"
+			],
+			[
+				"larlite_man",
+				"UserDev/DisplayTool/python/evdmanager/larlite_manager.py"
+			],
+			[
+				"mergal",
+				"UserDev/argoneut_electrons/mergeAll.py"
+			],
+			[
+				"geo",
+				"core/Base/GeoConstants.h"
+			],
+			[
+				"detprp",
+				"core/LArUtil/DetectorProperties.h"
+			],
+			[
+				"geom",
+				"core/LArUtil/Geometry.h"
+			],
+			[
+				"endpoin",
+				"core/DataFormat/endpoint2d.h"
+			],
+			[
+				"geohe",
+				"core/LArUtil/GeometryHelper.h"
+			],
+			[
+				"mctruth.h",
+				"core/DataFormat/mctruth.h"
+			],
+			[
+				"mctru",
+				"core/DataFormat/mctruth.cxx"
+			],
+			[
+				"mcpar",
+				"core/DataFormat/mcpart.h"
+			],
+			[
+				"viewpo",
+				"UserDev/DisplayTool/python/gui/viewport.py"
+			],
+			[
+				"shower.h",
+				"core/DataFormat/shower.h"
+			],
+			[
+				"shower.ph",
+				"UserDev/BasicTool/EMShowerTools/EMShowerProfile.h"
+			],
+			[
+				"stro",
+				"core/DataFormat/storage_manager.h"
+			],
+			[
+				"viewpor",
+				"UserDev/DisplayTool/python/gui/viewport.py"
+			],
+			[
+				"protosho",
+				"UserDev/RecoTool/ShowerReco3D/ProtoShower/ProtoShower.h"
+			],
+			[
+				"showerreco3d",
+				"UserDev/RecoTool/ShowerReco3D/App/ShowerReco3D.cxx"
+			],
+			[
+				"protshowh",
+				"UserDev/RecoTool/ShowerReco3D/ProtoShower/ProtoShowerHelper.h"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 303.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
