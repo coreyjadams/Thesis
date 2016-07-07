@@ -1,21 +1,143 @@
 
 \chapter{Introduction}
-Your first chapter is probably an introduction. But who knows. Check out Eq.\ (\ref{that_right_triangle_rule})!
-Note that after Eq.\ and Fig.\ you want to use `.\textbackslash'  to use a single sized space. Otherwise,
-latex will interpret it as the end of a sentence and put additional white space in between `Eq.' and 
-`(\ref{that_right_triangle_rule})'.
-
-\begin{equation}
-a^2 + b^2 = c^2 \label{that_right_triangle_rule}
-\end{equation}
 
 \section{Brief History of Neutrino Physics}
+
+
+Since its original inception in the 1930s, neutrino physics has developed into a robust field of high energy physics.  The neutrino was theorized in the 1930s by Wolfgang Pauli, and first detected in 1956 by Clyde Cowan and Frederick Reines \cite{cowanReines}.   Pauli originally proposed only one type of neutrino, but not long after his prediction (and before the experimental evidence that confirmed it) other types of neutrinos were postulated.   Since then, 2 other types of neutrinos have been discovered, namely the muon and tau neutrinos \cite{muon_neutrino},\cite{tau_neutrino}.  Conventionally, neutrinos are symbolized as $\nu_e, \nu_\mu,$ and $\nu_\tau$ corresponding to the 3 flavors of charged leptons.  These three flavors of neutrinos play an important role in the fundamental theory of particles known as the Standard Model of particle physics.
+
+Since the 1960s until the early 2000s, the field of neutrino physics had an unresolved anomaly known as the Solar Neutrino Problem.  Models of the interactions in the interior of the sun made a definite prediction for the number of electron-flavor neutrinos arriving at Earth, based on well grounded theories of stellar fuel burning.  On the other hand, experiments sensitive to neutrinos observed a significant deficit as compared to predictions \cite{davis}.  It wasn't until the GALLEX/SAGE \cite{gallex}\cite{sage} experiments, along with the Super-Kamiokande experiment \cite{superK} and the Sudbury Neutrino Observatory \cite{SNO}, that a solution to the Solar Neutrino Anomaly was found through the mechanism of oscillations: the sun did in fact produce the predicted rate of electron neutrinos, but experiments that were only sensitive to electron neutrinos were unable to detect the muon and tau neutrinos that were produced through the oscillation mechanism.  The conclusive evidence for neutrino oscillations also implies that neutrinos are not, as was previously believed, massless particles.
+
+
+
+
+Around the time of the resolution of the solar neutrino anamoly, similar discrepancies arose in other experiments such as the Liquid Scintillator Neutrino Detector (LSND) at Los Alamos National Laboratory \cite{lsnd} and \MB at Fermi National Accelerator Laboratory (Fermilab) \cite{mbcomb}, as well as several anomalies in nuclear reactor neutrino experiments in more recent times.  Both LSND and \MB observe a possible excess of electron type neutrinos in beams of primarily muon type neutrinos.  This apparent shift of neutrino flavors could be explained by a new oscillation if a fourth, heavier type of neutrino exists.  Because the number of active flavor neutrinos has been constrained by collider experiments to be 3 \cite{lep}, it has been dubbed the ``Sterile Neutrino."
+
+\MB, unfortunately, was not decisive a experiment and so the high mass neutrino oscillation possibility remains unresolved.  The \uboone experiment, which is currently under construction at Fermilab \cite{uboone}, is poised to resolve the \MB excess of electron neutrino like events within the next few years.  With its results, we hope the nature of the excess will be determined.  This thesis proposal is to perform important analyses for the \uboone experiment that will be built upon to resolve the \MB anomaly.
+
+Paramount to the success of the \uboone measurement is a detailed understanding and reduction of the systematic errors in the experiment.  This proposal outlines a plan to reduce one of the systematics uncertainties, the electron neutrino cross section on argon, by making a direct measurement of the CC inclusive interaction cross section.  While this is useful for the oscillation analysis of \uboone, it will also be an important physics result in its own right.  There is no available data on \nue cross section in the range of energy of \uboone, at the order of 1 GeV.  Current models of the cross section are based on theory calculations that are cross checked with \numu data in the same energy range.  However, large uncertainties still exist - something this proposal will directly address.
+
+
+
 Origin, developments, historical experiments
 
+
+\section{Neutrino Sources}
+Discussion of other sources: Solar neutrinos, reactor neutrinos, source neutrinos, etc.
+
+Neutrinos are produced by many sources, both natural and artificial.  The largest source of neutrinos on earth, by far, is from the sun.
+
+\section{Neutrino Oscillations}
+
+Neutrinos, when produced through electro-weak interactions, are produced in flavor eigenstates.  To date, there are known to be three flavors of neutrinos: \nue, \numu, and \nutau.  Each of these neutrinos, as suggested by their name, corresponds to a charged lepton.  The conservation of lepton flavor, in electro-weak interactions, dictates that the number of leptons of a particular flavor is conserved during an interaction.  As an example, the decay of a muon to an electron would violate lepton flavor conservation if not for the presence of neutrinos:
+
+\begin{equation}
+\mu^- \rightarrow e^- + \bar{\nu}_e + \nu_\mu
+\end{equation}
+
+Lepton flavor violation is not, however, a law of nature.  The most striking evidence for the violation of lepton flavor conservation is neutrino oscillations, though there are hints and proposals that lepton flavor could be violated by charged leptons as well \cite{mu2e}.  For neutrino oscillations, the violation of lepton flavor is a direct result of the fact that neutrinos in the lepton eigenstates are a superposition of the mass eigenstates of neutrinos:
+
+\begin{equation}
+\nu_e = \alpha \nu_1 + \beta \nu_2 + \gamma \nu_3
+\end{equation}
+
+where the numerical neutrino states represent the neutrinos with a well defined mass.  It should be noted, from a historical perspective, that in fact neutrinos were originally considered to be zero-mass in the Standard Model.  The discovery of neutrino oscillations instead provided definitive evidence that neutrinos {\bf do} have mass.  From a modern perspective, however, the evidence for neutrino masses is overwhelming.  The interesting phenomenon, then, arise from the fact that neutrinos produce in lepton flavor states do not stay stably in those states.  
+
+The most common way to mathematically describe neutrino oscillations is through the Pontecorvo-Maki-Nakagawa-Sakata matrix, or PMNS matrix:
+
+\begin{equation}
+  \left(
+  \begin{array}{c}
+    \nu_e \\
+    \nu_\mu \\
+    \nu_\tau \\
+  \end{array}
+  \right)
+  =
+  \left(
+  \begin{array}{ccc}
+    U_{e1} & U_{e2} & U_{e3}  \\
+    U_{\mu1} & U_{\mu2} & U_{\mu3}  \\
+    U_{\tau1} & U_{\tau2} & U_{\tau3}  \\
+  \end{array} 
+  \right)
+  \left(
+  \begin{array}{c}
+    \nu_1 \\
+    \nu_2 \\
+    \nu_3 \\
+  \end{array}
+  \right)
+\end{equation}
+
+In this matrix, under the standard assumptions of neutrino oscillations, the rows and columns are normalize such that the matrix is  unitary: $\sum_{i=1}^3 | U_{\alpha i} | ^2 = 1$, and similarly for the columns.  It's very common for the PMNS matrix to be parameterize in terms of mixing angles: 
+
+\begin{align*}
+  \left(
+  \begin{array}{ccc}
+    U_{e1} & U_{e2} & U_{e3}  \\
+    U_{\mu1} & U_{\mu2} & U_{\mu3}  \\
+    U_{\tau1} & U_{\tau2} & U_{\tau3}  \\
+  \end{array} 
+  \right)
+  = 
+  \left(
+  \begin{array}{ccc}
+    1 & 0 & 0  \\
+    0 & \text{cos}\theta_{23} & \text{sin}\theta_{23}  \\
+    0 & -\text{sin}\theta_{23} & \text{cos}\theta_{23}  \\
+  \end{array} 
+  \right)
+  &\times \\
+  \left(
+  \begin{array}{ccc}
+     \text{cos}\theta_{13} & 0 & \text{sin}\theta_{13} e^{ - i \delta_{CP}}  \\
+     0 & 1 & 0  \\
+     -\text{sin}\theta_{13} e^{i \delta_{CP}} & 0 & \text{cos}\theta_{13}  \\
+  \end{array} 
+  \right)
+  &\times \\
+  \left(
+  \begin{array}{ccc}
+    \text{cos}\theta_{12} & \text{sin}\theta_{23} & 0  \\
+    - \text{sin}\theta_{23} & \text{cos}\theta_{12} & 0 \\
+    0 & 0 & 1  \\
+  \end{array} 
+  \right)
+\end{align*}
+
+The value of this expansion is that the individual mixing angles are observable with different experimental setups.  The additional phase, $\delta_{CP}$, is needed if neutrinos violate Charge-Parity symmetry.  Some theories suggest that neutrino violation of CP symmetry is responsible for the matter/anti-matter asymmetry in the Universe (see Section~\ref{sec:future_experiments}).
+
+In general, an experiment probing neutrino oscillations will start with an ensemble of neutrinos prepared in a particular flavor state $\nu_\alpha$:
+\begin{equation*}
+\nu_\alpha = U_{\alpha 1} \nu_1 + U_{\alpha 2} \nu_2 + U_{\alpha 3} \nu_3
+\end{equation*}
+
+The state of the neutrino $\nu_\alpha$ evolves according to the standard time evolution operator, and so at a later time the neutrino state is  
+\begin{equation*}
+\nu_\alpha (t) = U_{\alpha 1} \nu_1(t) + U_{\alpha 2} \nu_2(t) + U_{\alpha 3} \nu_3(t)
+\end{equation*}
+
+where $\nu_{j}(t) = e^{-i ( E_j t - \vec{p} \dot \vec{x})} \nu_j (t)$, using the plane wave solution for the neutrinos.  Since each neutrino has a different mass, the three components of a neutrino flavor state become out of phase as time passes.  Since the neutrino masses are known to be very small, and the neutrinos detected in experiments are typically energies of MeV or higher, all observed neutrinos are ultra-relativistic.  So, the energy expression in the time evolution of the neutrino flavor state can be simplified with $E_j \approx E + \frac{m_i}{2E}$.  Therefore, the probability that a neutrino that started in state $\alpha$ will be observed in state $\beta$ at a later time $t$ is:
+
+\begin{equation*}
+P_{\alpha\rightarrow\beta} = |\braket{\nu_\alpha(t) | \nu_\beta}|^2 = |\sum_i U_{i\alpha} U_{i\beta} e^-i|^2
+\end{equation*}
+
+As a last aside, the neutrino mass itself is unmeasured to date.  Only upper limits have been set, and it is an open question as to whether or not neutrinos are their own anti-particles.  While these questions are not probed directly through oscillations, 
+
+
+
 \section{Current Status of Neutrino Physics}
+
+For a more comprehensive discussion of the outstanding short baseline anomalies, see Chapter~\ref{chp:sbn}.
+
 Outstanding anomalies, modern experiments.  LSND and Miniboone, reactors, gallium, etc., for sterile hints.
 
+
+
 \section{Future directions in Neutino Physics}
+\label{sec:future_experiments}
 DUNE and Nova for CP violation, experimental challenges
 
 \section{Electron Neutrinos as the probe for BSM Neutrino Physics}

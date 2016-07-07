@@ -547,10 +547,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 172.0,
-		"last_filter": "figure",
+		"height": 392.0,
+		"last_filter": "fig",
 		"selected_items":
 		[
+			[
+				"fig",
+				"Snippet: figure"
+			],
 			[
 				"figure",
 				"Snippet: figure"
@@ -669,10 +673,6 @@
 			],
 			[
 				"figr",
-				"Snippet: Figure"
-			],
-			[
-				"fig",
 				"Snippet: Figure"
 			],
 			[
@@ -1105,14 +1105,16 @@
 	},
 	"expanded_folders":
 	[
-		"/home/cadams/Dropbox/Thesis",
-		"/home/cadams/Dropbox/Thesis/ReferencePapers"
+		"/home/cadams/Dropbox/Thesis"
 	],
 	"file_history":
 	[
+		"/home/cadams/Dropbox/Thesis/lartpc.tex",
+		"/home/cadams/Dropbox/Thesis/argo_electrons.tex",
+		"/home/cadams/Dropbox/Thesis/beams.tex",
+		"/home/cadams/Dropbox/Thesis/sbn.tex",
 		"/home/cadams/Dropbox/Thesis/references.bib",
 		"/home/cadams/Dropbox/Thesis/electrons.tex",
-		"/home/cadams/Dropbox/Thesis/lartpc.tex",
 		"/home/cadams/.bashrc",
 		"/home/cadams/argoneut_06_00_00/srcs/argoneutcode/CCElectrons/nuefcl/standard_sim_t962_nue_electrons.fcl",
 		"/home/cadams/argoneut_06_00_00/srcs/argoneutcode/CMakeLists.txt",
@@ -1234,14 +1236,11 @@
 		"/home/cadams/larlite/core/Base/GeoTypes.h",
 		"/home/cadams/larlite/UserDev/Commissioning/CorrelatedNoiseScripts/correlationAna.py",
 		"/data_linux/products/binaries/setup",
-		"/data_linux/products/binaries/ups_OVERRIDE",
-		"/data_linux/products/binaries/ups/v5_2_0/Linux64bit+4.4-2.23/bin/ups",
-		"/home/cadams/larlite/UserDev/argoneut_electrons/analysis/MCShowerAna.cxx",
-		"/home/cadams/larlite/UserDev/DisplayTool/python/datatypes/empty.py"
+		"/data_linux/products/binaries/ups_OVERRIDE"
 	],
 	"find":
 	{
-		"height": 36.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -1255,6 +1254,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"argoneut_deconvolution",
+			"deconvolution",
 			"Anderson",
 			"lartpc_design",
 			"ofstream",
@@ -1380,9 +1381,7 @@
 			"target_block",
 			"i_block",
 			"target_plane",
-			"i_plane",
-			"l",
-			"CorrelatedNoiseFilter"
+			"i_plane"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1461,6 +1460,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"latr",
+				"lartpc.tex"
+			],
 			[
 				".xml",
 				"t962util/xml/data.xml"
@@ -1968,10 +1971,6 @@
 			[
 				"showerreco3d",
 				"UserDev/RecoTool/ShowerReco3D/App/ShowerReco3D.cxx"
-			],
-			[
-				"protshowh",
-				"UserDev/RecoTool/ShowerReco3D/ProtoShower/ProtoShowerHelper.h"
 			]
 		],
 		"width": 0.0

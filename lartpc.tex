@@ -143,13 +143,20 @@ For a track like particle, in general, the groups of hits are associated togethe
 
 Once clusters from multiple planes have been matched together, the wire information between the two clusters can be used to determine where in the Y-Z plane the clusters overlap.  This is because each wire intersects the other plane's wires at most once, so if a charge deposition from one plane is matched to one on another plane, it uniquely determines the location of the 3D charge (The X coordinate comes from the drift time).
 
-Almost all of the details of 3D tracking and reconstruction have been skimmed here, as they are crucial to the work presented in this thesis.  However, a great detail of knowledge and techniques is reported in many references \cite{reco:tracking_ref} \cite{reco:other_refs.}
+Almost all of the details of 3D tracking and reconstruction have been skimmed here, as they are not crucial to the work presented in this thesis.  However, a great detail of knowledge and techniques is reported in many references \cite{reco:tracking_ref} \cite{reco:other_refs.}
 
 \subsection{Particle Identification and Calorimetry}
 
 In a LArTPC, the calorimetric identification of particles is based upon the behavior of charged particles moving through the argon.  The energy deposited per centimeter is dictated by the Bethe-Bloch equations, and the properties in argon of common particles are seen in Figure \ref{fig:bethe_bloch}.
 
-As a particle loses energy, it's amount of ionization decreases until it reaches a minimum before the ionization spikes to very high values.  Due to the limited resolution of the detector, however, the observed dE/dx values for a given particle will increase as the particle comes to a rest.  As seen in Figure \ref{fig:residual range}, this measure of dE/dx versus residual range allows calorimetric separation of particles.  In particular, protons are easily separated from muons and pions with this measure.
+As a particle loses energy, it's amount of ionization decreases until it reaches a minimum before the ionization spikes to very high values.  Due to the limited resolution of the detector, however, the observed dE/dx values for a given particle will increase as the particle comes to a rest.  As seen in Figure \ref{fig:residual_range}, this measure of dE/dx versus residual range allows calorimetric separation of particles.  In particular, protons are easily separated from muons and pions with this measure.
+
+\begin{figure}[tb]
+  \centering
+  \includegraphics[]{lartpc_figures/residual_range.pdf}
+  \caption{Caption here}
+  \label{fig:residual_range}
+\end{figure}
 
 Since LArTPCs also offer bubble chamber quality images, the topology of an event can give excellent ways to distinguish particles.  As seen in Figure \ref{fig:mu_pi}, particles like muons and pions that are difficult to distinguish with calorimetry can often be separated based on subsequent interactions within the TPC.
 

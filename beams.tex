@@ -1,12 +1,21 @@
 \chapter{Neutrino Beams}
 
-Discussion of the design, realization and implementation of neutrino beams.  Proton sources, target materials, hadron interactions, horn focusing, produced particles, decay into neutrinos.  Also, discussion of beam simulation and flux estimation.  Neutrino and anti-neutrino running.
-
-\section{Neutrino Sources}
-Discussion of other sources: Solar neutrinos, reactor neutrinos, source neutrinos, etc.
 
 \section{Accelerator Based Neutrinos}
-Fermilab's accelerator complex, proton source, LINAC, Booster, main injector.
+
+A popular source of neutrinos in modern experiments are the neutrinos from accelerator complexes.  As of the writing of this thesis, there are three active neutrino beams: two at Fermilab, and one in Japan.  Compared to other sources of neutrinos, accelerator based neutrinos offer some advantages.
+
+First, neutrino beams made at accelerator complexes are designed, and not a by-product of other circumstances.  This means that the design of the beam is often optimized for physics goals, in particular by tuning the energy spectrum and energy range of the neutrino beams.  The NuMI beam, described below, was designed to have three modes of running to cover an entire energy range from 1 to 20 GeV neutrinos.  In general, accelerator based neutrino sources are crafted to build neutrino beams that will allow the neutrino experiments in the beam to maximize their physics output.
+
+Another advantage to neutrino beams at accelerators is the pulse structure of the beam.  Since accelerators, like Fermilab, make neutrino beams by colliding bunches of protons with a target material, the timing of the proton bunches provides a natural time structure to the neutrino beams.  Downstream detectors can, using sufficiently time-sensitive detection material, ``time-in'' to the neutrino beam pulses to reject non beam backgrounds.  For experiments on or near the surface, this is exceptionally important for rejecting cosmic backgrounds.
+
+\section{Fermilab's Accelerator Complex}
+
+At Fermilab, where two of the three active neutrino beams originate, much of the physics program is derived from the use of the proton beam that Fermilab produces.  All of the proton beams, regardless of destination, start in the same location.  A bottle of hydrogen provides a source of protons for the entire accelerator complex.  In batches, some of the hydrogen atoms are given a negative charge by the addition of an electron, and these electrons are pushed into the Linear Accelerator (LINAC) at Fermilab with 750 KeV of energy (via a Cockroft-Walton generator).  The LINAC accelerates the protons to 400 MeV, and at the end of the LINAC the protons enter the Booster, a synchrotron.  Before entering the Booster, the electrons are knocked off of the H$^-$ ion to ensure that only protons enter the downstream accelerator system.  Over the course of thousands of rotations around the Booster, the protons are accelerated to 8 MeV of kinetic energy.
+
+The Booster can nominally operate at 15 Hz, though is generally run at lower frequencies.  Future upgrades to Fermilab's accelerator complex involve running the Booster at it's maximum rate to produce as many protons as possible.  From the Booster, protons can be extracted to the Booster Neutrino Beam target, described below (Section~\ref{sec:bnb}).  The majority of protons, however, enter the Main Injector to be accelerated to higher energies.  The Main Injector can accelerate protons to 120 GeV or 150 Gev, depending on the use of the protons.
+
+At the time of writing, the majority of the protons from the main injector are used in the NuMI beam (Section~\ref{sec:numi_beam}), while some are used for fixed target experiments and test beams (beams made of pions or other particles, generally secondary or tertiary beams from the proton beam).  At the time of the data collected for this analysis, however, some of the protons from the Main Injector were used to produce anti-protons for the Tevatron, and some were injected into the Tevatron directly.  In the future, it's excepted that a large fraction of protons will be used for the muon campus (for mu2e and g-2 \cite{mu2e} \cite{g-2}), and further protons will be used for the LBNF Neutrino Beam \cite{LBNF-beam}.
 
 \section{Neutrinos from the Main Injector (NuMI Beam)}
 \label{sec:numi_beam}
@@ -23,7 +32,11 @@ The BNB was designed for, and by, the \MB collaboration.  \MB was a Cherenkov st
 
 The origin of the BNB is 8 GeV protons (8.89 GeV/c momentum) from Fermilab's Booster complex.  These protons are transported to a Beryllium target, encased in a magnetic focusing horn.  The protons collide with the Be and produce hadrons within the target, which are focused into the forward direction by the focusing horn.  The hadrons enter a decay pipe of 50 meters, where they decay in flight into lighter particles including neutrinos.  At the end of the decay pipe is a beam stop to prevent all particles (except neutrinos) from proceeding.  A schematic of the proton entry, horn location, decay pipe and beam stop are shown in Figure~\ref{fig:mb_target_schematic}.
 
-The primary source of the neutrinos in the BNB is from decay in flight pions, though there is significant contamination from kaon decay and muon decay (where the muons are also the product of pion decay).  The kaons and muons also produce a contamination of electron neutrinos in the primarily muon neutrino beam, and this flux of electron neutrinos is the primary background in the Short Baseline Neutrino Program's \nue appearance anaylsis.
+The batches of protons are pulsed, typically at a rate  not more than 5 Hz, and each bunch is approximately 1.6$\mu$s in duration.  For downstream experiments, such as \MB and the SBN Program, the ability to resolve interactions in the detector on the time scale of 1.6 $\mu$s is extremely useful for rejecting out-of-beam-time cosmics.  
+
+Each bunch of protons from the Booster typically contains approximately 4e12 protons.  These protons collide with the Beryllium target, which is 71 centimeters long and made from seven segments of Beryllium.  This length corresponds to 1.7 interaction lengths for the protons, meaning that just over 80\% of the protons interact in the target material.  The number of protons on target is measured upstream of the target by two magnetic toroids, and the uncertainty on the number of protons delivered is on the order of 1-3\% typically.
+
+Upon interacting, the protons produce lighter hadrons such as pions and kaons.  The spectra of produced hadrons is the source of the largest uncertainty in the Booster Neutrino Beam, and is discussed in more detail in Section~\ref{section:flux_uncert}.  The hadrons produced by the protons at the target are focused with the magnetic horn which produces an azimuthal, pulsed magnetic field in time with the proton delivery.  The primary source of the neutrinos in the BNB is from decay in flight pions, though there is significant contamination from kaon decay and muon decay (where the muons are also the product of pion decay).  The kaons and muons also produce a contamination of electron neutrinos in the primarily muon neutrino beam, and this flux of electron neutrinos is the primary background in the Short Baseline Neutrino Program's \nue appearance analysis (see Section~\ref{subsection:event_reco}.
 
 \begin{figure}[tb]
   \centering
