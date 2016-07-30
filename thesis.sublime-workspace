@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"targ",
+				"targetDirs"
+			],
+			[
+				"produc",
+				"product"
+			],
+			[
 				"getSh",
 				"getShowerCaloVector"
 			],
@@ -126,10 +134,6 @@
 			[
 				"distan",
 				"distance_bins"
-			],
-			[
-				"targ",
-				"target_block"
 			],
 			[
 				"core",
@@ -510,10 +514,6 @@
 			[
 				"proj",
 				"projection_error"
-			],
-			[
-				"laruti",
-				"larutil::Geometry::GetME	(dEdxPfPartAna.cxx)"
 			]
 		]
 	},
@@ -547,10 +547,22 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
-		"last_filter": "fig",
+		"height": 92.0,
+		"last_filter": "chap",
 		"selected_items":
 		[
+			[
+				"chap",
+				"Snippet: Chapter"
+			],
+			[
+				"sect",
+				"Snippet: Section"
+			],
+			[
+				"sectio",
+				"Snippet: Section"
+			],
 			[
 				"fig",
 				"Snippet: figure"
@@ -686,10 +698,6 @@
 			[
 				"Section",
 				"Snippet: Sub Section"
-			],
-			[
-				"sect",
-				"Snippet: Section"
 			],
 			[
 				"git diff",
@@ -1054,14 +1062,6 @@
 			[
 				"latex",
 				"LaTeXTools: Reconfigure and migrate settings"
-			],
-			[
-				"pack remo",
-				"Package Control: Remove Package"
-			],
-			[
-				"packai",
-				"Package Control: Install Package"
 			]
 		],
 		"width": 593.0
@@ -1109,13 +1109,24 @@
 	],
 	"file_history":
 	[
-		"/home/cadams/Dropbox/Thesis/lartpc.tex",
-		"/home/cadams/Dropbox/Thesis/argo_electrons.tex",
 		"/home/cadams/Dropbox/Thesis/beams.tex",
+		"/home/cadams/Dropbox/Thesis/introduction.tex",
+		"/home/cadams/Dropbox/Thesis/makefile",
+		"/home/cadams/Dropbox/Thesis/corey_adams_thesis.tex",
+		"/home/cadams/Dropbox/Prospectus/Introduction.tex",
+		"/home/cadams/Dropbox/Prospectus/Bibliography.tex",
+		"/home/cadams/Dropbox/Thesis/preamble.tex",
+		"/home/cadams/Dropbox/Thesis/lartpc.tex",
+		"/home/cadams/.bashrc",
+		"/home/cadams/Software/ROOT/root/math/mathmore/src/GSLMultiFit.h",
+		"/data_linux/products/cleanBuildDir.sh",
+		"/data_linux/products/temp/srcs/larsoft/ups/product_deps",
+		"/home/cadams/caffe/Makefile.config",
+		"/home/cadams/caffe/Makefile",
+		"/home/cadams/Dropbox/Thesis/argo_electrons.tex",
 		"/home/cadams/Dropbox/Thesis/sbn.tex",
 		"/home/cadams/Dropbox/Thesis/references.bib",
 		"/home/cadams/Dropbox/Thesis/electrons.tex",
-		"/home/cadams/.bashrc",
 		"/home/cadams/argoneut_06_00_00/srcs/argoneutcode/CCElectrons/nuefcl/standard_sim_t962_nue_electrons.fcl",
 		"/home/cadams/argoneut_06_00_00/srcs/argoneutcode/CMakeLists.txt",
 		"/home/cadams/argoneut_06_00_00/srcs/argoneutcode/T962G4Ana/T962G4Ana_module.cc",
@@ -1136,7 +1147,6 @@
 		"/home/cadams/larlite/UserDev/DisplayTool/python/evdmanager/larlite_manager.py",
 		"/home/cadams/larlite/core/Analysis/ana_processor.h",
 		"/home/cadams/larlite/UserDev/DisplayTool/RawViewer/DrawWire.cxx",
-		"/home/cadams/caffe/Makefile.config",
 		"/home/cadams/caffe/CMakeLists.txt",
 		"/home/cadams/larlite/UserDev/DisplayTool/UbooneNoiseFilter/GNUmakefile",
 		"/home/cadams/larlite/Makefile/GNUmakefile.CORE",
@@ -1226,21 +1236,11 @@
 		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawVertex.h",
 		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawTrack.h",
 		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawTrack.cxx",
-		"/data_linux/products/gallery-buildcfg-1.02.01",
-		"/data_linux/products/gallery-1.02.01-source_MANIFEST.txt",
-		"/data_linux/products/buildFW",
-		"/home/cadams/larlite/UserDev/DisplayTool/RawViewer/LinkDef.h",
-		"/home/cadams/larlite/UserDev/DisplayTool/RawViewer/ChirpFilter.h",
-		"/home/cadams/larlite/core/LArUtil/Geometry.h",
-		"/home/cadams/larlite/core/LArUtil/Geometry.cxx",
-		"/home/cadams/larlite/core/Base/GeoTypes.h",
-		"/home/cadams/larlite/UserDev/Commissioning/CorrelatedNoiseScripts/correlationAna.py",
-		"/data_linux/products/binaries/setup",
-		"/data_linux/products/binaries/ups_OVERRIDE"
+		"/data_linux/products/gallery-buildcfg-1.02.01"
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 36.0
 	},
 	"find_in_files":
 	{
@@ -1254,6 +1254,19 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"product",
+			"CPU_ONLY",
+			"Y",
+			"future_experimentes",
+			"2",
+			"equation",
+			"align",
+			"equation",
+			"sin",
+			"13",
+			"23",
+			"U_",
+			"micro",
 			"argoneut_deconvolution",
 			"deconvolution",
 			"Anderson",
@@ -1368,20 +1381,7 @@
 			"UbooneNoiseFilter",
 			"get_pedestal_info",
 			"is_chirping",
-			"waveform2",
-			"waveform1",
-			";",
-			"_this_block_data",
-			"_cross_data",
-			"windows_to_investigate",
-			"windowsize",
-			"windowsize[plane]",
-			"rms_minimum",
-			"int",
-			"target_block",
-			"i_block",
-			"target_plane",
-			"i_plane"
+			"waveform2"
 		],
 		"highlight": true,
 		"in_selection": false,

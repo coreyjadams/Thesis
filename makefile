@@ -9,7 +9,7 @@ all: $(filename).pdf
 clean:
 	\rm *.aux *.blg *.out *.bbl *.log *.dvi *.pdf *.fls *.lot *.lof
 
-$(filename).pdf: $(filename).tex
+$(filename).pdf: *.tex
 	pdflatex $(filename)
 	pdflatex $(filename)
 	bibtex $(filename)

@@ -6,16 +6,18 @@
 
 Since its original inception in the 1930s, neutrino physics has developed into a robust field of high energy physics.  The neutrino was theorized in the 1930s by Wolfgang Pauli, and first detected in 1956 by Clyde Cowan and Frederick Reines \cite{cowanReines}.   Pauli originally proposed only one type of neutrino, but not long after his prediction (and before the experimental evidence that confirmed it) other types of neutrinos were postulated.   Since then, 2 other types of neutrinos have been discovered, namely the muon and tau neutrinos \cite{muon_neutrino},\cite{tau_neutrino}.  Conventionally, neutrinos are symbolized as $\nu_e, \nu_\mu,$ and $\nu_\tau$ corresponding to the 3 flavors of charged leptons.  These three flavors of neutrinos play an important role in the fundamental theory of particles known as the Standard Model of particle physics.
 
+
+
 Since the 1960s until the early 2000s, the field of neutrino physics had an unresolved anomaly known as the Solar Neutrino Problem.  Models of the interactions in the interior of the sun made a definite prediction for the number of electron-flavor neutrinos arriving at Earth, based on well grounded theories of stellar fuel burning.  On the other hand, experiments sensitive to neutrinos observed a significant deficit as compared to predictions \cite{davis}.  It wasn't until the GALLEX/SAGE \cite{gallex}\cite{sage} experiments, along with the Super-Kamiokande experiment \cite{superK} and the Sudbury Neutrino Observatory \cite{SNO}, that a solution to the Solar Neutrino Anomaly was found through the mechanism of oscillations: the sun did in fact produce the predicted rate of electron neutrinos, but experiments that were only sensitive to electron neutrinos were unable to detect the muon and tau neutrinos that were produced through the oscillation mechanism.  The conclusive evidence for neutrino oscillations also implies that neutrinos are not, as was previously believed, massless particles.
 
 
 
 
-Around the time of the resolution of the solar neutrino anamoly, similar discrepancies arose in other experiments such as the Liquid Scintillator Neutrino Detector (LSND) at Los Alamos National Laboratory \cite{lsnd} and \MB at Fermi National Accelerator Laboratory (Fermilab) \cite{mbcomb}, as well as several anomalies in nuclear reactor neutrino experiments in more recent times.  Both LSND and \MB observe a possible excess of electron type neutrinos in beams of primarily muon type neutrinos.  This apparent shift of neutrino flavors could be explained by a new oscillation if a fourth, heavier type of neutrino exists.  Because the number of active flavor neutrinos has been constrained by collider experiments to be 3 \cite{lep}, it has been dubbed the ``Sterile Neutrino."
+% Around the time of the resolution of the solar neutrino anamoly, similar discrepancies arose in other experiments such as the Liquid Scintillator Neutrino Detector (LSND) at Los Alamos National Laboratory \cite{lsnd} and \MB at Fermi National Accelerator Laboratory (Fermilab) \cite{mbcomb}, as well as several anomalies in nuclear reactor neutrino experiments in more recent times.  Both LSND and \MB observe a possible excess of electron type neutrinos in beams of primarily muon type neutrinos.  This apparent shift of neutrino flavors could be explained by a new oscillation if a fourth, heavier type of neutrino exists.  Because the number of active flavor neutrinos has been constrained by collider experiments to be 3 \cite{lep}, it has been dubbed the ``Sterile Neutrino."
 
-\MB, unfortunately, was not decisive a experiment and so the high mass neutrino oscillation possibility remains unresolved.  The \uboone experiment, which is currently under construction at Fermilab \cite{uboone}, is poised to resolve the \MB excess of electron neutrino like events within the next few years.  With its results, we hope the nature of the excess will be determined.  This thesis proposal is to perform important analyses for the \uboone experiment that will be built upon to resolve the \MB anomaly.
+% \MB, unfortunately, was not decisive a experiment and so the high mass neutrino oscillation possibility remains unresolved.  The \uboone experiment, which is currently under construction at Fermilab \cite{uboone}, is poised to resolve the \MB excess of electron neutrino like events within the next few years.  With its results, we hope the nature of the excess will be determined.  This thesis proposal is to perform important analyses for the \uboone experiment that will be built upon to resolve the \MB anomaly.
 
-Paramount to the success of the \uboone measurement is a detailed understanding and reduction of the systematic errors in the experiment.  This proposal outlines a plan to reduce one of the systematics uncertainties, the electron neutrino cross section on argon, by making a direct measurement of the CC inclusive interaction cross section.  While this is useful for the oscillation analysis of \uboone, it will also be an important physics result in its own right.  There is no available data on \nue cross section in the range of energy of \uboone, at the order of 1 GeV.  Current models of the cross section are based on theory calculations that are cross checked with \numu data in the same energy range.  However, large uncertainties still exist - something this proposal will directly address.
+% Paramount to the success of the \uboone measurement is a detailed understanding and reduction of the systematic errors in the experiment.  This proposal outlines a plan to reduce one of the systematics uncertainties, the electron neutrino cross section on argon, by making a direct measurement of the CC inclusive interaction cross section.  While this is useful for the oscillation analysis of \uboone, it will also be an important physics result in its own right.  There is no available data on \nue cross section in the range of energy of \uboone, at the order of 1 GeV.  Current models of the cross section are based on theory calculations that are cross checked with \numu data in the same energy range.  However, large uncertainties still exist - something this proposal will directly address.
 
 
 
@@ -118,15 +120,21 @@ The state of the neutrino $\nu_\alpha$ evolves according to the standard time ev
 \nu_\alpha (t) = U_{\alpha 1} \nu_1(t) + U_{\alpha 2} \nu_2(t) + U_{\alpha 3} \nu_3(t)
 \end{equation*}
 
-where $\nu_{j}(t) = e^{-i ( E_j t - \vec{p} \dot \vec{x})} \nu_j (t)$, using the plane wave solution for the neutrinos.  Since each neutrino has a different mass, the three components of a neutrino flavor state become out of phase as time passes.  Since the neutrino masses are known to be very small, and the neutrinos detected in experiments are typically energies of MeV or higher, all observed neutrinos are ultra-relativistic.  So, the energy expression in the time evolution of the neutrino flavor state can be simplified with $E_j \approx E + \frac{m_i}{2E}$.  Therefore, the probability that a neutrino that started in state $\alpha$ will be observed in state $\beta$ at a later time $t$ is:
+where $\nu_{j}(t) = e^{-i ( E_j t - \vec{p} \dot \vec{x})} \nu_j (t)$, using the plane wave solution for the neutrinos.  Since each neutrino has a different mass, the three components of a neutrino flavor state become out of phase as time passes.  Since the neutrino masses are known to be very small, and the neutrinos detected in experiments are typically energies of MeV or higher, all observed neutrinos are ultra-relativistic.  So, the energy expression in the time evolution of the neutrino flavor state can be simplified with $E_j \approx E + \frac{m_j^2}{2E}$.  Therefore, the probability that a neutrino that started in state $\alpha$ will be observed in state $\beta$ at a later time $t$ is:
 
 \begin{equation*}
-P_{\alpha\rightarrow\beta} = |\braket{\nu_\alpha(t) | \nu_\beta}|^2 = |\sum_i U_{i\alpha} U_{i\beta} e^-i|^2
+P_{\alpha\rightarrow\beta} = \left|\braket{\nu_\alpha(t) | \nu_\beta}\right|^2 = \left|\sum_i U_{i\alpha} U_{i\beta} e^{-i t \frac{m_j^2 }{ 2 E}}\right|^2
 \end{equation*}
 
+Of course, since neutrinos are ultra-relativistic it is not possible to observe them at a later time in the same location.  Instead, neutrino oscillations searches observe the neutrinos at a distance away from the source.  Assuming the neutrinos travel at the speed of light, so that $L = c t$ (and typically setting c = 1), the useful oscillation probability expression for neutrino experiments is 
+
+\begin{equation*}
+P_{\alpha\rightarrow\beta} = \left|\sum_i U_{i\alpha} U_{i\beta} e^{-i m_j^2 \frac{L}{2E}}\right|^2
+\end{equation*}
+
+
+
 As a last aside, the neutrino mass itself is unmeasured to date.  Only upper limits have been set, and it is an open question as to whether or not neutrinos are their own anti-particles.  While these questions are not probed directly through oscillations, 
-
-
 
 \section{Current Status of Neutrino Physics}
 
