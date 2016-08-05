@@ -4,14 +4,6 @@
 		"selected_items":
 		[
 			[
-				"targ",
-				"targetDirs"
-			],
-			[
-				"produc",
-				"product"
-			],
-			[
 				"getSh",
 				"getShowerCaloVector"
 			],
@@ -134,6 +126,10 @@
 			[
 				"distan",
 				"distance_bins"
+			],
+			[
+				"targ",
+				"target_block"
 			],
 			[
 				"core",
@@ -514,62 +510,49 @@
 			[
 				"proj",
 				"projection_error"
+			],
+			[
+				"laruti",
+				"larutil::Geometry::GetME	(dEdxPfPartAna.cxx)"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "lartpc.tex",
+			"settings":
+			{
+				"buffer_size": 22032,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "argo_electrons.tex",
+			"settings":
+			{
+				"buffer_size": 390,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "beams.tex",
+			"settings":
+			{
+				"buffer_size": 12110,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "Packages/Makefile/Make.sublime-build",
-	"build_system_choices":
-	[
-		[
-			[
-				[
-					"Packages/Makefile/Make.sublime-build",
-					""
-				],
-				[
-					"Packages/Makefile/Make.sublime-build",
-					"Clean"
-				],
-				[
-					"Packages/LaTeXTools/LaTeX.sublime-build",
-					""
-				]
-			],
-			[
-				"Packages/Makefile/Make.sublime-build",
-				""
-			]
-		]
-	],
-	"build_varint": "",
 	"command_palette":
 	{
-		"height": 92.0,
-		"last_filter": "chap",
+		"height": 47.0,
 		"selected_items":
 		[
 			[
-				"chap",
-				"Snippet: Chapter"
-			],
-			[
-				"sect",
-				"Snippet: Section"
-			],
-			[
-				"sectio",
-				"Snippet: Section"
-			],
-			[
-				"fig",
-				"Snippet: figure"
-			],
-			[
 				"figure",
-				"Snippet: figure"
+				"Snippet: Figure"
 			],
 			[
 				"snpfi",
@@ -688,6 +671,10 @@
 				"Snippet: Figure"
 			],
 			[
+				"fig",
+				"Snippet: Figure"
+			],
+			[
 				"git add",
 				"Git: Add Current File"
 			],
@@ -698,6 +685,10 @@
 			[
 				"Section",
 				"Snippet: Sub Section"
+			],
+			[
+				"sect",
+				"Snippet: Section"
 			],
 			[
 				"git diff",
@@ -1062,37 +1053,21 @@
 			[
 				"latex",
 				"LaTeXTools: Reconfigure and migrate settings"
+			],
+			[
+				"pack remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"packai",
+				"Package Control: Install Package"
 			]
 		],
-		"width": 593.0
+		"width": 449.0
 	},
 	"console":
 	{
-		"height": 139.0,
-		"history":
-		[
-			"import pyqtgraph",
-			"303-287",
-			"320/32",
-			"380/32",
-			"96*4",
-			"96*5",
-			"384-64",
-			"1/30.",
-			"20*192",
-			"96*8",
-			"96*7",
-			"96*4",
-			"import ROOT",
-			"36*96",
-			"35*96",
-			"from ROOT import *",
-			"import numpy",
-			"a",
-			"a = 3",
-			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
-			" import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
-		]
+		"height": 139.0
 	},
 	"distraction_free":
 	{
@@ -1103,30 +1078,13 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/home/cadams/Dropbox/Thesis"
-	],
 	"file_history":
 	[
-		"/home/cadams/Dropbox/Thesis/beams.tex",
-		"/home/cadams/Dropbox/Thesis/introduction.tex",
-		"/home/cadams/Dropbox/Thesis/makefile",
-		"/home/cadams/Dropbox/Thesis/corey_adams_thesis.tex",
-		"/home/cadams/Dropbox/Prospectus/Introduction.tex",
-		"/home/cadams/Dropbox/Prospectus/Bibliography.tex",
-		"/home/cadams/Dropbox/Thesis/preamble.tex",
-		"/home/cadams/Dropbox/Thesis/lartpc.tex",
-		"/home/cadams/.bashrc",
-		"/home/cadams/Software/ROOT/root/math/mathmore/src/GSLMultiFit.h",
-		"/data_linux/products/cleanBuildDir.sh",
-		"/data_linux/products/temp/srcs/larsoft/ups/product_deps",
-		"/home/cadams/caffe/Makefile.config",
-		"/home/cadams/caffe/Makefile",
-		"/home/cadams/Dropbox/Thesis/argo_electrons.tex",
-		"/home/cadams/Dropbox/Thesis/sbn.tex",
+		"/Users/Corey/Dropbox/Thesis/preamble.tex",
 		"/home/cadams/Dropbox/Thesis/references.bib",
 		"/home/cadams/Dropbox/Thesis/electrons.tex",
+		"/home/cadams/Dropbox/Thesis/lartpc.tex",
+		"/home/cadams/.bashrc",
 		"/home/cadams/argoneut_06_00_00/srcs/argoneutcode/CCElectrons/nuefcl/standard_sim_t962_nue_electrons.fcl",
 		"/home/cadams/argoneut_06_00_00/srcs/argoneutcode/CMakeLists.txt",
 		"/home/cadams/argoneut_06_00_00/srcs/argoneutcode/T962G4Ana/T962G4Ana_module.cc",
@@ -1147,6 +1105,7 @@
 		"/home/cadams/larlite/UserDev/DisplayTool/python/evdmanager/larlite_manager.py",
 		"/home/cadams/larlite/core/Analysis/ana_processor.h",
 		"/home/cadams/larlite/UserDev/DisplayTool/RawViewer/DrawWire.cxx",
+		"/home/cadams/caffe/Makefile.config",
 		"/home/cadams/caffe/CMakeLists.txt",
 		"/home/cadams/larlite/UserDev/DisplayTool/UbooneNoiseFilter/GNUmakefile",
 		"/home/cadams/larlite/Makefile/GNUmakefile.CORE",
@@ -1236,7 +1195,19 @@
 		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawVertex.h",
 		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawTrack.h",
 		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawTrack.cxx",
-		"/data_linux/products/gallery-buildcfg-1.02.01"
+		"/data_linux/products/gallery-buildcfg-1.02.01",
+		"/data_linux/products/gallery-1.02.01-source_MANIFEST.txt",
+		"/data_linux/products/buildFW",
+		"/home/cadams/larlite/UserDev/DisplayTool/RawViewer/LinkDef.h",
+		"/home/cadams/larlite/UserDev/DisplayTool/RawViewer/ChirpFilter.h",
+		"/home/cadams/larlite/core/LArUtil/Geometry.h",
+		"/home/cadams/larlite/core/LArUtil/Geometry.cxx",
+		"/home/cadams/larlite/core/Base/GeoTypes.h",
+		"/home/cadams/larlite/UserDev/Commissioning/CorrelatedNoiseScripts/correlationAna.py",
+		"/data_linux/products/binaries/setup",
+		"/data_linux/products/binaries/ups_OVERRIDE",
+		"/data_linux/products/binaries/ups/v5_2_0/Linux64bit+4.4-2.23/bin/ups",
+		"/home/cadams/larlite/UserDev/argoneut_electrons/analysis/MCShowerAna.cxx"
 	],
 	"find":
 	{
@@ -1244,7 +1215,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 93.0,
+		"height": 0.0,
 		"where_history":
 		[
 		]
@@ -1254,21 +1225,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"product",
-			"CPU_ONLY",
-			"Y",
-			"future_experimentes",
-			"2",
-			"equation",
-			"align",
-			"equation",
-			"sin",
-			"13",
-			"23",
-			"U_",
-			"micro",
-			"argoneut_deconvolution",
-			"deconvolution",
+			"signal_shaping",
+			"argoneut_projection",
+			"argoneut_projections",
+			"lartpc_design",
+			"argoneut_detector",
+			"argoneut_sig",
+			"fig:f",
 			"Anderson",
 			"lartpc_design",
 			"ofstream",
@@ -1381,7 +1344,15 @@
 			"UbooneNoiseFilter",
 			"get_pedestal_info",
 			"is_chirping",
-			"waveform2"
+			"waveform2",
+			"waveform1",
+			";",
+			"_this_block_data",
+			"_cross_data",
+			"windows_to_investigate",
+			"windowsize",
+			"windowsize[plane]",
+			"rms_minimum"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1399,8 +1370,367 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "lartpc.tex",
+					"settings":
+					{
+						"buffer_size": 22032,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 182.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "argo_electrons.tex",
+					"settings":
+					{
+						"buffer_size": 390,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								95,
+								82
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "beams.tex",
+					"settings":
+					{
+						"buffer_size": 12110,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1447,8 +1777,6 @@
 	{
 		"height": 0.0
 	},
-	"pinned_build_system": "",
-	"project": "thesis.sublime-project",
 	"replace":
 	{
 		"height": 52.0
@@ -1457,13 +1785,8 @@
 	"select_file":
 	{
 		"height": 0.0,
-		"last_filter": "",
 		"selected_items":
 		[
-			[
-				"latr",
-				"lartpc.tex"
-			],
 			[
 				".xml",
 				"t962util/xml/data.xml"
@@ -1971,6 +2294,10 @@
 			[
 				"showerreco3d",
 				"UserDev/RecoTool/ShowerReco3D/App/ShowerReco3D.cxx"
+			],
+			[
+				"protshowh",
+				"UserDev/RecoTool/ShowerReco3D/ProtoShower/ProtoShowerHelper.h"
 			]
 		],
 		"width": 0.0
@@ -1978,32 +2305,15 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "",
 		"selected_items":
 		[
 		],
 		"width": 380.0
-	},
-	"select_symbol":
-	{
-		"height": 0.0,
-		"last_filter": "",
-		"selected_items":
-		[
-		],
-		"width": 0.0
-	},
-	"selected_group": 0,
-	"settings":
-	{
 	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 303.0,
-	"status_bar_visible": true,
-	"template_settings":
-	{
-	}
+	"status_bar_visible": true
 }
