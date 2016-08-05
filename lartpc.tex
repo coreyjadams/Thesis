@@ -92,7 +92,7 @@ The sense wires are readout with a system of electronics sampled every 198 ns, a
   \label{fig:argoneut_signals}
 \end{figure}
 
-\section{Event Imaging and Reconstruction}
+\section{\label{sec:lartpc_reconstruction} Event Imaging and Reconstruction}
 
 Each wire measures a signal of electrons as they drift, as a function of time.  When the wires are arrayed in an image in sequential order, such that the x axis is wire number and the y axis is time tick, 2D images are formed such as in figure \ref{fig:argoneut_data}.  As seen in figure \ref{fig:argoneut_projection}, the wire planes represent projections of the 3D data onto a plane that is orthogonal to the wires themselves.
 
@@ -122,7 +122,7 @@ To correct for this, a deconvolution process is applied to each wire.  As seen i
 
 \subsection{Hit Finding}
 
-For each wire in the detector, a hit finding algorithm is used to locate the regions of the readout with electron deposition signals.  While there are several different hit finding algorithms available in LArSoft \cite{larsoft}, the official LArTPC reconstruction software, the all follow a generalized procedure.
+For each wire in the detector, a hit finding algorithm is used to locate the regions of the readout with electron deposition signals.  While there are several different hit finding algorithms available in LArSoft \cite{Church:2013hea}, the official LArTPC reconstruction software, the all follow a generalized procedure.
 
 First, a deconvolved (and noise filtered) wire signal is scanned for regions of signal above a specified threshold.  Often, the baseline threshold of hit finding depends on whether the signal is from collection or induction planes.
 
@@ -144,6 +144,39 @@ For a track like particle, in general, the groups of hits are associated togethe
 Once clusters from multiple planes have been matched together, the wire information between the two clusters can be used to determine where in the Y-Z plane the clusters overlap.  This is because each wire intersects the other plane's wires at most once, so if a charge deposition from one plane is matched to one on another plane, it uniquely determines the location of the 3D charge (The X coordinate comes from the drift time).
 
 Almost all of the details of 3D tracking and reconstruction have been skimmed here, as they are not crucial to the work presented in this thesis.  However, a great detail of knowledge and techniques is reported in many references \cite{reco:tracking_ref} \cite{reco:other_refs.}
+
+\subsection{\label{subsec:lartpc_calibration} Calibration}
+
+For a \lartpc to perform physics studies with calorimetric information, it is essential to accuratly calibrate the detector response to charge depositions on the wires.  For \argoneut, this was performed with large sample of crossing muons as reported in \cite{Anderson:2012mra}.  That analysis demonstrated that muons induced from upstream interactions (known as ``through-going muons'' in \argoneut) can be used as a known source of  ionization in the detector, as shown in Figure~\ref{fig:mpv_muons}.  For \argoneut, the mean momentum of the through-going muons was estimated at 7 GeV/c.
+
+\begin{figure}[tb]
+  \centering
+  \includegraphics[width=\textwidth]{lartpc_figures/mpv_muons.png}
+  \caption[Most Probable Ionization, Muons]{Most probable ionization amounts for muons traversing liquid Argon, as a function of momentum.}
+  \label{fig:mpv_muons}
+\end{figure}
+
+To calibrate the detector from a sample of muons, the dE/dx of each deposition measured by the wires of the TPC can be collected into a histogram and the shape is fit with a Gaussian-convolved Landau distribution, as demonstrated in Figure~\ref{fig:coll_mpv_muons}.  Unlike \cite{Anderson:2012mra}, however, there are two differences performed for the calibration used in the analyses described in Chapters~\ref{chp:emshower} and \ref{chp:nue_xsec}: the calibration constants are calculated on a wire-by-wire basis, instead of for the entire detector.  Second, the calibration is calculated for the collection and the induction plane, instead of just the collection plane.  Due to advancements in deconvolution and hit finding since the original publication of the \argoneut calibrations, the induction plane can now be shown to be a useable plane for calorimetry, as seen in Figure~\ref{fig:coll_ind_differences}.  The two planes show agreement in the calorimetric values calculated for the crossing muons.  In the end, the calibration constants are determined to be 36.4 $\pm$ 2.48 [fC/(ADC*tick)] for the collection plane, and 143 $\pm$ 10.3 [fC/(ADC*tick)].
+
+\begin{figure}[tb]
+  \centering
+  \includegraphics[width=0.45\textwidth]{lartpc_figures/collection_muons_total.png}
+  \includegraphics[width=0.45\textwidth]{lartpc_figures/collection_muons_total_sim.png}
+  \caption[Muon dE/dx Distributions]{Most probable ionization amounts for muons traversing liquid Argon, as a function of momentum.}
+  \label{fig:coll_mpv_muons}
+\end{figure}
+
+\begin{figure}[p]
+  \centering
+  \includegraphics[width=0.45\textwidth]{lartpc_figures/mean_coll_vs_ind_sim_muons.png}
+  \includegraphics[width=0.45\textwidth]{lartpc_figures/mean_coll_vs_ind_data.png}
+  \includegraphics[width=0.45\textwidth]{lartpc_figures/median_coll_vs_ind_sim_muons.png}
+  \includegraphics[width=0.45\textwidth]{lartpc_figures/median_coll_vs_ind_data.png}
+  \includegraphics[width=0.45\textwidth]{lartpc_figures/mpv_coll_vs_ind_sim_muons.png}
+  \includegraphics[width=0.45\textwidth]{lartpc_figures/mpv_coll_vs_ind_data.png}
+  \caption[Cross Plane Calibration Checks]{A comparison of the mean, median, and most probable value for crossing muons between the collection (x axis) and induction (y axis) planes.  Simulation is shown on the left, data on the right.  There is good agreement between collection and induction planes, as well as between simulation and data.}
+  \label{fig:coll_ind_differences}
+\end{figure}
 
 \subsection{Particle Identification and Calorimetry}
 
@@ -173,9 +206,26 @@ Since LArTPCs also offer bubble chamber quality images, the topology of an event
   \label{fig:signal_shaping}
 \end{figure}
 
-\argoneut is only 90cm long at it's longest dimension, and since the NuMI beam has neutrino energies of 10+ GeV, it is extremely rare for muons produced in \argoneut to stop within the detector.  This enabled several precision measurements of muon neutrino cross sections on argon by looking for neutrinos that interact in \argoneut, and tracking them through the MINOS near detector \cite{argoneut_numu}, \cite{argoneut_antinumu}.
+\argoneut is only 90cm long at it's longest dimension, and since the NuMI beam has neutrino energies of 10+ GeV, it is extremely rare for muons produced in \argoneut to stop within the detector.  This enabled several precision measurements of muon neutrino cross sections on argon by looking for neutrinos that interact in \argoneut, and tracking them through the MINOS near detector \cite{Anderson:2011ce}, \cite{Acciarri:2014isz}.
 
 For the analyses presented in this thesis, MINOS is not used as a muon spectrometer directly.  Instead, since the target interaction is electron neutrinos, MINOS is able to provide rejection of muon neutrino events.
 
+\section{\label{sec:microboone} \uboone}
 
-\section{Future LArTPCs}
+\section{\label{sec:future_tpcs} Future LArTPCs}
+
+
+% \uboone is the largest \lartpc in the United States, and the second largest in the world.  Originally proposed in 2007, it was designed to confirm or rule out the \MB low energy excess.
+
+% Details of the \uboone detector.  PMT systems, low energy excess search.
+
+% \subsection{Future \lartpcs}
+
+% \subsubsection{SBND}
+
+% Details of SBND, PMTS, proximity to beam, flux window, etc.
+
+% \subsubsection{\icarus}
+
+% More of the same
+

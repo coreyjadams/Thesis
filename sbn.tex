@@ -112,7 +112,7 @@ U_{s1} & U_{s2} & U_{s3} & U_{s4}  \\
    \\
   sin^2(2 \theta_{\mu\mu}) &\equiv 4 |U_{\mu4}|^2 (1 - |U_{\mu4}|^2) \approx 4 |U_{\mu 4}|^2.
   \end{align}
-  Intriguingly, there has been no observed signal of muon neutrino disappearance consistent with the same anomalies that hint towards sterile neutrino oscillations, despite searches by MINOS \cite{MINOS} and \MB+SciBooNE \cite{miniboone_sciboone}.
+  Intriguingly, there has been no observed signal of muon neutrino disappearance consistent with the same anomalies that hint towards sterile neutrino oscillations, despite searches by MINOS \cite{Adamson:2010wi}, \MB+SciBooNE \cite{Mahn:2011ea}, and IceCube \cite{TheIceCube:2016oqi}.
 
   \item { \em Electron (and Anti-Electron) Appearance:} Given that a sterile neutrino can have mixing parameter that connect to both electron and muon type neutrinos, it is possible to have an oscillation of muon neutrinos into electron neutrinos.
   \begin{align}
@@ -129,23 +129,14 @@ Taken together, the global data can be combined as in \cite{kopp_best_fit,giunti
 \section{FermiLab's Short Baseline Neutrino Program}
 
 \label{sec:sbn_detectors}
-With all of the above anomalies and hints of beyond the standard model, it is essential to address the sterile neutrino question and resolve the \MB anomaly.  To address these hints, Fermilab is pursuing a program of short baseline neutrino experiments along it's Booster Neutrino Beam.  The first experiment, \uboone, started operations in 2015 and is designed to definitively lay to rest the \MB anomaly.  Subsequently, two other detectors will join \uboone along the Booster Beam at 100m and 660m.  This section will describe the detectors, and present the physics potential of Fermilab's Short Baseline Program with focus on the flagship measurement, electron neutrino appearance.
+With all of the above anomalies and hints of beyond the standard model, it is essential to address the sterile neutrino question and resolve the \MB anomaly.  To address these hints, Fermilab is pursuing a program of short baseline neutrino experiments along it's Booster Neutrino Beam.  The first experiment, \uboone, started operations in 2015 and is designed to definitively lay to rest the \MB anomaly.  Subsequently, two other detectors will join \uboone along the Booster Beam at 100m and 660m.  An overview of the three \lartpcs involved in Fermilab's Short Baseline Program is given in Sections \ref{sec:microboone} and \ref{sec:future_tpcs}.  The location of the three detectors can be seen in Figure~\ref{fig:sbn_birdseyeview}.
 
-\subsection{\uboone}
-
-\uboone is the largest \lartpc in the United States, and the second largest in the world.  Originally proposed in 2007, it was designed to confirm or rule out the \MB low energy excess.
-
-Details of the \uboone detector.  PMT systems, low energy excess search.
-
-\subsection{Future \lartpcs}
-
-\subsubsection{SBND}
-
-Details of SBND, PMTS, proximity to beam, flux window, etc.
-
-\subsubsection{\icarus}
-
-More of the same
+\begin{figure}[tb]
+  \centering
+  \includegraphics[width=\textwidth]{sbn_figures/SBN_Map.jpeg}
+  \caption[SBN Detector Locations]{An aerial view of the SBN program.  The three detectors are highlighted in yellow, and (from right to left, along the path of the beam) are \sbnd, \uboone, and \icarus}
+  \label{fig:sbn_birdseyeview}
+\end{figure}
 
 \section{Physics Program}
 
@@ -196,7 +187,7 @@ For the study of the Short Baseline Neutrino Program's sensitivity to anomalous 
 
     \item{\em Photon Conversion Gap:} In events where the neutrino interaction produces high energy photons, it can at times also product hadronic activity at the vertex.  If more than 50 MeV of energy is observed at the vertex, and a gap between the electromagnetic shower and the vertex is detected with more than 3 centimeters (in \uboone, this is up to 30 wires), the event is rejected.
 
-    \item{\em dE/dx Cut:} In this study, for events passing the previous two cuts, and 94\% rejection was applied.  This accounts for the expected resolution, in the SBN detectors, of the calorimetric based cut on the ionization of the first few centimeters of a shower.  For more about the power of the dE/dx cut in data, see Section~\ref{sec:e_gamma_sep}
+    \item{\em dE/dx Cut:} In this study, for events passing the previous two cuts, and 94\% rejection was applied.  This accounts for the expected resolution, in the SBN detectors, of the calorimetric based cut on the ionization of the first few centimeters of a shower.  For more about the power of the dE/dx cut in data, see Section~\ref{sec:argo_dedx}
 
   \end{enumerate}
 
@@ -274,7 +265,7 @@ where L and E are known from the Monte Carlo as the distance the neutrino has tr
 \centering
 \small
 \caption{Background Rates, broken out by analysis bin and origin, for the SBND experiment for 6.6e20 POT. The signal is from the Giunti {\em et al.} best fit point}
-\label{my-label}
+\label{tab:sbn_event_rates_no_signal}
 \begin{tabular}{r|cccccccccll}
 \multicolumn{1}{l|}{Bins [GeV]} & \multicolumn{1}{l}{$\mu\rightarrow\nu_e$} & \multicolumn{1}{l}{$K^{\pm}\rightarrow \nu_e$} & \multicolumn{1}{l}{$K^0 \rightarrow \nue$} & \multicolumn{1}{l}{$\nu + e^-$} & \multicolumn{1}{l}{NC~$\pi^0$} & \multicolumn{1}{l}{$\Delta \rightarrow N\gamma$} & \multicolumn{1}{l}{$\nu_{\mu}$~CC} & \multicolumn{1}{l}{Dirt} & \multicolumn{1}{l}{Cosmic} & Signal               & Total \\ \hline
 \textbf{0.20-0.35}    & 45                          & 16                          & 6                           & 3                        & 56                         & 0                          & 10                         & 47                       & 7                          & 13                   & 189   \\
@@ -297,7 +288,6 @@ Total                 & 593                         & 684                       
 \centering
 \small
 \caption{Background Rates, broken out by analysis bin and origin, for the \uboone experiment for 6.6e20 POT. The signal is from the Giunti {\em et al.} best fit point}
-\label{my-label}
 \begin{tabular}{r|cccccccccll}
 \multicolumn{1}{l|}{Bins [GeV]} & \multicolumn{1}{l}{$\mu\rightarrow\nu_e$} & \multicolumn{1}{l}{$K^{\pm}\rightarrow \nu_e$} & \multicolumn{1}{l}{$K^0 \rightarrow \nue$} & \multicolumn{1}{l}{$\nu + e^-$} & \multicolumn{1}{l}{NC~$\pi^0$} & \multicolumn{1}{l}{$\Delta \rightarrow N\gamma$} & \multicolumn{1}{l}{$\nu_{\mu}$~CC} & \multicolumn{1}{l}{Dirt} & \multicolumn{1}{l}{Cosmic} & Signal & Total \\ \hline
 \textbf{0.20-0.35}        & 21                          & 10                          & 4                           & 3                        & 29                         & 0                          & 7                          & 34                       & 6                          & 2      & 113   \\
@@ -320,7 +310,6 @@ Total                     & 331                         & 388                   
 \centering
 \small
 \caption{Background Rates, broken out by analysis bin and origin, for the \icarus experiment for 6.6e20 POT. The signal is from the Giunti {\em et al.} best fit point}
-\label{my-label}
 \begin{tabular}{r|cccccccccll}
 \multicolumn{1}{l|}{Bins [Gev]} & \multicolumn{1}{l}{$\mu\rightarrow\nu_e$} & \multicolumn{1}{l}{$K^{\pm}\rightarrow \nu_e$} & \multicolumn{1}{l}{$K^0 \rightarrow \nue$} & \multicolumn{1}{l}{$\nu + e^-$} & \multicolumn{1}{l}{NC~$\pi^0$} & \multicolumn{1}{l}{$\Delta \rightarrow N\gamma$} & \multicolumn{1}{l}{$\nu_{\mu}$~CC} & \multicolumn{1}{l}{Dirt} & \multicolumn{1}{l}{Cosmic} & Signal & Total \\ \hline
 \textbf{0.20-0.35}        & 585                         & 151                         & 59                          & 59                       & 504                        & 1                          & 112                        & 23                       & 3                          & 62     & 1496  \\
