@@ -51,7 +51,7 @@ The two most successful metrics in separating tracks and showers for well cluste
 \centering
 \includegraphics[width=0.45\textwidth]{emshower_figures/modhitdensarea_proper.pdf}
 \includegraphics[width=0.45\textwidth]{emshower_figures/princcomp_area_proper.pdf}
-\caption{\label{fig:separation} ``Modified hit density'' and Principal Component Eigenvalue calculated for single electron showers(red) and muon tracks (blue).}
+\caption[Track/Shower Discrimination Metrics]{\label{fig:separation} ``Modified hit density'' and Principal Component Eigenvalue calculated for single electron showers(red) and muon tracks (blue).}
 \end{figure}
 
 An additional requirement is that a shower-like cluster in on plane should correspond to an analogous cluster in the second plane. This removed spurious tags due to wire noise or other sources.
@@ -80,13 +80,13 @@ For a sample of electrons, this analysis targeted electron neutrino events as th
 \begin{figure}[ht]
 \centering
 \includegraphics[width=\textwidth]{emshower_figures/ElectronEvents.pdf}
-\caption{\label{fig:electrons} Examples of $\nu_e \rightarrow e$~CC events.  The top row are the induction views and the bottom row are the collection views of two events. In both cases, there is no observable gap between the shower and the hadronic activity.In the (bottom) collection planes, there is a block of 5 wires that are inactive due to a bad electronics connection in the detector.}
+\caption[Electron Candidate Events in \argoneut]{\label{fig:electrons} Examples of $\nu_e \rightarrow e$~CC events.  The top row are the induction views and the bottom row are the collection views of two events. In both cases, there is no observable gap between the shower and the hadronic activity.In the (bottom) collection planes, there is a block of 5 wires that are inactive due to a bad electronics connection in the detector.}
 \end{figure}
 
 
 \section{Reconstructing Electromagnetic Showers in \lartpcs}
 
-To reconstruct electromagnetic showers in \lartpcs, a procedure described in Section~\ref{sec:lartpc_reconstruction} is applied.  In general, the raw data from the detector must be deconvolved to mitigate noise sources, and a peak finding algorithm is applied to the signal from each wire to find charge depositions, known as hits. The integral of the ADC count in each hit is used to calculate the charge $dQ$ using an (ADC$\times$Timetick)/Coulomb conversion constant.  The constants are obtained using the procedure described in \ref{subsec:lartpc_calibration}, which follows the procedure in \cite{TGMuon}.
+To reconstruct electromagnetic showers in \lartpcs, a procedure described in Section~\ref{sec:lartpc_reconstruction} is applied.  In general, the raw data from the detector must be deconvolved to mitigate noise sources, and a peak finding algorithm is applied to the signal from each wire to find charge depositions, known as hits. The integral of the ADC count in each hit is used to calculate the charge $dQ$ using an (ADC$\times$Timetick)/Coulomb conversion constant.  The constants are obtained using the procedure described in \ref{subsec:lartpc_calibration}, which follows the procedure in \cite{Anderson:2012mra}.
 
 The most difficult step in the reconstruction of electromagnetic showers, by far, is deciding which hits in an interaction are associated with the shower. For the events selected to demonstrate electon/gamma separation, the hits were assembled into appropriate clusters manually.
 
@@ -98,7 +98,7 @@ In order to measure dE/dx correctly, it is extremely important to precisely dete
 \begin{figure}[h!]
   \centering
   \includegraphics[width=\textwidth]{emshower_figures/iterative_start_point.pdf}
-  \caption{Diagram of the 3D start point algorithm.}
+  \caption[Diagram of the 3D start point algorithm.]{Diagram of the 3D start point algorithm.}
   \label{fig:iterative_start_point}
 \end{figure}
 
@@ -109,7 +109,7 @@ An initial guess, the point in black, is made for the start point based on the 2
 \begin{figure}[h!]
   \centering
   \includegraphics[width=\textwidth]{emshower_figures/iterative_start_dir.pdf}
-  \caption{Diagram of the 3D start direction algorithm.}
+  \caption[Diagram of the 3D start direction algorithm.]{Diagram of the 3D start direction algorithm.}
   \label{fig:iterative_start_dir}
 \end{figure}
 
@@ -140,7 +140,7 @@ Here, $\theta$ represents the polar angle in 3D with respect to the z axis (appr
    \includegraphics[height=2in]{emshower_figures/xy_projection.png}
    \includegraphics[height=2in]{emshower_figures/xz_projection.png}
    \includegraphics[height=2in]{emshower_figures/theta_distribution.png}
-   \caption{The vertexes of electron candidates (blue circles) and gamma candidates (red plus signs) in the Z-Y, Z-X, and X-Y projections, as well as the distribution of the polar angle of events with respect to the Z direction (approximately the beam direction).  The electron sample is very forward going, and the gamma sample has a wider distribution of angles. }
+   \caption[Vertex Distributions of Electromagnetic Showers.]{The vertexes of electron candidates (blue circles) and gamma candidates (red plus signs) in the Z-Y, Z-X, and X-Y projections, as well as the distribution of the polar angle of events with respect to the Z direction (approximately the beam direction).  The electron sample is very forward going, and the gamma sample has a wider distribution of angles. }
    \label{fig:geomety_dists}
  \end{figure} 
 
@@ -148,7 +148,7 @@ Here, $\theta$ represents the polar angle in 3D with respect to the z axis (appr
    
    \includegraphics[width=0.45\textwidth]{emshower_figures/3d_resolution.png}
    \includegraphics[width=0.45\textwidth]{emshower_figures/AngularResolution.png}
-   \caption{The calculated resolution of the 3D start point (left) and angular resolution (right) for single electromagnetic showers generated with the LArSoft package.  The angular resolution for gammas is slightly worse than for electrons because the gamma sample is at lower energy, and hence has fewer depositions (hits) in the TPC.}
+   \caption[Resolution of Electromagnetic Showers]{The calculated resolution of the 3D start point (left) and angular resolution (right) for single electromagnetic showers generated with the LArSoft package.  The angular resolution for gammas is slightly worse than for electrons because the gamma sample is at lower energy, and hence has fewer depositions (hits) in the TPC.}
    \label{fig:shower_reco}
  \end{figure} 
 
@@ -163,7 +163,7 @@ For the calorimetric separation of electrons and gamma to succeed, the dE/dx met
 \begin{figure}[p]
   \centering
   \includegraphics[width=0.5\textwidth]{emshower_figures/effective_pitch.png}
-  \caption{The effective pitch for the electron and gamma samples used in this analysis.  The effective pitch is a measure of how far a particle travels between depositions of charge recorded on adjacent wires.  The effective pitch is at least the wire spacing, which is 0.4 cm in ArgoNeuT.  The gamma distribution shows a slightly higher effective pitch, which is expected from Figure \ref{fig:geomety_dists} showing that the gammas are at slightly higher angles to the wire planes than the electron sample.}
+  \caption[Effective Pitch]{The effective pitch for the electron and gamma samples used in this analysis.  The effective pitch is a measure of how far a particle travels between depositions of charge recorded on adjacent wires.  The effective pitch is at least the wire spacing, which is 0.4 cm in ArgoNeuT.  The gamma distribution shows a slightly higher effective pitch, which is expected from Figure \ref{fig:geomety_dists} showing that the gammas are at slightly higher angles to the wire planes than the electron sample.}
   \label{fig:effective_pitch}
 \end{figure}
 
@@ -172,7 +172,7 @@ An valuable cross-check of this sample of events is the distribution of every dE
 \begin{figure}[p]
   \centering
   \includegraphics[width=0.8\textwidth]{emshower_figures/photons_landau.png}
-  \caption{Distribution of dE/dx for all hits at the start of the shower for the gamma sample.  Unlike the aggregate measure of dE/dx, this plot uses the Modified Box Model \cite{Bruce}.}
+  \caption[Photon Landau Distribution]{Distribution of dE/dx for all hits at the start of the shower for the gamma sample.  Unlike the aggregate measure of dE/dx, this plot uses the Modified Box Model \cite{Acciarri:2013met}.}
   \label{fig:photon_landau}
  \end{figure} 
 
@@ -181,7 +181,7 @@ An valuable cross-check of this sample of events is the distribution of every dE
    
   \includegraphics[width=0.8\textwidth]{emshower_figures/mcLandaus.png}
   \includegraphics[width=0.8\textwidth]{emshower_figures/fitted_electron_distribution.png}
-  \caption{(Top) Normalized Monte Carlo distribution of dE/dx for all hits in a pure electron and pure gamma sample.  (Bottom) All dE/dx hits from the electron candidate sample, compared to a sample of Monte Carlo comprised of 80\% electrons and 20\% gamma.}
+  \caption[Estimate of Photon Contamination in Electron Sample]{(Top) Normalized Monte Carlo distribution of dE/dx for all hits in a pure electron and pure gamma sample.  (Bottom) All dE/dx hits from the electron candidate sample, compared to a sample of Monte Carlo comprised of 80\% electrons and 20\% gamma.}
   \label{fig:electron_landau}
 \end{figure} 
 
@@ -192,7 +192,7 @@ An valuable cross-check of this sample of events is the distribution of every dE
   \centering
   \includegraphics[width=\textwidth]{emshower_figures/fitted_electron_landau.png}
   \includegraphics[width=\textwidth]{emshower_figures/mpv_electrons.pdf}
-  \caption{(Left) Background subtracted distribution of the hits at the start of the electron showers, with a fitted Gaussian-convolved Landau .  (Right) Most probable value of ionization as a function of momentum for particles traversing liquid argon.  For electrons above 100 MeV/c, as this sample is, the theoretical expectation of the most probable ionization is 1.77 MeV/cm.  This is in good agreement with the fitted value of 1.74 MeV/cm.}
+  \caption[Electron Landau Distribution]{(Left) Background subtracted distribution of the hits at the start of the electron showers, with a fitted Gaussian-convolved Landau .  (Right) Most probable value of ionization as a function of momentum for particles traversing liquid argon.  For electrons above 100 MeV/c, as this sample is, the theoretical expectation of the most probable ionization is 1.77 MeV/cm.  This is in good agreement with the fitted value of 1.74 MeV/cm.}
   \label{fig:mpv_electrons}
  \end{figure} 
 
@@ -221,12 +221,12 @@ As a final verification of the reconstruction, the data distribution for the ele
 \begin{figure}[p]
   \centering
   \includegraphics[width=0.95\textwidth]{emshower_figures/median_dedx.png}
-  \caption{The dE/dx distribution for electrons (blue) and gammas (red).  The solid blue curve, representing the simulation of electron dE/dx, includes a 20\% contaimination of gammas consistent with the results from Figure~\ref{fig:electron_landau}.}
+  \caption[Calorimetric dE/dx Distribution]{The dE/dx distribution for electrons (blue) and gammas (red).  The solid blue curve, representing the simulation of electron dE/dx, includes a 20\% contaimination of gammas consistent with the results from Figure~\ref{fig:electron_landau}.}
   \label{fig:dEdx}
 \end{figure}
 
 
-Figure~\ref{fig:dEdx} represents the first demonstration of calorimetric separation of electrons and gammas in a LArTPC using neutrino events.  Despite the low statistics of the ArgoNeuT experiment, the electron and gamma separation using calorimetry is clearly validated. When a cut is made at 2.9 MeV/cm the efficiency of selecting electron candidate events in data is 76 $\pm$ 7\% with a 7 $\pm$ 2\% contamination from the gamma sample. Here, the uncertainties on the efficiency are estimated with the Feldman-Cousins method \cite{FeldmanCousins} and are statistical only.  It must be noted, however, that the sample of electron candidates in this figure is not background subtracted.  The efficiency to select electrons with the same cut at 2.9 MeV/cm, estimated with the Monte Carlo, is 91\%.  This is consistent with the above measurement that 20 $\pm$ 15\% of the electron candidate sample, selected by topology only, is in fact gammas.
+Figure~\ref{fig:dEdx} represents the first demonstration of calorimetric separation of electrons and gammas in a LArTPC using neutrino events.  Despite the low statistics of the ArgoNeuT experiment, the electron and gamma separation using calorimetry is clearly validated. When a cut is made at 2.9 MeV/cm the efficiency of selecting electron candidate events in data is 76 $\pm$ 7\% with a 7 $\pm$ 2\% contamination from the gamma sample. Here, the uncertainties on the efficiency are estimated with the Feldman-Cousins method \cite{Feldman:1997qc} and are statistical only.  It must be noted, however, that the sample of electron candidates in this figure is not background subtracted.  The efficiency to select electrons with the same cut at 2.9 MeV/cm, estimated with the Monte Carlo, is 91\%.  This is consistent with the above measurement that 20 $\pm$ 15\% of the electron candidate sample, selected by topology only, is in fact gammas.
 
 
 The value of the cut used above, 2.9 MeV/cm, is also somewhat arbitrary and must be determined uniquely for each analysis.  In this case, it is selected as the mid point between the two peaks of the distribution.  However, in an analysis targeting electron neutrinos the absolute normalization of the electron and gamma shower populations is crucial.  The desired purity of electrons must be balanced with the need to keep sufficient electron statistics.  An aggressive dE/dx cut, at 2.5 MeV/cm, effectively rejects gammas but also can remove a significant amount of electrons (removes 30\% of electron candidate events in data, 13\% of Monte Carlo electrons).  

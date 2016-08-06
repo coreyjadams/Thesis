@@ -519,30 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "lartpc.tex",
-			"settings":
-			{
-				"buffer_size": 22032,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "argo_electrons.tex",
-			"settings":
-			{
-				"buffer_size": 390,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "beams.tex",
-			"settings":
-			{
-				"buffer_size": 12110,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/Makefile/Make.sublime-build",
 	"command_palette":
@@ -550,6 +526,14 @@
 		"height": 47.0,
 		"selected_items":
 		[
+			[
+				"fig",
+				"Snippet: Figure"
+			],
+			[
+				"chap",
+				"Snippet: Chapter"
+			],
 			[
 				"figure",
 				"Snippet: Figure"
@@ -668,10 +652,6 @@
 			],
 			[
 				"figr",
-				"Snippet: Figure"
-			],
-			[
-				"fig",
 				"Snippet: Figure"
 			],
 			[
@@ -1057,10 +1037,6 @@
 			[
 				"pack remo",
 				"Package Control: Remove Package"
-			],
-			[
-				"packai",
-				"Package Control: Install Package"
 			]
 		],
 		"width": 449.0
@@ -1080,7 +1056,18 @@
 	},
 	"file_history":
 	[
+		"/Users/Corey/Dropbox/Thesis/lartpc.tex",
+		"/Users/Corey/Dropbox/Thesis/corey_adams_thesis.tex",
+		"/Users/Corey/Dropbox/Thesis/conclusion.tex",
+		"/Users/Corey/Dropbox/Thesis/references.bib",
+		"/Users/Corey/Dropbox/Thesis/emshowers.tex",
+		"/Users/Corey/Dropbox/Thesis/sbn.tex",
+		"/Users/Corey/Dropbox/Thesis/systematics.tex",
+		"/Users/Corey/Dropbox/Thesis/beams.tex",
+		"/Users/Corey/Dropbox/Thesis/nue_xsec.tex",
 		"/Users/Corey/Dropbox/Thesis/preamble.tex",
+		"/Users/Corey/Dropbox/Thesis/argo_electrons.tex",
+		"/Users/Corey/Dropbox/Thesis/electrons.tex",
 		"/home/cadams/Dropbox/Thesis/references.bib",
 		"/home/cadams/Dropbox/Thesis/electrons.tex",
 		"/home/cadams/Dropbox/Thesis/lartpc.tex",
@@ -1196,18 +1183,7 @@
 		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawTrack.h",
 		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawTrack.cxx",
 		"/data_linux/products/gallery-buildcfg-1.02.01",
-		"/data_linux/products/gallery-1.02.01-source_MANIFEST.txt",
-		"/data_linux/products/buildFW",
-		"/home/cadams/larlite/UserDev/DisplayTool/RawViewer/LinkDef.h",
-		"/home/cadams/larlite/UserDev/DisplayTool/RawViewer/ChirpFilter.h",
-		"/home/cadams/larlite/core/LArUtil/Geometry.h",
-		"/home/cadams/larlite/core/LArUtil/Geometry.cxx",
-		"/home/cadams/larlite/core/Base/GeoTypes.h",
-		"/home/cadams/larlite/UserDev/Commissioning/CorrelatedNoiseScripts/correlationAna.py",
-		"/data_linux/products/binaries/setup",
-		"/data_linux/products/binaries/ups_OVERRIDE",
-		"/data_linux/products/binaries/ups/v5_2_0/Linux64bit+4.4-2.23/bin/ups",
-		"/home/cadams/larlite/UserDev/argoneut_electrons/analysis/MCShowerAna.cxx"
+		"/data_linux/products/gallery-1.02.01-source_MANIFEST.txt"
 	],
 	"find":
 	{
@@ -1225,6 +1201,43 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"2012vc",
+			"daya_bay",
+			"2011gz",
+			"TGMuon",
+			"FeldmanCousins",
+			"Kopp",
+			"2013met",
+			"inconsis",
+			"sbn_event_rates_no_signal",
+			"mb_stacked_rates",
+			"icecube",
+			"argoneut_numu",
+			"argoneut_antinumu",
+			"Acciarri",
+			"Anderson",
+			"residual_range",
+			"mpv_muons",
+			"anderson",
+			"geant",
+			"residual_range",
+			"coll_mpv_muons",
+			"textwidth",
+			"=\\",
+			"width",
+			"column",
+			"figures",
+			"column",
+			"figures",
+			"column",
+			"figures",
+			"columnwidth",
+			"}\n",
+			"gamma",
+			"figures",
+			"columnwidth",
+			"lartpc_reconstruction",
+			"figures",
 			"signal_shaping",
 			"argoneut_projection",
 			"argoneut_projections",
@@ -1315,44 +1328,7 @@
 			"reader",
 			"ana_processor",
 			"reader",
-			"image_process",
-			"ana_processor",
-			"e_",
-			"electron",
-			"Electron",
-			"electrons",
-			"e_",
-			"eff_mean",
-			"eff_upper",
-			"eff_lower",
-			"electron_eff",
-			"electron_eff_stat_err",
-			"electron_eff",
-			"6827",
-			"confidence_interval",
-			"tot_ctr",
-			"total_ctr",
-			"beam_ctr",
-			"this_ctr",
-			"electrons",
-			"CUDA_DIR",
-			"//",
-			"statuses",
-			"find_correlated_noise_errors",
-			"description",
-			"libub_noise_filter_NoiseFilter",
-			"UbooneNoiseFilter",
-			"get_pedestal_info",
-			"is_chirping",
-			"waveform2",
-			"waveform1",
-			";",
-			"_this_block_data",
-			"_cross_data",
-			"windows_to_investigate",
-			"windowsize",
-			"windowsize[plane]",
-			"rms_minimum"
+			"image_process"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1370,367 +1346,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "lartpc.tex",
-					"settings":
-					{
-						"buffer_size": 22032,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"incomplete_sync": null,
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"remote_loading": false,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": true,
-							"sublimelinter_gutter_marks_theme": "simple",
-							"sublimelinter_mark_style": "none",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"synced": false,
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 182.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "argo_electrons.tex",
-					"settings":
-					{
-						"buffer_size": 390,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								95,
-								82
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"incomplete_sync": null,
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"remote_loading": false,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": true,
-							"sublimelinter_gutter_marks_theme": "simple",
-							"sublimelinter_mark_style": "none",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"synced": false,
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "beams.tex",
-					"settings":
-					{
-						"buffer_size": 12110,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"incomplete_sync": null,
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"remote_loading": false,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": true,
-							"sublimelinter_gutter_marks_theme": "simple",
-							"sublimelinter_mark_style": "none",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"synced": false,
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -2314,6 +1931,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 303.0,
+	"side_bar_width": 186.0,
 	"status_bar_visible": true
 }
