@@ -186,7 +186,7 @@ As a particle loses energy, it's amount of ionization decreases until it reaches
 
 \begin{figure}[tb]
   \centering
-  \includegraphics[]{lartpc_figures/residual_range.pdf}
+  \includegraphics[width=\textwidth]{lartpc_figures/residual_range.pdf}
   \caption[Residual Range]{dE/dx versus residual range of various particles in liquid Argon.  The values of dE/dx vs. Residual range for a particle observed in the detector can be used to identify the particle's type.}
   \label{fig:residual_range}
 \end{figure}
@@ -199,7 +199,7 @@ Since LArTPCs also offer bubble chamber quality images, the topology of an event
 
 \argoneut is fortunate in that it was located directly upstream of the MINOS near detector, which is a magnetized tracking detector \cite{MINOS}.  This gives \argoneut a distinct trait that no other LArTPC has had: muon sign selection for muons produced in \argoneut that enter the MINOS near detector.
 
-\begin{figure}[h]
+\begin{figure}[htb]
   \centering
   \includegraphics[width=\textwidth]{lartpc_figures/minos.pdf}
   \caption[\argoneut and MINOS]{An event display depicting the \argoneut experiment and the MINOS near detector. \argoneut is the small box in the foreground.  The tracks represent TPC data of \numu CC interactions that were successfully tracked and matched into the MINOS near detector.  Figure from \cite{Anderson:2012vc}.}
@@ -218,7 +218,7 @@ For the analyses presented in this thesis, MINOS is not used as a muon spectrome
 
 \uboone is the successor to \MB \cite{miniboone} (See Section~\ref{sec:miniboone}), designed to confirm or rule out the \MB ``Low Energy Excess,'' described further in Chapter~\ref{chp:sbn}.  \uboone is large TPC, 235 $ (w) \times $ 250 $ (h) \times $ 10.95 $ (l) $ m$^3$, or about 87 tons of Liquid Argon - see Figure~\ref{fig:uboone_det}.  The most notable differences between \argoneut and \uboone are the third instrumented wire plane and the PMT system for light collection.  Additionally, the wire spacing in \uboone is 3~mm, decreased from 4~mm in \argoneut.
 
-\begin{figure}[h]
+\begin{figure}[htb]
   \centering
   \includegraphics[width=0.5\textwidth]{lartpc_figures/uboone_tpc.jpg}
   \caption[\uboone Detector Design]{An engineering style image of the \uboone detector as it was designed.  The beam enters from the bottom right side of the detector, along the longest axis.  The high voltage cathode is on the right, back of the detector while the sense wires are on the exposed left side where the cryostat has been cut away.}
@@ -228,30 +228,82 @@ For the analyses presented in this thesis, MINOS is not used as a muon spectrome
 \uboone's main physics goal, the resolution of the Low Energy Excess, is in addition to a host of other physics and R\&D tasks.  On the physics side, \uboone will provide exceptional data for studying neutrino interactions and particularly nuclear physics.  \uboone has the finest 3D resolution of any calorimetric neutrino detector to date, allowing it to measure the outgoing hadrons (protons, pions, neutrons, kaons, etc.) from a neutrino interaction.  An image of the \uboone collection plane, showing a \numu candidate event with a proton and $\pi^0$, showcases \uboone's precision imaging.  \uboone expects high statistics in many interesting neutrino cross section channels, as shown in Table~\ref{tab:uboone_xsec}.  The cross section measurements of \uboone (and SBND and ICARUS) will be a major legacy of the Fermilab \lartpcs especially in the DUNE\cite{DUNE} era.
 
 
-\begin{figure}[h]
+\begin{figure}[htb]
   \centering
   \includegraphics[width=0.75\textwidth]{lartpc_figures/run3469_subrun574_event28734_col_small.png}
   \caption[\uboone Run 3469, Event 28734]{}
   \label{fig:uboone_r3469_e28734}
 \end{figure}
 
+TODO: uboone xsec table
+
+\uboone also introduces a number of important R\&D acheivements to the field of \lartpcs.  It is the first large scale \lartpc to acheive high purity without evacuating the cryostat.  Instead, the TPC used a purge of high purity argon gas to push impurities out of the cryostat before colling the cryostat and filling with liquid argon.   In this way, critical impurities were removed from the detector - see Figure~\ref{fig:o2purge}.  Additionally, \uboone employs cold readout electronics immersed in the liquid argon.  As seen in Figure~\ref{fig:noise_vs_temp}, the average noise level of the readout wires decreased dramatically during the cooldown of the \uboone cryostat.
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[width=0.75\textwidth]{lartpc_figures/O2Purge.pdf}
+  \caption[\uboone O2 Contamination]{The oxygen contamination of the gaseous argon while purging air. The sensor for this oxygen concentration was turned on after 10:00 AM April 21, 2015, and it reached its sensitivity limit during the evening of April 23, 2015. \cite{uboone_pub_1003}}
+  \label{fig:o2purge}
+\end{figure}
+
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[width=0.45\textwidth]{lartpc_figures/noise_vs_temp.png}
+  \includegraphics[width=0.45\textwidth]{lartpc_figures/noise_vs_time.png}
+  \caption[\uboone Noise Temperature Dependence]{Noise measured on collection plane wires as a function of temperature (left) and time (right). Each data point corresponds to the measured noise level for a given run. The times shown are the times at which each run was taken. For each run, a list of channels was selected such that 1) it was a collection plane wire, 2) it had noise values within a certain range. The average and standard deviation of the distribution of RMS noise values for channels passing the cut was calculated. Data points represent the average RMS, and error-bars show the standard deviation of these distributions. Error bars are meant to show how the change in temperature affects noise levels compared to the intrinsic variability of noise in the detector due to channel-to-channel gain variations. ENC values are measured in number of electrons by taking the ADC noise measured at a 14 mV/fC ASIC gain and multiplying it by [ $1.6E-4 (fC/e-) \times 1.935 (ADC/mV) \times 14 (mV/fC)]^{-1}$. Noise values drop with the gasseous argon temperature. This is expected behavior due mainly to the properties of the CMOS ASIC chips. The red vertical line in this plot represents the time at which the LAr filling-process began. After this point noise levels begin to rise.  Sporadicity of the data-points is due to irregular run-taking patterns in the very early weeks of the commissioning phase. Noise levels fluctuate slightly upwards in early and mid June. This is because the cryostat cooling was temporarily interrupted for a brief period, allowing the temperature, and thus the noise values, to rise. \cite{uboone_pub_1001} }
+  \label{fig:noise_vs_temp}
+\end{figure}
+
+Another significant improvement that \uboone brings that \argoneut did not have is the addition of a light collection system.  ICARUS, while running in Gran Sasso lab in Italy, also had a sophisticated light collection system.  However, the system is essential for detectors like \uboone running on the surface and not deep underground, such as ICARUS.  The \uboone light collection is composed of 8 inch Photo-Multiplier Tubes (PMTs) arrayed behind the wire planes.  Argon scintillates at a vacuum ultraviolet wavelength (to which liquid argon is transparent), but the PMTs detect visible light.  So, each PMT has a wavelength shifting plate to convert the vacuum ultra violet to visible light detectable by the PMTs.
+
+On the surface, \uboone is exposed to a high flux of cosmic rays, averaging ~10 cosmic ray interactions in the detector each readout window of 4.8 ms.  On the other hand, the detector is exposed to the neutrino beam for just several $\mu$s.  Though the wire information can not be used to identify precisely when an interaction occured in the TPC, the PMT information detects flashes of light with each particle interaction and can localize interactions in a much tighter region of time.  This provides two advantages: first, if the time of an interaction is known (particularly cosmic interactions), the corrections that must be applied as a function of drift distance (such as lifetime corrections) can be accurately applied.  Second, and more important for a successful run of the detector, the PMT system provides a triggering system for the beam interactions, as shown in Figure~\ref{fig:pmt_timing}.  A clear excess of PMT flashes coincident with the expect neutrino beam, for both BNB and NuMI beams, can be seen.  By only saving events to disk when there is a PMT flash in this region of time, \uboone is able to dramatically reduce it's consumption of network bandwidth and disk storage.
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[width=0.45\textwidth]{lartpc_figures/BNB_pmt_timing.pdf}
+  \includegraphics[width=0.45\textwidth]{lartpc_figures/NUMI_pmt_timing.pdf}
+  \caption[\uboone O2 Contamination]{The measured distribution of flash times (requiring flashes greater than 50PE) with respect to the trigger time for BNB-triggered events (left) and NuMI-triggered events (right), shown as a ratio to the expected cosmic rate from off-beam data. The blue band denoting the cosmic rate was centered at one, with a width corresponding to the measured uncertainty in the cosmic rate. A clear excess can be seen due to neutrinos between 3 and 5 $\mu$s (for BNB) 6 and 15 $\mu$s (for NuMI) after the trigger. This is where the neutrinos were expected based on the Resistive Wall Monitor signal arrival time. A total of 1.92E6 BNB (left) and 3.67E5 NuMI (right) triggered events (unbiased trigger) were used to produce this plot. \cite{uboone_pub_1010}}
+  \label{fig:pmt_timing}
+\end{figure}
+
+\uboone began taking neutrino data in the fall of 2015, and collected 3.3E20 POT (approximately half of its data set) by the fall of 2016.  In the near future, \uboone will determine the origin of \MB's low energy excess.  \uboone will lead the Fermilab Short Baseline Program forward as the first running \lartpc on the Booster Neutrino Beam, which is an exciting step forward in the U.S. \lartpc program.
 
 \subsection{\label{sec:future_tpcs} Future LArTPCs}
 
-
-% \uboone is the largest \lartpc in the United States, and the second largest in the world.  Originally proposed in 2007, it was designed to confirm or rule out the \MB low energy excess.
-
-% Details of the \uboone detector.  PMT systems, low energy excess search.
-
-% \subsection{Future \lartpcs}
+As mentioned above, \uboone is the newest \lartpc to the Fermilab Short Baseline Program, but there are two other \lartpcs planned to begin operation within several years.  In this brief section, I will give a few selected details of these other two detectors as they are both critical components of the SBN program and essential to resolving short baseline neutrino anamolies (see Chapter~\ref{chp:sbn}).
 
 \subsubsection{\label{subsec:sbnd} SBND}
+
+Along the Booster Neutrino Beam, SBND will be the \lartpc closest to the neutrino source.  It is currently under design and construction, with final assembly taking place in 2017 and 2018.  Due to the proximity of SBND to the BNB target, SBND will have the highest statistics measurements of neutrino interactions of any \lartpc to date.  With over 1 million events per year, SBND records statistics equivalent to the \uboone data set in just one month (and it matches the statistics of \argoneut in just one day!).  With this expected event rate, SBND can probe rare neutrino interactions with high statistics.  The high event rate also allows precision measurements of final state topolgies of neutrino interactions, which in turn is essential for tuning neutrino interaction models for DUNE.
+
+TODO: SBND event rates table.
+
+Like, \uboone, SBND will feature a light collection system to trigger neutrino events and accurately determine cosmic timing.  Unlike \uboone, SBND is a dual drift TPC with the high voltage cathode in the middle of the TPC, and two sets of read out wires on each side - see Figure~\ref{fig:sbnd_det}.  Like \uboone, SBND is driving forward the U.S. \lartpc program with important R\&D tasks, including the manufacture of Cathode Plane Assemblies and Anoda Plane Assemblies.
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[width=0.45\textwidth]{lartpc_figures/sbnd_cryostat.pdf}
+  \includegraphics[width=0.45\textwidth]{lartpc_figures/sbnd_tpc.pdf}
+  \caption[\sbnd Design]{The SBND TPC (left) and cryostat design (right).}
+  \label{fig:sbnd_det}
+\end{figure}
 
 % Details of SBND, PMTS, proximity to beam, flux window, etc.
 
 \subsubsection{\label{subsec:sbnd} \icarus}
 
-% More of the same
+ICARUS is an Italian \lartpc, and the first \lartpc in a neutrino beam.  The detector, known as T600, is approximately 476 tons of active argon divided into two modules (known as T300 each).  The two modules were deployed together at Gran Sasso lab in Italy, underground, where they were exposed to CERN's CNGS neutrino beam.  ICARUS has been a pioneed of \lartpc technology.
 
-\subsubsection{\label{subsec:dune} DUNE}
+After the CNGS beam was decommissioned, it was decided to transport the ICARUS detector from Italy to Fermilab for use as the thrid detector in the SBN Program.  ICARUS is significantly more massive than both \uboone and SBND, and so it offers the chance to record oscillation spectra from anomalous neutrino oscillations at a different L/E than \uboone, with high statistics.  Currently, ICARUS is at CERN where it is being refurbished and upgraded, before it is shipped to Fermilab for installation.
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[width=0.45\textwidth]{lartpc_figures/icarus.jpg}
+  \includegraphics[width=0.45\textwidth]{lartpc_figures/icarus_real.png}
+  \caption[ICARUS T600]{The design of the ICARUS T600 detector (left) and the realization of the detector underground at Gran Sasso lab in Italy (right).}
+  \label{fig:sbnd_det}
+\end{figure}
+
+
 
