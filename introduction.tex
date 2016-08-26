@@ -1,8 +1,36 @@
 
-\chapter{Introduction}
+\chapter{Neutrino Physics}
 
 
-Since its original inception in the 1930s, neutrino physics has developed into a robust field of high energy physics.  The neutrino was theorized in the 1930s by Wolfgang Pauli \cite{Pauli}, and first detected in 1956 by Clyde Cowan and Frederick Reines \cite{cowanReines}.   Pauli originally proposed only one type of neutrino, but not long after his prediction (and before the experimental evidence that confirmed it) other types of neutrinos were postulated.   Since then, 2 other types of neutrinos have been discovered, namely the muon and tau neutrinos \cite{muon_neutrino},\cite{tau_neutrino}.  Conventionally, neutrinos are symbolized as $\nu_e, \nu_\mu,$ and $\nu_\tau$ corresponding to the 3 flavors of charged leptons.  These three flavors of neutrinos play an important role in the fundamental theory of particles known as the Standard Model of particle physics.
+Since its original inception in the 1930s, neutrino physics has developed into a robust field of high energy physics.  The neutrino was theorized in the 1930s by Wolfgang Pauli, rigorously incorporated into the theory of beta decay by Enrico Fermi \cite{Fermi}, and first detected in 1956 by Clyde Cowan and Frederick Reines \cite{cowanReines}.
+
+Originally, the neutrino was postulated to preserve conservation of momentum in the theory of beta decay, where a nucleon such as a neutron is converted to a proton by emitting an electron and a neutrino:
+\begin{equation}
+\label{beta_decay}
+n \rightarrow p^+ + e^- + \nuebar
+\end{equation}
+
+The reaction above is actually an example of a weak interaction happening at the quark level, where one of the neutron's down quarks converts to an up quark through the emission of a $W^-$.  Unfortunately, the neutrino is a very weakly interacting particle, so the direct observation of both the electron and the neutrino from a $\beta$ decay reaction was, and still is, impossible.  
+
+For the detection of the neutrino, Cowan and Reines used a very similar reaction to beta decay, but instead of producing a neutrino this reaction absorbs a neutrino and emits a neutron and a positron:
+\begin{equation}
+\label{inverse_beta_decay}
+p^+  + \nuebar \rightarrow e^- + n 
+\end{equation}
+
+Unlike neutrinos, neutrons and positrons are relatively easy to observe, so Cowan and Reines simply exposed a large sample of protons to a very large blast of neutrinos.  Practically, this meant building a detector near a high intensity source of neutrinos, which they did: they exposed large tanks of water to the neutrino flux of a nuclear reactor at the Savannah River plant, in Georgia.  The neutrinos coming to their detector (actually, {\em anti}-neutrinos) interacted with the protons and produced a neutron and a positron.  The positron was observed after it interacted by annihilating with an electron in the water tank, producing a pair of gamma particles.  The neutron was detected by it's capture on Cadmium, which was doped in the tank.  The neutron capture also produces a gamma, but it is delayed from the positron's gamma pair.  Cowan and Reines ultimately observed about three neutrinos per hour in their detector.  Conclusively, when the reactor was shut off, they no longer observed neutrinos. 
+
+Since the first discovery of the neutrino, neutrinos and their interactions have played a central role in the development of the standard model of particle physics.  Pauli originally proposed only one neutrino, but not long after his prediction (and before the experimental evidence that confirmed it) other types of neutrinos were postulated.   Since then, 2 other types of neutrinos have been discovered, namely the muon and tau neutrinos \cite{muon_neutrino},\cite{tau_neutrino}. 
+
+Conventionally, neutrinos are symbolized as $\nu_e, \nu_\mu,$ and $\nu_\tau$ corresponding to the 3 flavors of charged leptons.  The charged current interactions of these neutrinos, by exchanging a $W^\pm$ boson, produces an outgoing charged lepton of the same flavor as the incoming neutrino: \nue produces electrons, \nuebar produces anti-electrons, \numu produces muons, etc, such as in Equations~\ref{beta_decay} and \ref{inverse_beta_decay}.  However, neutrinos can also interact via neutral currents, where the outgoing lepton is {\em not} charged.  Instead, the neutrino exchanges a neutral $Z^0$ boson with the target material.  The first observed neutral current interaction is shown in Figure~\ref{fig:gargamelle_nc} \cite{gargamelle_nc}.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.95\textwidth]{intro_figures/gargamelle_nc.png}
+  \caption[First Observed Neutral Current Neutrino Interaction]{The first observed neutral current neutrino interaction, seen by Gargamelle in 1973.}
+  \label{fig:gargamelle_nc}
+\end{figure}
+
 
 Neutrino physics was dramatically altered with the discovery of neutrino oscillations, described below, which opens the door to measurements of CP Violation and possible sterile states of neutrinos.  Since the 1960s until the early 2000s, the field of neutrino physics had an unresolved anomaly known as the Solar Neutrino Problem.  Models of the interactions in the interior of the sun made a definite prediction for the number of electron-flavor neutrinos arriving at Earth \cite{solar_neutrinos}, based on well grounded theories of stellar fuel burning.  On the other hand, experiments sensitive to neutrinos observed a significant deficit as compared to predictions \cite{davis}.  It wasn't until the GALLEX/SAGE \cite{gallex} \cite{sage} experiments, along with the Super-Kamiokande experiment \cite{superK} and the Sudbury Neutrino Observatory \cite{SNO}, that a solution to the Solar Neutrino Anomaly was found through the mechanism of oscillations: the sun did in fact produce the predicted rate of electron neutrinos, but experiments that were only sensitive to electron neutrinos were unable to detect the muon and tau neutrinos that were produced through the oscillation mechanism.  
 
@@ -12,45 +40,38 @@ One of the most exciting questions that may be addressed by studying neutrinos i
 
 Another intriguing avenue of discovery in neutrino physics is the resolution of short baseline anomalies, which may hint towards the existence of sterile neutrinos.  Experiments have been proposed to probe these anomalies \cite{SBN, prospect}, and other existing experiments have found ways to investigate short baseline anomalies already \cite{icecube, nova_steriles, minos_steriles, daya_bay_steriles}.
 
-Both for the case of CP violation and the resolution of short baseline anomalies, the detection and measurement of electron neutrinos crucial.  The most promising proposal to measure CP violation, DUNE \cite{dune}, will look for the appearance of electron neutrinos in a primarily muon neutrino beam.  The Fermilab Short Baseline Neutrino Program (SBN Program) \cite{SBN} will similarly be searching for electron neutrinos in a primarily muon neutrino neutrino beam.  The first stage of the SBN Program, \uboone, is already running in Fermilab's Booster Neutrino Beam searching for low energy electron neutrinos.
+Both for the case of CP violation and the resolution of short baseline anomalies, the detection and measurement of electron neutrinos crucial.  The most promising proposal to measure CP violation, DUNE \cite{DUNE}, will look for the appearance of electron neutrinos in a primarily muon neutrino beam.  The Fermilab Short Baseline Neutrino Program (SBN Program) \cite{SBN} will similarly be searching for electron neutrinos in a primarily muon neutrino neutrino beam.  The first stage of the SBN Program, \uboone, is already running in Fermilab's Booster Neutrino Beam searching for low energy electron neutrinos.
 
 Both DUNE and the SBN Program rely on high granularity detectors for their neutrino searches, the liquid argon time projection chamber (LArTPC, see Chapter~\ref{chp:lartpc}).  However, at the time of the publication of this thesis, only one \lartpc in the world has ever observed electron neutrinos.  The ICARUS experiment includes an observation of two electron neutrinos at approximately 20 GeV \cite{ICARUS_steriles}.  On the other hand, the energy of interest to both DUNE and SBN is significantly lower, in the range of 1 GeV.  Therefore, the work presented in this thesis is the first observation of low energy electron neutrinos in a liquid argon time projection chamber.   
 
-\section{Brief History of Neutrino Physics}
-
-\subsection{Neutrino Oscillations}
-
-
-\subsection{Next Steps in Neutrino Physics}
-
-\subsection{Electron Neutrinos as the flagship measurement of Precision Neutrino Measurements}
-
-\section{Goals and Motivations}
-
-\section{Achievements}
-
-
-
-
-
-
-% Around the time of the resolution of the solar neutrino anamoly, similar discrepancies arose in other experiments such as the Liquid Scintillator Neutrino Detector (LSND) at Los Alamos National Laboratory \cite{lsnd} and \MB at Fermi National Accelerator Laboratory (Fermilab) \cite{mbcomb}, as well as several anomalies in nuclear reactor neutrino experiments in more recent times.  Both LSND and \MB observe a possible excess of electron type neutrinos in beams of primarily muon type neutrinos.  This apparent shift of neutrino flavors could be explained by a new oscillation if a fourth, heavier type of neutrino exists.  Because the number of active flavor neutrinos has been constrained by collider experiments to be 3 \cite{lep}, it has been dubbed the ``Sterile Neutrino."
-
-% \MB, unfortunately, was not decisive a experiment and so the high mass neutrino oscillation possibility remains unresolved.  The \uboone experiment, which is currently under construction at Fermilab \cite{uboone}, is poised to resolve the \MB excess of electron neutrino like events within the next few years.  With its results, we hope the nature of the excess will be determined.  This thesis proposal is to perform important analyses for the \uboone experiment that will be built upon to resolve the \MB anomaly.
-
-% Paramount to the success of the \uboone measurement is a detailed understanding and reduction of the systematic errors in the experiment.  This proposal outlines a plan to reduce one of the systematics uncertainties, the electron neutrino cross section on argon, by making a direct measurement of the CC inclusive interaction cross section.  While this is useful for the oscillation analysis of \uboone, it will also be an important physics result in its own right.  There is no available data on \nue cross section in the range of energy of \uboone, at the order of 1 GeV.  Current models of the cross section are based on theory calculations that are cross checked with \numu data in the same energy range.  However, large uncertainties still exist - something this proposal will directly address.
-
-
-
-Origin, developments, historical experiments
 
 
 \section{Neutrino Sources}
-Discussion of other sources: Solar neutrinos, reactor neutrinos, source neutrinos, etc.
 
-Neutrinos are produced by many sources, both natural and artificial.  The largest source of neutrinos on earth, by far, is from the sun.
+Neutrinos, despite their weak interaction cross section and difficulty to observe, are actually incredibly common on Earth - more than a trillion neutrinos pass through an average sized human hand every second.  By far the most powerful nearby source of neutrinos is from the Sun, produced predominantly in proton-proton fusion.  But, more powerful (and more exotic) sources of neutrinos are known to exist, such as supernova \cite{supernova_1987a}.  Terrestrially, neutrinos are produced in the geothermal reactions of the Earth's core, and there is large flux of ``atmospheric'' neutrinos produced by the interactions of cosmic particles in the upper atmosphere.  As radioactive elements decay through weak interactions, radioactive material emits neutrinos as well - in fact this can be a quite useful source for calibration of neutrino experiments.
+
+There are also artificial sources of neutrinos, most commonly nuclear reactors.  Though they are less powerful than the Sun, neutrino experiments can get significantly closer to a nuclear reactor than to the Sun, and the local neutrino flux can be quite high.  The most sophisticated artificial source of neutrinos comes from the neutrinos beams produced at accelerator complexes such as Fermilab, CERN, and J-PARC.  Artificial neutrino beams can provide a high intensity source of neutrinos over a large range of energies, and offer many other benefits as well.  
+
+A detailed understanding of the source of neutrinos is vital to the success of every neutrino experiment, and Chapter~\ref{chp:beams} explores neutrino beams in more detail.
+
+\subsection{Solar Neutrinos}
+
+\subsection{Atmospheric Neutrinos}
+
+\subsection{Supernova Neutrinos}
+
+\subsection{Radioactive Sources}
+
+\subsection{Reactor Neutrinos}
+
+\subsection{Neutrino Beams}
 
 \section{Neutrino Oscillations}
+
+Neutrino oscillations are the foundation and the starting point for modern neutrino experiments exploring CP violation and short baseline anomalies, and can be used to probe the mass hierarchy of the neutrinos.  As such, they are fundamentally important to neutrino experiments, so a description of the theory of neutrino oscillations and the experimental evidence is presented here.
+
+\subsection{Neutrino Oscillations - Theory}
+
 
 Neutrinos, when produced through electro-weak interactions, are produced in flavor eigenstates.  To date, there are known to be three flavors of neutrinos: \nue, \numu, and \nutau.  Each of these neutrinos, as suggested by their name, corresponds to a charged lepton.  The conservation of lepton flavor, in electro-weak interactions, dictates that the number of leptons of a particular flavor is conserved during an interaction.  As an example, the decay of a muon to an electron would violate lepton flavor conservation if not for the presence of neutrinos:
 
@@ -153,20 +174,25 @@ Of course, since neutrinos are ultra-relativistic it is not possible to observe 
 P_{\alpha\rightarrow\beta} = \left|\sum_i U_{i\alpha} U_{i\beta} e^{-i m_j^2 \frac{L}{2E}}\right|^2
 \end{equation*}
 
+For the case of oscillation between two types of neutrinos, the oscillation probability is often expressed as
+
+\begin{equation}
+P_{\alpha\rightarrow\beta} = \text{sin}^2(2\theta)\text{sin}^2\left( \frac{\Delta m^2 L}{4 E} \right)
+\end{equation}
+
+As seen in the next section, the sinusoidal characteristic of oscillations is apparent when the neutrinos are presented as a function of $L/E$.
+
+\subsection{Neutrino Oscillations - Experimental Evidence}
+
+\subsubsection{Solar Neutrino Problem}
+
+\subsubsection{Super-K and SNO}
+
+\subsubsection{MINOS, Daya Bay, Nova}
 
 
-As a last aside, the neutrino mass itself is unmeasured to date.  Only upper limits have been set, and it is an open question as to whether or not neutrinos are their own anti-particles.  While these questions are not probed directly through oscillations, 
 
-\section{Current Status of Neutrino Physics}
-
-For a more comprehensive discussion of the outstanding short baseline anomalies, see Chapter~\ref{chp:sbn}.
-
-Outstanding anomalies, modern experiments.  LSND and Miniboone, reactors, gallium, etc., for sterile hints.
-
-
-
-\section{Future directions in Neutino Physics}
+\section{Future Directions in Neutrino Physics}
 \label{sec:future_experiments}
-DUNE and Nova for CP violation, experimental challenges
+% DUNE and Nova for CP violation, experimental challenges
 
-\section{Electron Neutrinos as the probe for BSM Neutrino Physics}
