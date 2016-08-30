@@ -1,4 +1,3 @@
-
 \usepackage{geometry} % you need this for yalephd.cls to work.
 \usepackage{graphicx} % you probably want the rest of these.
 \usepackage{dcolumn}
@@ -19,6 +18,25 @@
 \usepackage{placeins}
 % This is a font, kind of similar to Times New Roman
 \usepackage{mathptmx}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{Page \thepage}
+ 
+
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+
+\fancyhead[R]{%
+   % We want italics
+   \itshape
+   % The chapter number only if it's greater than 0
+   \ifnum\value{chapter}>0 \chaptername\ \thechapter \hfill  \fi
+   % The chapter title
+   \leftmark}
+\fancyfoot[C]{\thepage}
+
+
 
 \usepackage{hyperref}
 \hypersetup{

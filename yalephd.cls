@@ -179,10 +179,10 @@ class, modified by AG]
 % those pages and the rest of the body having the same page style, with
 % the number at bottom center.
 
-\pagestyle{plain}
+% \pagestyle{plain}
 
 \RequirePackage{geometry}
-\geometry{left=1.5 in, right=1 in, top=1 in,bottom=1.0 in,nohead,footskip=0.5 in}
+\geometry{left=1.5 in, right=1 in, top=1 in,bottom=1.0 in,footskip=0.5 in}
 
 
 \RequirePackage{setspace}
@@ -210,7 +210,7 @@ class, modified by AG]
 
 \newenvironment{abstract}{%
   \begin{titlepage}%
-    \pagestyle{empty}%
+    \thispagestyle{empty}%
     \begin{center}
       {\bf Abstract}\par\bigskip
       {\Large \bf \@title}\par\bigskip
@@ -260,7 +260,7 @@ class, modified by AG]
   \global\let\advisor\relax
   \global\let\date\relax
   \global\let\and\relax
-\pagestyle{plain} % Page numbers at bottom center.
+\thispagestyle{plain} % Page numbers at bottom center.
 \pagenumbering{roman} % roman numerals.
 \addtocounter{page}{1} %This is page i, but not shown -- Next page is ii.
 }
