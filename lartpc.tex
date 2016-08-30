@@ -41,8 +41,7 @@ As mentioned above, the Liquid Argon TPC has a long history of development.  Thi
 
 The \argoneut TPC is a rectangular volume of liquid argon that measures 40 cm high (Y direction), 47 cm wide (X direction), and 90 cm long (Z direction).  In total, this corresponds to about 170 liters of Liquid Argon.  In its running configuration, neutrinos from Fermilab's NuMI beam (See Section~\ref{sec:numi_beam}) enter nearly parallel to the Z direction, with a slight downward direction.  On the left side of the detector in the beam direction is the high voltage cathode providing a uniform electric field of 500 V/cm throughout the TPC (corresponding to approximately -23 kV of voltage at the cathode).  Opposite the cathode is the anode, composed of three wire planes, of which only two are instrumented for readout.
 
-%insert argoneut tpc picture.
-\begin{figure}[h]
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=0.75\textwidth]{lartpc_figures/argoneut_tpc_and_cryostat.pdf}
   \caption[The \argoneut TPC]{The \argoneut TPC positioned just outside of its cryostat.  The wire planes and the readout electronics are visible on the right side of the TPC.}
@@ -66,8 +65,7 @@ The uniformity of the electric field in the \argoneut detector is maintained wit
 
 Once the electrons have been separated from the ions, they drift towards the readout wires of the TPC.  Though argon itself does not attach electrons, impurities in the argon can do so.  The amount of drifting electrons declines as a function of the distance it has to drift.  This decline is well modeled with an exponential decline, and the decay constant is referred to as the electron ``lifetime.'' Proper calorimetry must take the lifetime of the electrons into account on hit by hit basis to correctly account for the effect of the impurities in the liquid argon.  In \argoneut, the electron lifetime is measured in data by comparing the amplitude of hits from crossing muons at different drift distances as seen in Figure \ref{fig:argoneut_lifetime}.
 
-%insert lifetime plot here.
-\begin{figure}[h]
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=0.5\textwidth]{lartpc_figures/argoneut_lifetime.pdf}
   \caption[\argoneut Lifetime Measurement]{The electron lifetime in \argoneut is computed run by run empirically, using a sample of depositions in the TPC from minimally ionizing particles.  Shown here is the fit, using an exponential, for run 648 giving an electron lifetime of 742 $\pm \mu s$ (statistical error only).}
@@ -75,20 +73,15 @@ Once the electrons have been separated from the ions, they drift towards the rea
 \end{figure}
 
 
-%
-% Edited up to here.
-%
 
+The \argoneut detector has three planes of wires at the anode, two of which are instrumented.  The first plane, composed of 225 wires oriented vertically, serves as a shielding plane for the other wires and to provide shaping to the electric field through the TPC.  The three planes are spaced with 4mm between each other.  The second plane, referred to as the ``induction plane,'' contains wires that are set at +60$^\text{o}$ to the beam axis.  As electrons cross the shield plane, they approach the induction plane wires.  The wires are biased, however, such that the electrons drift around the individual wires.  The approaching and subsequent passing of electrons induces a current on these wires (hence the name ``induction plane'') and bipolar pulse shape is recorded by the readout electronics for wires that observe electrons.  See figure \ref{fig:argoneut_signals} for examples of this pulse.
 
-As alluded to above, the \argoneut detector has three planes of wires at the anode, two of which are instrumented.  The first plane, composed of 225 wires oriented vertically, serves as a shielding plane for the other wires and to provide shaping to the electric field through the TPC.  The three planes are spaced with 4mm between each other.  The second plane, referred to as the ``induction plane,'' contains wires that are set at +60$^o$ to the beam axis.  As electrons cross the shield plane, they approach the induction plane wires.  The wires are biased, however, such that the electrons drift around the individual wires.  The approaching and subsequent passing of electrons induces a current on these wires (hence the name ``induction plane'') and bipolar pulse shape is recorded by the readout electronics for wires that observe electrons.  See figure \ref{fig:argoneut_signals} for examples of this pulse.
-
-The final set of wires, dubbed the ``collection plane,'' is biased such that it collects the drifting electrons onto it and they are observed as a pulse of charge by the electronics system.  The collection plane is set at an angle of -60$^o$ to the beam direction.  The two instrumented planes each have wire spacings of 4mm, and sample at 5.05 MHz.  In total, the instrumented planes have 240 wires in each plane.  Naturally, since the wires are at an angle with respect to the TPC axes, not all wires are of the same length.  Most wires, 144 of 240 in each plane, are 46.2 cm long.  The shortest wires are 3.7 cm long.
+The final set of wires, dubbed the ``collection plane,'' is biased such that it collects the drifting electrons onto it and they are observed as a pulse of charge by the electronics system.  The collection plane is set at an angle of -60$^\text{o}$ to the beam direction.  The two instrumented planes each have wire spacings of 4mm, and sample at 5.05 MHz.  In total, the instrumented planes have 240 wires in each plane.  Naturally, since the wires are at an angle with respect to the TPC axes, not all wires are of the same length.  Most wires, 144 of 240 in each plane, are 46.2 cm long.  The shortest wires are 3.7 cm long.
 
 The sense wires are readout with a system of electronics sampled every 198 ns, and the readout system has a sensitivty of 7.49 ADC/fC of charge recorded.  This gives a signal to noise ratio of 15 or higher for minimally ionizing particles in the TPC.  An in depth description of the \argoneut readout electronics is available in \cite{Anderson:2012vc}
 
 
-%insert wire pulse figure
-\begin{figure}[h]
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=\textwidth]{lartpc_figures/argoneut_signal.pdf}
   \caption[Deconvolution of \argoneut Signals]{Raw and deconvoluted signal shapes from the \argoneut detector.  On the top is shown the induction pulse.  The bipolar shape of the pulse in the induction plane is corrected during the deconvolution stage.  On both planes, a Gaussian hit fitting technique is used to determine the amount of charge recorded. Figure from \cite{Anderson:2012vc}.}
@@ -97,12 +90,19 @@ The sense wires are readout with a system of electronics sampled every 198 ns, a
 
 \section{\label{sec:lartpc_reconstruction} Event Imaging and Reconstruction}
 
-Each wire measures a signal of electrons as they drift, as a function of time.  When the wires are arrayed in an image in sequential order, such that the x axis is wire number and the y axis is time tick, 2D images are formed such as in figure \ref{fig:argoneut_data}.  As seen in figure \ref{fig:argoneut_projection}, the wire planes represent projections of the 3D data onto a plane that is orthogonal to the wires themselves.
+One of the prime advantages of a \lartpc to other neutrino detection technologies is the ability to do precision imaging {\em and} calorimetry.  In this section, the standard chain of reconstruction algorithms is described to show how the high resolution images are transformed into high level, particle physics data.
 
-%insert argoneut data picture.
+Each wire in the detector measures a signal of electrons as they drift, as a function of time.  When the wires are arrayed in an image in sequential order, such that the x axis is wire number and the y axis is time tick, 2D images are formed such as in figure \ref{fig:argoneut_data}.  As seen in figure \ref{fig:argoneut_projection}, the wire planes represent projections of the 3D data onto a plane that is orthogonal to the wires themselves.
 
-%insert argoneut projection picture
-\begin{figure}[h]
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{lartpc_figures/R626_E1236_collection.png}
+  \includegraphics[width=\textwidth]{lartpc_figures/R626_E1236_induction.png}
+  \caption[\argoneut Event Images]{Full Resolution \argoneut data.  The horizontal direction, from left to right, represents increasing wire number.  The vertical direction is the drift distance, with the wires at the bottom of the picture.  An artificial color scale is applied to highlight depositions of charge above noise levels.}
+  \label{fig:argoneut_data}
+\end{figure}
+
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=\textwidth]{lartpc_figures/argoneut_plane_projection.pdf}
   \caption[\argoneut 3D projection]{Representation of the projection of the LArTPC in \argoneut.  The wire and time axes give a 2D image that represents a projection of the 3D charge depositions on to the 2D surfaces shown in blue.  Figure from \cite{Anderson:2012vc}.}
@@ -110,28 +110,27 @@ Each wire measures a signal of electrons as they drift, as a function of time.  
 \end{figure}
 
 \subsection{Deconvolution}
-The reconstruction of these images into a 3D event starts at the lowest level, filtering and deconvolution of the wire signals.  In general, the number of electrons recorded by a given wire as a function of time is not prefectly matched by the ADC signals read out by the detector.
+The reconstruction of these images into a 3D event starts at the lowest level, filtering and deconvolution of the wire signals.  In general, the number of electrons recorded by a given wire as a function of time is not perfectly matched by the ADC signals read out by the detector, due to the response of the detector electronics and noise effects.
 
-To correct for this, a deconvolution process is applied to each wire.  As seen in figure \ref{fig:argoneut_signal_shaping}, the response of the detector to a delta function introduces a spread of signal which is removed using a scheme with the Fast Fourier Transform. The response of each channel is measured with external pulse generators.  The convolution theorem then allows the removal of the detector response by taking the  inverse Fourier transform of $\frac{v[t]}{r[t]}$, where $v[t]$ is the Fourier transform of the recorded waveform and $r[t]$ is the Fourier transform of the channel's response.  Figure \ref{fig:argoneut_deconvolution} shows the result of applying deconvolution to \argoneut data in the collection and induction planes.  In addition, the deconvolution for the induction plane removes the bipolar behavior to make hit finding easier.
+To correct for this, a deconvolution process is applied to each wire.  As seen in figure \ref{fig:signal_shaping}, the response of the detector to a delta function introduces a spread of signal which is removed using a scheme with the Fast Fourier Transform. The response of each channel is measured with external pulse generators.  The convolution theorem then allows the removal of the detector response by taking the  inverse Fourier transform of $\frac{v[t]}{r[t]}$, where $v[t]$ is the Fourier transform of the recorded waveform and $r[t]$ is the Fourier transform of the channel's response.  Figure \ref{fig:argoneut_signals} shows the result of applying deconvolution to \argoneut data in the collection and induction planes.  In addition, the deconvolution for the induction plane removes the bipolar behavior to make hit finding easier.
 
-% need an image of argoneut deconvolution
-
-\begin{figure}[h]
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=\textwidth]{lartpc_figures/argoneut_signal_shaping.pdf}
   \caption[Signal Shaping in \argoneut]{On the left, an image of the idealized detector response to drift electrons in the induction and collection plane.  On the right, the response of the electrons filter and digitization to a delta function pulse.  Figure from \cite{Anderson:2012vc}.}
   \label{fig:signal_shaping}
 \end{figure}
 
+
 \subsection{Hit Finding}
 
-For each wire in the detector, a hit finding algorithm is used to locate the regions of the readout with electron deposition signals.  While there are several different hit finding algorithms available in LArSoft \cite{Church:2013hea}, the official LArTPC reconstruction software, the all follow a generalized procedure.
+For each wire in the detector, a hit finding algorithm is used to locate the regions of the readout with electron deposition signals.  While there are several different hit finding algorithms available in LArSoft \cite{Church:2013hea}, the official LArTPC reconstruction software, they all follow a generalized procedure.
 
-First, a deconvolved (and noise filtered) wire signal is scanned for regions of signal above a specified threshold.  Often, the baseline threshold of hit finding depends on whether the signal is from collection or induction planes.
+First, a deconvolved (and noise filtered) wire signal is scanned for regions of signal above a specified threshold.  The baseline threshold of hit finding depends on whether the signal is from collection or induction planes, as the two planes have different Signal to Noise ratios.
 
-Next, the regions of interest are fitted with an analytic function to allow a precise determination of the time tick, peak, and integral of the charge deposited.  The most common function used is a Gaussian.  In some cases, and commonly in neutrino interactions, hits that are close to each other from different particles will have overlapping regions.  In this case, the multiplicity of the region above threshold can be determined to help tracking algorithms accurately distribute hits between different particles.  An example of this is seen in Figure \ref{fig:argoneut_hit_multiplicity}.  In general, complicated regions with multiple hits are fit with several Gaussians summed together.
+Next, the regions of interest are fitted with an analytic function to allow a precise determination of the time tick, peak, and integral of the charge deposited.  The most common function used is a Gaussian.  In some cases, and commonly in neutrino interactions, hits that are close to each other from different particles will have overlapping regions.  In this case, the multiplicity of the region above threshold can be determined to help tracking algorithms accurately distribute hits between different particles.  An example of this is seen in Figure \ref{fig:argoneut_hit_multiplicity}.  In general, complicated regions with multiple hits are fit with several Gaussian functions summed together.
 
-\begin{figure}[h]
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=\textwidth]{lartpc_figures/argoneut_hit_multiplicity.pdf}
   \caption[Hit Finding in \argoneut]{A neutrino vertex as seen in the induction view in \argoneut.  The top left shows the reconstructed signals above threshold.  The other figures show the wire signal moving away from the vertex: the initial signal is wider than normal, and as the tracks diverge in the detector the two peaks are resolved.  Figure from \cite{Anderson:2012vc}.}
@@ -140,17 +139,21 @@ Next, the regions of interest are fitted with an analytic function to allow a pr
 
 \subsection{Cluster, Tracking and 3D Reconstruction}
 
-Once the wire signals have been deconvolved, and the signal depositions have been reconstructed as hits, a number of higher level steps remain between hits and physics data.  First, hits must be grouped together based on which particle they originated from.  In general, this is an extremely difficult problem with no simple answer.  For particles like muons and protons, which produce simple tracks of hits in the detector, it is not impossible and a lot of progress and achievements have been made.  For more complicated events, such as electromagnetic showers, clustering remains the weakest point of the reconstruction chain.
+Once the wire signals have been deconvolved, and the signal depositions have been reconstructed as hits, a number of higher level steps remain between hits and physics data.  First, hits must be grouped together based on which particle they originated from.  In general, this is an {\em extremely} difficult problem with no simple answer.  For particles like muons and protons, which produce simple tracks of hits in the detector, it is not impossible and a lot of progress and achievements have been made.  For more complicated events, such as electromagnetic showers, clustering remains the weakest point of the reconstruction chain.
 
-For a track like particle, in general, the groups of hits are associated together into clusters.  These cluster are then matched across the planes of the detector (two planes in argoneut, but many state of the art detectors have 3).  Though the planes offer different projections of the 3D events into 2D, the drift direction (time tick direction in \ref{fig:argoneut_data}) is a common axis in every projection.  Therefore, the most useful metric to determine if two clusters are from the same track in the argon is the time if took those clusters to drift to the wires.
+For a track like particle, in general, the groups of hits are associated together into clusters by finding sets of hits that are well aligned.  These clusters are then matched across the planes of the detector (two planes in \argoneut, but many state of the art detectors have 3).  Though the planes offer different projections of the 3D events into 2D, the drift direction (vertical direction in \ref{fig:argoneut_data}) is a common axis in every projection.  Therefore, the most useful metric to determine if two clusters are from the same track in the argon is the time it took those clusters to drift to the wires.
 
 Once clusters from multiple planes have been matched together, the wire information between the two clusters can be used to determine where in the Y-Z plane the clusters overlap.  This is because each wire intersects the other plane's wires at most once, so if a charge deposition from one plane is matched to one on another plane, it uniquely determines the location of the 3D charge (The X coordinate comes from the drift time).
 
-Almost all of the details of 3D tracking and reconstruction have been skimmed here, as they are not crucial to the work presented in this thesis.  However, a great detail of knowledge and techniques is reported in many references \cite{reco:tracking_ref} \cite{reco:other_refs.}
+Almost all of the details of 3D tracking and reconstruction have been skimmed here, as they are not crucial to the work presented in this thesis.  However, a great detail of knowledge and techniques is reported in many references \cite{Antonello:2012hu,uboone_pub_1015}.
+
+%
+% Edited up to here.
+%
 
 \subsection{\label{subsec:lartpc_calibration} Calibration}
 
-For a \lartpc to perform physics studies with calorimetric information, it is essential to accuratly calibrate the detector response to charge depositions on the wires.  For \argoneut, this was performed with large sample of crossing muons as reported in \cite{Anderson:2012mra}.  That analysis demonstrated that muons induced from upstream interactions (known as ``through-going muons'' in \argoneut) can be used as a known source of  ionization in the detector, as shown in Figure~\ref{fig:mpv_muons}.  For \argoneut, the mean momentum of the through-going muons was estimated at 7 GeV/c.
+For a \lartpc to perform physics studies with calorimetric information, it is essential to accurately calibrate the detector response to charge depositions on the wires.  For \argoneut, this was performed with large sample of crossing muons as reported in \cite{Anderson:2012mra}.  That analysis demonstrated that muons induced from upstream interactions (known as ``through-going muons'' in \argoneut) can be used as a known source of ionization in the detector, as shown in Figure~\ref{fig:mpv_muons}.  For \argoneut, the mean momentum of the through-going muons was estimated at 7 GeV/c.
 
 \begin{figure}[tb]
   \centering
@@ -159,7 +162,9 @@ For a \lartpc to perform physics studies with calorimetric information, it is es
   \label{fig:mpv_muons}
 \end{figure}
 
-To calibrate the detector from a sample of muons, the dE/dx of each deposition measured by the wires of the TPC can be collected into a histogram and the shape is fit with a Gaussian-convolved Landau distribution, as demonstrated in Figure~\ref{fig:coll_mpv_muons}.  Unlike \cite{Anderson:2012mra}, however, there are two differences performed for the calibration used in the analyses described in Chapters~\ref{chp:emshowers} and \ref{chp:nue_xsec}: the calibration constants are calculated on a wire-by-wire basis, instead of for the entire detector.  Second, the calibration is calculated for the collection and the induction plane, instead of just the collection plane.  Due to advancements in deconvolution and hit finding since the original publication of the \argoneut calibrations, the induction plane can now be shown to be a useable plane for calorimetry, as seen in Figure~\ref{fig:coll_ind_differences}.  The two planes show agreement in the calorimetric values calculated for the crossing muons.  In the end, the calibration constants are determined to be 36.4 $\pm$ 2.48 [fC/(ADC*tick)] for the collection plane, and 143 $\pm$ 10.3 [fC/(ADC*tick)].
+To calibrate the detector from a sample of muons, the dE/dx of each deposition measured by the wires of the TPC can be collected into a histogram and the shape is fit with a Gaussian-convolved Landau distribution, as demonstrated in Figure~\ref{fig:coll_mpv_muons}.  If the most probable value of the distribution, which is a parameter of the fit, is observed to be different from the target value (1.73 MeV/cm), the calibration constants are adjusted.  This process repeats until the calibration constant produces a distribution of hits that agrees with theoretical values of ionization per centimeter.
+
+Unlike \cite{Anderson:2012mra}, there are two differences in the calibration used in the analyses described in Chapter~\ref{chp:emshowers}. First, the calibration constants are calculated on a wire-by-wire basis, instead of for the entire detector.  Second, the calibration constants are calculated for both the collection and the induction plane, instead of just the collection plane.  Due to advancements in deconvolution and hit finding since the original publication of the \argoneut calibrations, the induction plane can now be shown to be a usable plane for calorimetry, as seen in Figure~\ref{fig:coll_ind_differences}.  The two planes show agreement in the calorimetric values calculated for the crossing muons.  In the end, the average calibration constants for each plane are determined to be 36.4 $\pm$ 2.48 [fC/(ADC*tick)] for the collection plane, and 143 $\pm$ 10.3 [fC/(ADC*tick)].
 
 \begin{figure}[tb]
   \centering
@@ -185,6 +190,13 @@ To calibrate the detector from a sample of muons, the dE/dx of each deposition m
 
 In a LArTPC, the calorimetric identification of particles is based upon the behavior of charged particles moving through the argon.  The energy deposited per centimeter is dictated by the Bethe-Bloch equations, and the properties in argon of common particles are seen in Figure \ref{fig:bethe_bloch}.
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{lartpc_figures/mpv_particles}
+  \caption[MPV Ionization in Argon for Common Species of Particles]{Most probable ionization per centimeter in argon for a variety of common particles.}
+  \label{fig:bethe_bloch}
+\end{figure}
+
 As a particle loses energy, it's amount of ionization decreases until it reaches a minimum before the ionization spikes to very high values.  Due to the limited resolution of the detector, however, the observed dE/dx values for a given particle will increase as the particle comes to a rest.  As seen in Figure \ref{fig:residual_range}, this measure of dE/dx versus residual range allows calorimetric separation of particles.  In particular, protons are easily separated from muons and pions with this measure.
 
 \begin{figure}[tb]
@@ -196,6 +208,13 @@ As a particle loses energy, it's amount of ionization decreases until it reaches
 
 Since LArTPCs also offer bubble chamber quality images, the topology of an event can give excellent ways to distinguish particles.  As seen in Figure \ref{fig:mu_pi}, particles like muons and pions that are difficult to distinguish with calorimetry can often be separated based on subsequent interactions within the TPC.
 
+\begin{figure}[tb]
+  \centering
+  \includegraphics[width=\textwidth]{lartpc_figures/r650_1765_pi_zero_overlaid_with_track.png}
+  \caption[Pion Reinteraction]{An \argoneut event with a strong pion reinteraction.  The pion track, starting from the bottom left and moving towards the top right, reinteracts with an argon nucleus through a hadronic interaction.  The resulting topology of many particles from the secondary interaction easily distinguishes this track as a pion and not a muon.}
+  \label{fig:mu_pi}
+\end{figure}
+
 
 
 \subsection{MINOS}
@@ -206,20 +225,20 @@ Since LArTPCs also offer bubble chamber quality images, the topology of an event
   \centering
   \includegraphics[width=\textwidth]{lartpc_figures/minos.pdf}
   \caption[\argoneut and MINOS]{An event display depicting the \argoneut experiment and the MINOS near detector. \argoneut is the small box in the foreground.  The tracks represent TPC data of \numu CC interactions that were successfully tracked and matched into the MINOS near detector.  Figure from \cite{Anderson:2012vc}.}
-  \label{fig:signal_shaping}
+  \label{fig:minos}
 \end{figure}
 
-\argoneut is only 90cm long at it's longest dimension, and since the NuMI beam has neutrino energies of 10+ GeV, it is extremely rare for muons produced in \argoneut to stop within the detector.  This enabled several precision measurements of muon neutrino cross sections on argon by looking for neutrinos that interact in \argoneut, and tracking them through the MINOS near detector \cite{Anderson:2011ce}, \cite{Acciarri:2014isz}.
+\argoneut is only 90cm long at it's longest dimension, and since the NuMI beam has neutrino energies of 10+ GeV, it is extremely rare for muons produced in \argoneut to stop within the detector.  This enabled several precision measurements of muon neutrino cross sections on argon by looking for neutrinos that interact in \argoneut, and tracking them through the MINOS near detector \cite{Anderson:2011ce, Acciarri:2014isz}.
 
 For the analyses presented in this thesis, MINOS is not used as a muon spectrometer directly.  Instead, since the target interaction is electron neutrinos, MINOS is able to provide rejection of muon neutrino events.
 
-\section{Other \lartpcs}
+\section{Current and Future \lartpcs}
 
-\argoneut, the main subject of this chapter, was the first LArTPC in a neutrino beam in the U.S. and the start of the \lartpc neutrino program.  Before \argoneut even collected data, however, another TPC was already proposed.  Since then, \lartpcs have become the detector of choice for neutrino physics in the ~GeV energy range.  This section describes some of the important future TPCs in the US neutrino program. 
+\argoneut, the main subject of this chapter, was the first LArTPC in a neutrino beam in the U.S. and the start of the U.S. \lartpc neutrino program.  Before \argoneut even collected data, however, another \lartpc was already proposed.  Since then, \lartpcs have become the detector of choice for neutrino physics in the ~GeV energy range.  This section describes some of the important future TPCs in the US neutrino program. 
 
 \subsection{\label{sec:microboone} \uboone}
 
-\uboone is the successor to \MB \cite{miniboone} (See Section~\ref{sec:miniboone}), designed to confirm or rule out the \MB ``Low Energy Excess,'' described further in Chapter~\ref{chp:sbn}.  \uboone is large TPC, 235 $ (w) \times $ 250 $ (h) \times $ 10.95 $ (l) $ m$^3$, or about 87 tons of Liquid Argon - see Figure~\ref{fig:uboone_det}.  The most notable differences between \argoneut and \uboone are the third instrumented wire plane and the PMT system for light collection.  Additionally, the wire spacing in \uboone is 3~mm, decreased from 4~mm in \argoneut.
+\uboone is the successor to \MB \cite{miniboone} (See Section~\ref{sec:miniboone}), designed to confirm or rule out the \MB ``Low Energy Excess,'' described further in Chapter~\ref{chp:sbn}.  \uboone is large TPC, 235 $ (w) \times $ 250 $ (h) \times $ 10.95 $ (l) $ m$^3$, or about 87 tons of Liquid Argon - see Figure~\ref{fig:uboone_det}.  The most notable differences, other than size, between \argoneut and \uboone are the third instrumented wire plane and the PMT system for light collection.  Additionally, the wire spacing in \uboone is 3~mm, decreased from 4~mm in \argoneut.
 
 \begin{figure}[htb]
   \centering
