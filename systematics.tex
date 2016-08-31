@@ -64,17 +64,15 @@ In general, this method of `reweighting' applies new weights to every neutrino i
 \label{sec:covariance_matrix}
 
 Using the methods described above for applying weights on an event-by-event basis, it's possible to generate a suite of ``Universes'' of event rate histograms, where the value of each analysis bin can be known in each universe as $N^i_{\text{Univ.} m}.$  In this document, since there are three detectors under consideration, the vector of event rates in each analysis bin, $N$, is a concatenation of the vector of event rates in each detector.  If there are $P$ total analysis bins in each detector, then 
-\begin{equation}
-\begin{centering}
-\vec{N}_{\text{Nom.}} = \left(~N_{\text{Nom.}}^{1,~SBND},~\dots~N_{\text{Nom.}}^{P,~SBND},~N_{\text{Nom.}}^{1,~\uboone}~\dots~N_{\text{Nom.}}^{P,~\uboone},~N_{\text{Nom.}}^{1,~\icarus}~\dots~N_{\text{Nom.}}^{P,~\icarus} ~\right)
-\end{centering}
-\end{equation}
+\begin{multline}
+\vec{N}_{\text{Nom.}} = (~N_{\text{Nom.}}^{1,~SBND},~\dots, ~N_{\text{Nom.}}^{P,~SBND},~N_{\text{Nom.}}^{1,~\uboone}, \\ 
+\dots,N_{\text{Nom.}}^{P,~\uboone},~N_{\text{Nom.}}^{1,~\icarus},~\dots~N_{\text{Nom.}}^{P,~\icarus} ~)
+\end{multline}
 and in each universe where an underlying physical parameter has been varied:
-\begin{equation}
-\begin{centering}
-\vec{N}_{\text{Univ.}~m} = \left(~N_{\text{Univ.}~m}^{1,~SBND},~\dots~N_{\text{Univ.}~m}^{P,~SBND},~N_{\text{Univ.}~m}^{1,~\uboone}~\dots~N_{\text{Univ.}~m}^{P,~\uboone},~N_{\text{Univ.}~m}^{1,~\icarus}~\dots~N_{\text{Univ.}~m}^{P,~\icarus} ~\right).
-\end{centering}
-\end{equation}
+\begin{multline}
+\vec{N}_{\text{Univ.}~m} = (~N_{\text{Univ.}~m}^{1,~SBND},~\dots~N_{\text{Univ.}~m}^{P,~SBND},~N_{\text{Univ.}~m}^{1,~\uboone}, \\
+\dots,~N_{\text{Univ.}~m}^{P,~\uboone},~N_{\text{Univ.}~m}^{1,~\icarus}~\dots~N_{\text{Univ.}~m}^{P,~\icarus} ~).
+\end{multline}
 
 With these vectors, it's possible to calculate deviation from the nominal values due to the underlying uncertainties in an analysis bin:
 \begin{equation}
@@ -206,7 +204,7 @@ Table~\ref{tab:genie_xsec_params} shows the parameters that were varied in the G
 {
 \renewcommand{\arraystretch}{1.5}
 \begin{table}[tb]
-  \caption[Genie Cross Section Variations]{Genie Cross Section Variations and their nominal uncertainty, from \cite{Genie_manual}}
+  \caption[Genie Cross Section Variations]{Genie Cross Section Variations and their nominal uncertainty, from \cite{Andreopoulos:2015wxa}}
   \label{tab:genie_xsec_params}
   \centering
 
@@ -295,7 +293,7 @@ To evaluate the expect sensitivity of the SBN Program, the above covariance matr
 \begin{figure}[tb]
   \centering
   \includegraphics[width=0.75\textwidth]{systematics_figures/{ND_100m_uB_T600_onaxis_nue_appearance_ecalo2_nu_vePhot0.05_gap3_lessCosmics_xsec_0_flux_6_dirt_cos_sensPlot.pdf}}
-  \caption[SBN Sensitivity]{The SBN Program's quoted sensitivity, under all the assumptions shown above. At the best fit points from \cite{kopp_best_fit} and \cite{giunti_best_fit}, the significance is well above 5 $\sigma$.}
+  \caption[SBN Sensitivity]{The SBN Program's quoted sensitivity, under all the assumptions shown above. At the best fit points from \cite{Kopp:2013vaa} and \cite{Giunti:2011gz}, the significance is well above 5 $\sigma$.}
   \label{fig:sbn_final_sensitivity}
 \end{figure}
 

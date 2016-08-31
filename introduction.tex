@@ -43,8 +43,6 @@ Both for the case of CP violation and the resolution of short baseline anomalies
 
 Both DUNE and the SBN Program rely on high granularity detectors for their neutrino searches, the liquid argon time projection chamber (LArTPC, see Chapter~\ref{chp:lartpc}).  However, at the time of the publication of this thesis, only one \lartpc in the world has ever observed electron neutrinos.  The ICARUS experiment includes an observation of two electron neutrinos at approximately 20 GeV \cite{ICARUS_steriles}.  On the other hand, the energy of interest to both DUNE and SBN is significantly lower, in the range of 1 GeV.  Therefore, the work presented in this thesis is the first observation of low energy electron neutrinos in a liquid argon time projection chamber.   
 
-
-
 \section{Neutrino Sources}
 
 Neutrinos, despite their weak interaction cross section and difficulty to observe, are actually incredibly common on Earth - more than a trillion neutrinos pass through an average sized human hand every second.  By far the most powerful nearby source of neutrinos is from the Sun, produced predominantly in proton-proton fusion.  But, more powerful (and more exotic) sources of neutrinos are known to exist, such as supernova \cite{supernova_1987a}.  Terrestrially, neutrinos are produced in the geothermal reactions of the Earth's core, and there is large flux of ``atmospheric'' neutrinos produced by the interactions of cosmic particles in the upper atmosphere.  As radioactive elements decay through weak interactions, radioactive material emits neutrinos as well - in fact this can be a quite useful source for calibration of neutrino experiments.
@@ -67,7 +65,7 @@ A detailed understanding of the source of neutrinos is vital to the success of e
 
 \section{Neutrino Oscillations}
 
-Neutrino oscillations are the foundation and the starting point for modern neutrino experiments exploring CP violation and short baseline anomalies, and can be used to probe the mass hierarchy of the neutrinos.  As such, they are fundamentally important to neutrino experiments, so a description of the theory of neutrino oscillations and the experimental evidence is presented here.
+Neutrino oscillations \cite{Bilenky:1978nj, Maki:1962mu, Langacker:1988up} are the foundation and the starting point for modern neutrino experiments exploring CP violation and short baseline anomalies, and can be used to probe the mass hierarchy of the neutrinos.  As such, they are fundamentally important to neutrino experiments, so a description of the theory of neutrino oscillations and the experimental evidence is presented here.
 
 \subsection{Neutrino Oscillations - Theory}
 
@@ -115,7 +113,7 @@ The most common way to mathematically describe neutrino oscillations is through 
 
 In this matrix, under the standard assumptions of neutrino oscillations, the rows and columns are normalize such that the matrix is  unitary: $\sum_{i=1}^3 | U_{\alpha i} | ^2 = 1$, and similarly for the columns.  It's very common for the PMNS matrix to be parameterize in terms of mixing angles: 
 
-\begin{align*}
+\begin{align}
   \left(
   \begin{array}{ccc}
     U_{e1} & U_{e2} & U_{e3}  \\
@@ -147,7 +145,7 @@ In this matrix, under the standard assumptions of neutrino oscillations, the row
     0 & 0 & 1  \\
   \end{array} 
   \right)
-\end{align*}
+\end{align}
 
 The value of this expansion is that the individual mixing angles are observable with different experimental setups.  The additional phase, $\delta_{CP}$, is needed if neutrinos violate Charge-Parity symmetry.  Some theories suggest that neutrino violation of CP symmetry is responsible for the matter/anti-matter asymmetry in the Universe (see Section~\ref{sec:future_experiments}).
 
@@ -183,15 +181,83 @@ As seen in the next section, the sinusoidal characteristic of oscillations is ap
 
 \subsection{Neutrino Oscillations - Experimental Evidence}
 
+Neutrino oscillations have a compelling record of experimental evidence in their favor.  This section provides a brief overview of some of the notable oscillation experiments to date.  A much more complete summary of neutrino oscillations, both theory and experimental evidence, is available from the Particle Data Group \cite{pdg_neutrinos}.
+
 \subsubsection{Solar Neutrino Problem}
 
-\subsubsection{Super-K and SNO}
+The first experimental hint of neutrino oscillations came with the ``Solar Neutrino Problem.''  The standard Solar model makes a definite prediction for the number of neutrinos produced by the sun \cite{standard_solar_model}, while the observation of Ray Davis and John Bahcall at the Homestake experiment observed only approximately one third of the neutrinos they expected from the Sun.  This observation was subsequently reproduced and confirmed by a number of experiments \cite{Hampel:1998xg, ukuda:1996sz, Gavrin:2005ks, Anselmann:1992um, Altmann:2005ix, Fukuda:2002pe, Ahmad:2001an, Ahmad:2002jz}.
 
-\subsubsection{MINOS, Daya Bay, Nova}
+The many neutrino detectors observing the solar neutrinos produced different measurements of their observed flux, compared to predictions from standard solar models - see Figure~\ref{fig:solar_neutrino_deficit}.  Each experiment, however, observes a different deficit of neutrinos.  However, the experiments searching for solar neutrinos had different minimum thresholds for detection, and the solar neutrino flux is not constant with energy (Figure~\ref{fig:solar_neutrino_flux}).  This strongly implied that the resolution of the Solar Neutrino Problem needed to account for a dependence on neutrino energy, consistent with neutrino oscillations.  Further, the evidence was very strong that the neutrino oscillations in the Sun were affected by the interactions of neutrinos with matter, know as the Mikheev-Smirnov-Wolfenstien (MSW) effect \cite{Wolfenstein:1977ue,Mikheev:1986gs}.
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.75\textwidth]{intro_figures/solar_neutrino_deficit.png}
+  \caption[Solar Neutrino Deficit]{Solar Neutrino deficit for the different detector materials.  Figure from \cite{solar_neutrino_image}.}
+  \label{fig:solar_neutrino_deficit}
+\end{figure}
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.75\textwidth]{intro_figures/solar_neutrino_flux.png}
+  \caption[Solar Neutrino Deficit]{Solar Neutrino deficit for the different detector materials.  Figure from \cite{solar_neutrino_image}.}
+  \label{fig:solar_neutrino_flux}
+\end{figure}
+
+Eventually, with the results of experiments such as Super Kamiokande and and SNO, the square mass separation required for to explain the solar neutrino deficit in terms of oscillations was measured as $m_{solar} = 7.5 \times 10^{-5} eV^2$.  This measurement was later confirmed by the KamLAND experiment \cite{Eguchi:2002dm, Araki:2004mb}, who also were able to demonstrate experimentally the sinusoidal dependence of neutrino oscillations, in Figure~\ref{fig:kamland}.  Combined with solar neutrino data, the KamLAND results \cite{Abe:2008aa,Gando:2010aa} indicated that the solar neutrino mass splitting, now understood to be $\Delta m^2_{12}$, is $\Delta m^2{12} = 7.5^{+0.19}_{-0.20} \times 10^{-5} eV^2$, and the oscillation mixing angle is given as $\text{tan}^2(\theta_{12}) = 0.452^{+0.035}_{-0.033}$.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.45\textwidth]{intro_figures/kamland.png}
+  \includegraphics[width=0.45\textwidth]{intro_figures/kamland_highstats.png}
+  \caption[KamLAND Oscillation Results]{(Left) Initial oscillation spectrum from KamLAND. (Right) Higher statistics results from KamLAND.  The data are plotted with L=180km, and the data agree well with the best fit oscillation hypothesis. Figures from \cite{Araki:2004mb,Abe:2008aa}.}
+  \label{fig:kamland}.
+\end{figure}
+
+The resolution of the solar neutrino anomaly set off a cascade of neutrino oscillation searches, including the search for oscillations outside of the solar neutrino regime.  The observation of atmospheric oscillations, in fact, was historically the first direct evidence of neutrino oscillations.
+
+\subsubsection{Atmospheric Neutrinos}
+
+Earth is continuously bombarded with particles in the upper atmosphere, producing (among other things) a flux of neutrinos primarily from the decay of pions and kaons \cite{Honda:2004yz, PhysRevD.70.023006, Plyaskin:2001ku}.  The atmospheric flux is often predicted as a function of zenith angle, and this allows neutrino oscillation experiments to study neutrinos over a very large range of distances: the shortest distances of travel from production are 10s of kilometers, directly above a detector, to $1.2 \times 10^4$ kilometers, from the opposite side of the Earth.  The atmospheric neutrino flux is composed of primarily of \numu, \numubar, \nue, and \nuebar neutrinos in approximately a 2:1 ratio for (\numu + \numubar) : (\nue + \nuebar) \cite{pdg}.
+
+Compelling evidence for the oscillation of atmospheric muon neutrinos was presented by the Super-Kamiokande collaboration in 1998 \cite{PhysRevLett.81.1562}, shown in Figure~\ref{fig:super_k_oscillations}.  Because the Super-Kamiokande detector is unable to distinguish muons from anti-muons, there is no ability to sign select and the oscillation result is presented as a combined oscillation of muon neutrinos and anti-neutrinos.  Because of the distances involved and the energy range of the neutrinos, the solar neutrino mixing is not plausible as an explanation for the oscillation of atmospheric neutrinos.  In addition, the electron neutrino component of the flux is in general agreement with the observed data, assuming no oscillations.  Therefore, the explanation is that atmospheric muon neutrinos oscillate into tau neutrinos.  A subsequent study confirmed the statistical observation of tau neutrinos from atmospheric oscillations, though the tau neutrinos can not be identified on an event-by-event basis \cite{PhysRevLett.110.181802}.  The atmospheric neutrino oscillation suggests a mass splitting that is in the range of $10^{-3} eV^2$, significantly higher than the observed solar neutrino mass splitting.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.95\textwidth]{intro_figures/superk_atmospheric_oscillations.png}
+  \caption[Super-K Neutrino Oscillations]{Super-Kamiokande atmospheric neutrino oscillations, as a function of L/E.  L is calculated from the zenith angle of the detected neutrino. Figure from \cite{PhysRevLett.93.101801}.}
+  \label{fig:label}
+\end{figure}
+
+\subsubsection{On-axis Neutrino Beams: K2K and MINOS}
+
+The precision measurement of the atmospheric neutrino mixing and mass splitting was determined using long baseline neutrino oscillation experiments with neutrino beams.  The first such experiment, K2K (KEK to Kamiokande), observed oscillations through the disappearance of accelerator produced muon neutrinos \cite{PhysRevD.74.072003}.  MINOS was the second long baseline neutrino oscillation experiment, with a beam of neutrinos from Fermilab traveling to Soudan in Minnesota.  MINOS reported oscillation \cite{PhysRevLett.106.181801} of muon neutrinos as well as muon anti-neutrinos due to the ability of the NuMI beam to run in an anti-neutrino enhanced configuration.  MINOS is a magnetized detector, allowing sign selection of the muons it observes.
+
+The advantage of MINOS and K2K over the results of Super-Kamiokande is that the source of neutrinos is controlled, the energy spectrum is relatively narrow banded (<$E_\nu> = 1.3 GeV$ for K2K), and the length for oscillations is fixed (250 km for K2K, 735 km for MINOS).  Because the parameters of the experiments are more tightly controlled, MINOS and K2K are both able to measure the parameters of atmospheric oscillation with precision.  MINOS's full data set \cite{PhysRevD.86.052007} measures the atmospheric oscillation parameters as $\Delta m^2_A = 2.41^{+0.09}_{-0.10} eV^2$, with $\text{sin}^2(2\theta_A) = 0.950^{+0.035}_{-0.036}$.  In addition, MINOS is able to measure neutrino and anti-neutrino oscillations independently, though the parameters are found to agree for neutrinos and anti-neutrinos within experimental uncertainties.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.45\textwidth]{intro_figures/k2k_oscillations.png}
+  \includegraphics[width=0.45\textwidth]{intro_figures/minos_oscillations.png}
+  \caption[MINOS and K2K \numu Oscillations]{(Left) K2K Event spectrum. (Right) MINOS event spectrum.  Both data sets clearly favor the oscillation hypothesis.}
+  \label{fig:label}
+\end{figure}
+
+\subsubsection{Off-axis Neutrino Beams: T2K, \nova}
+As one moves off of the axis of a neutrino beam, the flux from the beam decreases and narrows in energy.  For an oscillation experiment, a mono-energetic and point-like neutrino source is ideal, and an off-axis neutrino beam is closer to this ideal situation.  Both the T2K \cite{PhysRevLett.112.181801} and \nova \cite{PhysRevD.93.051104} experiments utilize this to study neutrino oscillations.  In particular, since \nova is fine grained detector, they are able to observe the appearance of electron neutrinos arising from \numu $\rightarrow$ \nue oscillations \cite{Adamson:2016tbq}.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.45\textwidth]{intro_figures/nova_numu.png}
+  \includegraphics[width=0.45\textwidth]{intro_figures/nova_nue.png}
+  \caption[\nova Oscillation Results]{(Left) \numu Oscillation results. (Right) \nue appearance oscillation results.  Figures from \cite{PhysRevD.93.051104} and \cite{Adamson:2016tbq}.}
+  \label{fig:label}
+\end{figure}
+
+\subsubsection{Reactor Neutrinos}
+
+The three neutrino oscillation paradigm requires three mass splittings (between the three neutrinos) and three mixing angles, 
 
 \section{Future Directions in Neutrino Physics}
 \label{sec:future_experiments}
-% DUNE and Nova for CP violation, experimental challenges
+% DUNE and Nova for CP violation, experimental challenges, mass hierarchy, majorana or dirac, 
 

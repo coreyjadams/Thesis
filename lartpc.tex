@@ -10,7 +10,7 @@ Time Projection Chambers are designed to observe electrically charged particles.
 
 \section{History and Liquid Argon Time Projection Chamber Concepts}
 
-The Liquid Argon Time Projection Chamber (LArTPC) was initially proposed for neutrino physics in 1977 by Carlo Rubbia \cite{Rubbia:1977zz}.  At the time of it's concept, neutrino physics was dominated by bubble chamber detectors like Gargamelle \cite{gargamelle}, renowned for it's remarkable resolution of particle topologies.  Initially, the LArTPC was proposed as a way to combine high spatial resolution detectors with calorimetry measuring detectors in a way that is scalable to massive detectors.  As the field of neutrino physics approaches the largest LArTPC to date with DUNE \cite{DUNE}, it's worthwhile to recall the original advantages of the LArTPC technology as laid out in 1977 \cite{Rubbia:1977zz}:
+The Liquid Argon Time Projection Chamber (LArTPC) was initially proposed for neutrino physics in 1977 by Carlo Rubbia \cite{Rubbia:1977zz}.  At the time of it's concept, neutrino physics was dominated by bubble chamber detectors like Gargamelle \cite{Musset:1978gf}, renowned for it's remarkable resolution of particle topologies.  Initially, the LArTPC was proposed as a way to combine high spatial resolution detectors with calorimetry measuring detectors in a way that is scalable to massive detectors.  As the field of neutrino physics approaches the largest LArTPC to date with DUNE \cite{DUNE}, it's worthwhile to recall the original advantages of the LArTPC technology as laid out in 1977 \cite{Rubbia:1977zz}:
 
 \begin{itemize}
 
@@ -30,7 +30,7 @@ The Liquid Argon Time Projection Chamber (LArTPC) was initially proposed for neu
 
 40 years after the original proposal, it is remarkable how relevant the initial advantages remain in the face of an experiment such as DUNE. 
 
-Since the original proposal, some additional advantages of LArTPCs have been noted and are worth mentioning.  For example, the scintillation of Liquid Argon has been successfully characterized \cite{lar_scintillation} and is measurable in coincidence with the drift ionization.  For large detectors, especially surface detectors, this allows the ability to match scintillation light to ionization tracks to reject out of time events such as cosmic particles.  It also allows the implementation of a hardware based trigger to filter neutrino interactions online.  For even modest sized LArTPCs, this can be an essential aspect to control data rates and ease computing requirements.
+Since the original proposal, some additional advantages of LArTPCs have been noted and are worth mentioning.  For example, the scintillation of Liquid Argon has been successfully characterized \cite{Heindl:2010zz} and is measurable in coincidence with the drift ionization.  For large detectors, especially surface detectors, this allows the ability to match scintillation light to ionization tracks to reject out of time events such as cosmic particles.  It also allows the implementation of a hardware based trigger to filter neutrino interactions online.  For even modest sized LArTPCs, this can be an essential aspect to control data rates and ease computing requirements.
 
 \section{Design of LArTPCs}
 \label{sec:argoneut_detector}
@@ -48,9 +48,9 @@ The \argoneut TPC is a rectangular volume of liquid argon that measures 40 cm hi
   \label{fig:argoneut_tpc}
 \end{figure}
 
-In the detector, as a neutrino interacts it produces outgoing particles, most commonly: muons, protons, neutrons, pions (charged and neutral), photons and electrons.  Naturally, the possible particles produced in a neutrino interaction is much broader than this short list, but this comprises some of the most frequent particles.  In the case of the electrically charged particles, the particle will ionize the argon atoms as it moves through the detector.  The ionization produced is a statistical quantity, but the average expected ionization depends strongly on the momentum and mass of the particle in question.  In general, particles with higher mass and lower momentum produce larger ionization per unit distance traveled \cite{bethe-bloch}.  The ionization per unit distance, measured most frequently in the units MeV/cm, is a very powerful tool for calorimetric identification of particles (as demonstrated in Chapter \ref{chp:electrons}).
+In the detector, as a neutrino interacts it produces outgoing particles, most commonly: muons, protons, neutrons, pions (charged and neutral), photons and electrons.  Naturally, the possible particles produced in a neutrino interaction is much broader than this short list, but this comprises some of the most frequent particles.  In the case of the electrically charged particles, the particle will ionize the argon atoms as it moves through the detector.  The ionization produced is a statistical quantity, but the average expected ionization depends strongly on the momentum and mass of the particle in question.  In general, particles with higher mass and lower momentum produce larger ionization per unit distance traveled \cite{Kalinovsky:1989kk}.  The ionization per unit distance, measured most frequently in the units MeV/cm, is a very powerful tool for calorimetric identification of particles (as demonstrated in Chapter \ref{chp:emshowers}).
 
-Neutral particles, such as neutrons and photons, do not ionize the argon atoms as they traverse the detector.  However, these particles can still interact with the argon and produce charged particles visible to the TPC instrumentation.  Neutrons frequently will scatter off of an argon nucleus and produce a recoiling proton, which can be observed in the detector.  Photons can produce electromagnetic showers through Compton scattering and pair production, described more fully in Chapter \ref{chp:electons}.
+Neutral particles, such as neutrons and photons, do not ionize the argon atoms as they traverse the detector.  However, these particles can still interact with the argon and produce charged particles visible to the TPC instrumentation.  Neutrons frequently will scatter off of an argon nucleus and produce a recoiling proton, which can be observed in the detector.  Photons can produce electromagnetic showers through Compton scattering and pair production, described more fully in Chapter \ref{chp:emshowers}.
 
 After the particles from the neutrino interaction have produced ionization in the detector, the electric field separates the ions and electrons from each other.  Naturally, the separation is imperfect and depends on the strength of the electric field, the amount of ionization, as well as the angle of ionization with respect to the field.  This effect, known as recombination of electrons and ions, has been studied in detail in the \argoneut detector \cite{Acciarri:2013met}.  In general, this effect causes a quenching of the observed electrons compared to the true ionizing power of the high energy particles as seen in Figure \ref{fig:argoneut_recombination}.
 
@@ -219,7 +219,7 @@ Since LArTPCs also offer bubble chamber quality images, the topology of an event
 
 \subsection{MINOS}
 
-\argoneut is fortunate in that it was located directly upstream of the MINOS near detector, which is a magnetized tracking detector \cite{MINOS}.  This gives \argoneut a distinct trait that no other LArTPC has had: muon sign selection for muons produced in \argoneut that enter the MINOS near detector.
+\argoneut is fortunate in that it was located directly upstream of the MINOS near detector, which is a magnetized tracking detector \cite{Michael:2008bc}.  This gives \argoneut a distinct trait that no other LArTPC has had: muon sign selection for muons produced in \argoneut that enter the MINOS near detector.
 
 \begin{figure}[htb]
   \centering
@@ -232,13 +232,15 @@ Since LArTPCs also offer bubble chamber quality images, the topology of an event
 
 For the analyses presented in this thesis, MINOS is not used as a muon spectrometer directly.  Instead, since the target interaction is electron neutrinos, MINOS is able to provide rejection of muon neutrino events.
 
+\FloatBarrier
+
 \section{Current and Future \lartpcs}
 
 \argoneut, the main subject of this chapter, was the first LArTPC in a neutrino beam in the U.S. and the start of the U.S. \lartpc neutrino program.  Before \argoneut even collected data, however, another \lartpc was already proposed.  Since then, \lartpcs have become the detector of choice for neutrino physics in the ~GeV energy range.  This section describes some of the important future TPCs in the US neutrino program. 
 
 \subsection{\label{sec:microboone} \uboone}
 
-\uboone is the successor to \MB \cite{miniboone} (See Section~\ref{sec:miniboone}), designed to confirm or rule out the \MB ``Low Energy Excess,'' described further in Chapter~\ref{chp:sbn}.  \uboone is large TPC, 235 $ (w) \times $ 250 $ (h) \times $ 10.95 $ (l) $ m$^3$, or about 87 tons of Liquid Argon - see Figure~\ref{fig:uboone_det}.  The most notable differences, other than size, between \argoneut and \uboone are the third instrumented wire plane and the PMT system for light collection.  Additionally, the wire spacing in \uboone is 3~mm, decreased from 4~mm in \argoneut.
+\uboone \cite{Chen:2007ae} is the successor to \MB \cite{AguilarArevalo:2008qa} (See Section~\ref{sec:miniboone}), designed to confirm or rule out the \MB ``Low Energy Excess,'' described further in Chapter~\ref{chp:sbn}.  \uboone is large TPC, 235 $ (w) \times $ 250 $ (h) \times $ 10.95 $ (l) $ m$^3$, or about 87 tons of Liquid Argon - see Figure~\ref{fig:uboone_det}.  The most notable differences, other than size, between \argoneut and \uboone are the third instrumented wire plane and the PMT system for light collection.  Additionally, the wire spacing in \uboone is 3~mm, decreased from 4~mm in \argoneut.
 
 \begin{figure}[htb]
   \centering
@@ -247,7 +249,7 @@ For the analyses presented in this thesis, MINOS is not used as a muon spectrome
   \label{fig:uboone_det}
 \end{figure}
 
-\uboone's main physics goal, the resolution of the Low Energy Excess, is in addition to a host of other physics and R\&D tasks.  On the physics side, \uboone will provide exceptional data for studying neutrino interactions and particularly nuclear physics.  \uboone has the finest 3D resolution of any calorimetric neutrino detector to date, allowing it to measure the outgoing hadrons (protons, pions, neutrons, kaons, etc.) from a neutrino interaction.  An image of the \uboone collection plane, showing a \numu candidate event with a proton and $\pi^0$, showcases \uboone's precision imaging.  \uboone expects high statistics in many interesting neutrino cross section channels, as shown in Table~\ref{tab:uboone_xsec}.  The cross section measurements of \uboone (and SBND and ICARUS) will be a major legacy of the Fermilab \lartpcs especially in the DUNE\cite{DUNE} era.
+\uboone's main physics goal, the resolution of the Low Energy Excess, is in addition to a host of other physics and R\&D tasks.  On the physics side, \uboone will provide exceptional data for studying neutrino interactions and particularly nuclear physics.  \uboone has the finest 3D resolution of any calorimetric neutrino detector to date, allowing it to measure the outgoing hadrons (protons, pions, neutrons, kaons, etc.) from a neutrino interaction.  An image of the \uboone collection plane, Figure~\ref{fig:uboone_r3469_e28734}, showing a \numu candidate event with a proton and $\pi^0$, showcases \uboone's precision imaging.  \uboone expects high statistics in many interesting neutrino cross section channels, as shown in Table~\ref{tab:uboone_xsec}.  The cross section measurements of \uboone (and SBND and ICARUS) will be a major legacy of the Fermilab \lartpcs especially in the DUNE\cite{DUNE} era.
 
 
 \begin{figure}[htb]
@@ -257,7 +259,41 @@ For the analyses presented in this thesis, MINOS is not used as a muon spectrome
   \label{fig:uboone_r3469_e28734}
 \end{figure}
 
-TODO: uboone xsec table
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{l c r}
+    {\bf Process}  & \hfill & {\bf No. Events} \\
+    \hline
+    \hline
+    \multicolumn{3}{c}{\numu Events by Topology} \\
+     & & \\
+    CC Inclusive & & 122,100 \\
+    CC 0 $\pi$  & \numu N $\rightarrow \mu$ + Np & 78,500 \\
+      & ~$\cdot$ \numu N $\rightarrow \mu$ + 0p & 16,500 \\ 
+      & ~$\cdot$ \numu N $\rightarrow \mu$ + 1p & 44,200\\
+      & ~$\cdot$ \numu N $\rightarrow \mu$ + 2p & 8,300\\
+      & ~$\cdot$ \numu N $\rightarrow \mu$ + $\ge$ 3p & 9,500\\
+    CC 1 $\pi^\pm$ & \numu N $\rightarrow \mu$ + nucleons + 1$\pi^\pm$ & 30,300 \\
+    CC $\ge$ 2 $\pi^\pm$ & \numu N $\rightarrow \mu$ + nucleons + $\ge$ 2 $\pi^\pm$ & 2,700 \\
+    CC $\ge$ 1 $\pi^0$ & \numu N $\rightarrow \mu$ + nucleons + $\ge$ 1 $\pi^0$ & 13,400 \\
+    & & \\
+    NC Inclusive & & 45,900 \\
+    NC 0 $\pi$ & \numu N $\rightarrow \mu$ + nucleons & 29,900 \\
+    NC 1 $\pi^\pm$ & \numu N $\rightarrow \mu$ + nucleons + 1$\pi^\pm$ & 6,900 \\
+    NC $\ge$ 2 $\pi^\pm$ & \numu N $\rightarrow \mu$ + nucleons + $\ge$ 2 $\pi^\pm$ & 900 \\
+    NC $\ge$ 1 $\pi^0$ & \numu N $\rightarrow \mu$ + nucleons + $\ge$ 1 $\pi^0$ & 9,200 \\
+    \hline
+    \hline
+    \multicolumn{3}{c}{\nue Events} \\
+    CC Inclusive & & 820 \\
+    NC Inclusive & & 290 \\
+    \hline
+    \hline
+  \end{tabular} 
+  \caption[\uboone Event Rates]{Estimated event rates using GENIE (v2.8) in a 6.6e20 POT exposure of MicroBooNE, located 470m from the neutrino source, the Booster Neutrino Beam. In enumerating proton multiplicity, there is a kinetic energy threshold on protons of 20 MeV. The 0$\pi$ topologies include any number of neutrons in the event. This study uses a 17cm fiducial volume cut in MicroBooNE, which gives a fiducial volume of 61t.}
+  \label{tab:uboone_xsec}
+  
+\end{table}
 
 \uboone also introduces a number of important R\&D acheivements to the field of \lartpcs.  It is the first large scale \lartpc to acheive high purity without evacuating the cryostat.  Instead, the TPC used a purge of high purity argon gas to push impurities out of the cryostat before colling the cryostat and filling with liquid argon.   In this way, critical impurities were removed from the detector - see Figure~\ref{fig:o2purge}.  Additionally, \uboone employs cold readout electronics immersed in the liquid argon.  As seen in Figure~\ref{fig:noise_vs_temp}, the average noise level of the readout wires decreased dramatically during the cooldown of the \uboone cryostat.
 
@@ -277,9 +313,9 @@ TODO: uboone xsec table
   \label{fig:noise_vs_temp}
 \end{figure}
 
-Another significant improvement that \uboone brings that \argoneut did not have is the addition of a light collection system.  ICARUS, while running in Gran Sasso lab in Italy, also had a sophisticated light collection system.  However, the system is essential for detectors like \uboone running on the surface and not deep underground, such as ICARUS.  The \uboone light collection is composed of 8 inch Photo-Multiplier Tubes (PMTs) arrayed behind the wire planes.  Argon scintillates at a vacuum ultraviolet wavelength (to which liquid argon is transparent), but the PMTs detect visible light.  So, each PMT has a wavelength shifting plate to convert the vacuum ultra violet to visible light detectable by the PMTs.
+Another significant improvement that \uboone brings that \argoneut did not have is the addition of a light collection system.  A light collection system is essential for detectors like \uboone running on the surface and not deep underground.  The \uboone light collection is composed of 8 inch Photo-Multiplier Tubes (PMTs) arrayed behind the wire planes.  Argon scintillates at a vacuum ultraviolet wavelength (to which liquid argon is transparent), but the PMTs detect visible light.  So, each PMT has a wavelength shifting plate to convert the vacuum ultra violet to visible light detectable by the PMTs.
 
-On the surface, \uboone is exposed to a high flux of cosmic rays, averaging ~10 cosmic ray interactions in the detector each readout window of 4.8 ms.  On the other hand, the detector is exposed to the neutrino beam for just several $\mu$s.  Though the wire information can not be used to identify precisely when an interaction occured in the TPC, the PMT information detects flashes of light with each particle interaction and can localize interactions in a much tighter region of time.  This provides two advantages: first, if the time of an interaction is known (particularly cosmic interactions), the corrections that must be applied as a function of drift distance (such as lifetime corrections) can be accurately applied.  Second, and more important for a successful run of the detector, the PMT system provides a triggering system for the beam interactions, as shown in Figure~\ref{fig:pmt_timing}.  A clear excess of PMT flashes coincident with the expect neutrino beam, for both BNB and NuMI beams, can be seen.  By only saving events to disk when there is a PMT flash in this region of time, \uboone is able to dramatically reduce it's consumption of network bandwidth and disk storage.
+On the surface, \uboone is exposed to a high flux of cosmic rays, as many as ~10 cosmic ray interactions in the detector each readout window of 4.8 ms.  On the other hand, the detector is exposed to the neutrino beam for just several $\mu$s.  Though the wire information can not be used to identify precisely when an interaction occurred in the TPC, the PMT information detects flashes of light with each particle interaction and can localize interactions in a much tighter region of time.  This provides two advantages: first, if the time of an interaction is known (particularly cosmic interactions), the corrections that must be applied as a function of drift distance (such as lifetime corrections) can be accurately applied.  Second, and more important for a successful operation of the detector, the PMT system provides a triggering system for the beam interactions, as shown in Figure~\ref{fig:pmt_timing}.  A clear excess of PMT flashes coincident with the expect neutrino beam, for both BNB and NuMI beams, can be seen.  By only saving events to disk when there is a PMT flash in this region of time, \uboone is able to dramatically reduce it's consumption of network bandwidth and disk storage.
 
 \begin{figure}[htb]
   \centering
@@ -289,7 +325,9 @@ On the surface, \uboone is exposed to a high flux of cosmic rays, averaging ~10 
   \label{fig:pmt_timing}
 \end{figure}
 
-\uboone began taking neutrino data in the fall of 2015, and collected 3.3E20 POT (approximately half of its data set) by the fall of 2016.  In the near future, \uboone will determine the origin of \MB's low energy excess.  \uboone will lead the Fermilab Short Baseline Program forward as the first running \lartpc on the Booster Neutrino Beam, which is an exciting step forward in the U.S. \lartpc program.
+\uboone began taking neutrino data in the fall of 2015, and collected approximately 3.5E20 POT (about half of its data set) by the fall of 2016.  In the near future, \uboone will determine the origin of \MB's low energy excess.  \uboone will lead the Fermilab Short Baseline Program forward as the first running \lartpc on the Booster Neutrino Beam, which is an exciting step forward in the U.S. \lartpc program.
+
+\FloatBarrier
 
 \subsection{\label{sec:future_tpcs} Future LArTPCs}
 
@@ -297,11 +335,9 @@ As mentioned above, \uboone is the newest \lartpc to the Fermilab Short Baseline
 
 \subsubsection{\label{subsec:sbnd} SBND}
 
-Along the Booster Neutrino Beam, SBND will be the \lartpc closest to the neutrino source.  It is currently under design and construction, with final assembly taking place in 2017 and 2018.  Due to the proximity of SBND to the BNB target, SBND will have the highest statistics measurements of neutrino interactions of any \lartpc to date.  With over 1 million events per year, SBND records statistics equivalent to the \uboone data set in just one month (and it matches the statistics of \argoneut in just one day!).  With this expected event rate, SBND can probe rare neutrino interactions with high statistics.  The high event rate also allows precision measurements of final state topolgies of neutrino interactions, which in turn is essential for tuning neutrino interaction models for DUNE.
+Along the Booster Neutrino Beam, SBND will be the \lartpc closest to the neutrino source.  It is currently under design and construction, with final assembly taking place in 2017 and 2018.  Due to the proximity of SBND to the BNB target, SBND will have the highest statistics measurements of neutrino interactions of any \lartpc to date.  With over 1 million events per year, SBND records statistics equivalent to the \uboone data set in just one month (and it matches the statistics of \argoneut in just one day!).  With this expected event rate, SBND can probe rare neutrino interactions with high statistics.  The high event rate also allows precision measurements of final state topologies of neutrino interactions, which in turn is essential for tuning neutrino interaction models for DUNE.
 
-TODO: SBND event rates table.
-
-Like, \uboone, SBND will feature a light collection system to trigger neutrino events and accurately determine cosmic timing.  Unlike \uboone, SBND is a dual drift TPC with the high voltage cathode in the middle of the TPC, and two sets of read out wires on each side - see Figure~\ref{fig:sbnd_det}.  Like \uboone, SBND is driving forward the U.S. \lartpc program with important R\&D tasks, including the manufacture of Cathode Plane Assemblies and Anoda Plane Assemblies.
+Like \uboone, SBND will feature a light collection system to trigger neutrino events and accurately determine cosmic timing.  Unlike \uboone, SBND is a dual drift TPC with the high voltage cathode in the middle of the TPC, and two sets of read out wires on each side - see Figure~\ref{fig:sbnd_det}.  Like \uboone, SBND is driving forward the U.S. \lartpc program with important R\&D tasks, including the manufacture of Cathode Plane Assemblies and Anode Plane Assemblies.
 
 \begin{figure}[htb]
   \centering
@@ -313,19 +349,20 @@ Like, \uboone, SBND will feature a light collection system to trigger neutrino e
 
 % Details of SBND, PMTS, proximity to beam, flux window, etc.
 
-\subsubsection{\label{subsec:sbnd} \icarus}
+\subsubsection{\label{subsec:icarus} \icarus}
 
-ICARUS is an Italian \lartpc, and the first \lartpc in a neutrino beam.  The detector, known as T600, is approximately 476 tons of active argon divided into two modules (known as T300 each).  The two modules were deployed together at Gran Sasso lab in Italy, underground, where they were exposed to CERN's CNGS neutrino beam.  ICARUS has been a pioneed of \lartpc technology.
+ICARUS is an Italian \lartpc, and the first \lartpc in a neutrino beam.  The detector, known as T600, is approximately 476 tons of active argon divided into two modules (known as T300 each).  The two modules were deployed together at Gran Sasso lab in Italy, underground, where they were exposed to CERN's CNGS neutrino beam.  ICARUS has been a pioneer of \lartpc technology.
 
-After the CNGS beam was decommissioned, it was decided to transport the ICARUS detector from Italy to Fermilab for use as the thrid detector in the SBN Program.  ICARUS is significantly more massive than both \uboone and SBND, and so it offers the chance to record oscillation spectra from anomalous neutrino oscillations at a different L/E than \uboone, with high statistics.  Currently, ICARUS is at CERN where it is being refurbished and upgraded, before it is shipped to Fermilab for installation.
+After the CNGS beam was decommissioned, it was decided to transport the ICARUS detector from Italy to Fermilab for use as the third detector in the SBN Program.  ICARUS is significantly more massive than both \uboone and SBND, and so it offers the chance to record oscillation spectra from anomalous neutrino oscillations at a different L/E than \uboone, with high statistics.  Currently, ICARUS is at CERN where it is being refurbished and upgraded, before it is shipped to Fermilab for installation.
 
 \begin{figure}[htb]
   \centering
   \includegraphics[width=0.45\textwidth]{lartpc_figures/icarus.jpg}
   \includegraphics[width=0.45\textwidth]{lartpc_figures/icarus_real.png}
   \caption[ICARUS T600]{The design of the ICARUS T600 detector (left) and the realization of the detector underground at Gran Sasso lab in Italy (right).}
-  \label{fig:sbnd_det}
+  \label{fig:icarus}
 \end{figure}
 
 
+\FloatBarrier
 

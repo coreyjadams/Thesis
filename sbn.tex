@@ -15,7 +15,7 @@ A more thorough analysis of the global, experimental picture of neutrino oscilla
 In 1995, the Liquid Scintillator Neutrino Detector at Los Alamos National Laboratory published the results of it's first search for \numubar to \nuebar oscillations \cite{Athanassopoulos:1995iw}.  The detector was a liquid scintillator detector making observations of electron anti neutrinos through the inverse beta decay reaction on carbon.  The origin of the neutrinos was a decay at rest pion source, producing neutrinos in the range of 20 to 50 MeV.  In the inverse beta decay reaction signature is a prompt positron emission, followed by a 2.2 MeV gamma from neutron capture.   LSND observed 89.7 $\pm$ 22.4 $\pm$ 6.0 \nuebar candidate events above background over five years of data taking, corresponding to a significance of 3.8 $\sigma$.
 
 
-\begin{figure}[t!]
+\begin{figure}[htbp]
     \centering
     \begin{subfigure}[t]{0.5\textwidth}
         \centering
@@ -38,14 +38,14 @@ Many experiments have measured the flux of neutrinos from nuclear reactors over 
 
 Some concern over the so called Reactor Deficit has been raised over the fact that before the recalculation was completed, all experiments were in agreement with the existing theoretical prediction.  However, experimental results from the Daya Bay collaboration \cite{An:2015nua}, done in a blind analysis, support the experimental evidence of the reactor neutrino deficit (See Figure~\ref{fig:daya_bay_reactor_flux}).
 
-\begin{figure}[tb]
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=\textwidth]{sbn_figures/reactor_flux.pdf}
   \caption[Reactor Deficit]{Measurements of the reactor neutrino flux indicate a deficit when compared with theoretical predictions.  It's plausible that the deficit is evidence of anomalous neutrino oscillations.}
   \label{fig:reactor_deficit}
 \end{figure}
 
-\begin{figure}[tb]
+\begin{figure}[htbp]
   \centering
   \includegraphics[]{sbn_figures/daya_bay_flux_deficit.pdf}
   \caption[Daya Bay Reactor Flux]{The Daya Bay experiment performed a blind measurement of the reactor flux and their location and found excellent agreement with previous experimental data.  This was performed after the flux recalculations.}
@@ -69,14 +69,14 @@ Second, the \MB oscillation result is inconsistent with anticipated 3+1 model st
 Despite the controversy, when taken with consideration into consideration with other results such as LSND (at the same L/E as \MB), and the reactor and source anomalies, there is intriguing evidence of physics beyond the Standard Model in the neutrino sector.
 
 
-\begin{figure}[tb]
+\begin{figure}[htbp]
   \centering
   \includegraphics[]{sbn_figures/miniboone_beam_excess.pdf}
   \caption[\MB Beam Excess]{Caption here}
   \label{fig:mb_beam_excess}
 \end{figure}
 
-\begin{figure}[tb]
+\begin{figure}[htbp]
   \centering
   \includegraphics[]{sbn_figures/miniboone_stacked_rates.pdf}
   \caption[\MB Stacked Rates]{Caption here}
@@ -131,7 +131,7 @@ Taken together, the global data can be combined as in \cite{Kopp:2013vaa,Giunti:
 \label{sec:sbn_detectors}
 With all of the above anomalies and hints of beyond the standard model, it is essential to address the sterile neutrino question and resolve the \MB anomaly.  To address these hints, Fermilab is pursuing a program of short baseline neutrino experiments along it's Booster Neutrino Beam.  The first experiment, \uboone, started operations in 2015 and is designed to definitively lay to rest the \MB anomaly.  Subsequently, two other detectors will join \uboone along the Booster Beam at 100m and 660m.  An overview of the three \lartpcs involved in Fermilab's Short Baseline Program is given in Sections \ref{sec:microboone} and \ref{sec:future_tpcs}.  The location of the three detectors can be seen in Figure~\ref{fig:sbn_birdseyeview}.
 
-\begin{figure}[tb]
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=\textwidth]{sbn_figures/SBN_Map.jpeg}
   \caption[SBN Detector Locations]{An aerial view of the SBN program.  The three detectors are highlighted in yellow, and (from right to left, along the path of the beam) are \sbnd, \uboone, and \icarus}
@@ -202,6 +202,12 @@ For the study of the Short Baseline Neutrino Program's sensitivity to anomalous 
 
 \end{enumerate}
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.95\textwidth]{sbn_figures/ArgoNeuT_Labels.png}
+  \caption{caption}
+  \label{fig:argo_pi0}
+\end{figure}
 
 \subsection{Simulated Event Reconstruction and Analysis cuts}
 \label{subsection:event_reco}
@@ -217,9 +223,9 @@ The simplest cut is the fiducial volume cut applied in all three detectors.  Eve
 
 To simulate calorimetric energy reconstruction, the incoming neutrino energy in each Monte Carlo event is estimated by summing the energy of the lepton (or the $\gamma$ the faking an electron) and all charged hadrons above observation thresholds present in the final state.  The observation thresholds are defined by requiring that the kinetic energy of each hadron be sufficient that it cross at least 2 wires, and are guided by \argoneut data.  For protons, for example, the threshold is 20 MeV. 
 
-The event rate distributions, and the tables of event rates, are shown in Figure~\ref{fig:sbn_event_rates_no_signal} and Table~\ref{tab:sbn_event_rates_no_signal}.
+The event rate distributions, and the tables of event rates, are shown in Figure~\ref{fig:sbn_event_rates_no_signal} and sidewaysTable~\ref{tab:sbn_event_rates_no_signal}.
 
-\begin{figure}[]
+\begin{figure}[htbp]
     \centering
     \begin{subfigure}[]{0.49\textwidth}
         \centering
@@ -254,16 +260,17 @@ P(\numu \rightarrow \nue) = sin^2(2 \theta_{\mu e})\times sin(1.27 \frac{\Delta 
 where L and E are known from the Monte Carlo as the distance the neutrino has traveled since the decay of it's parent particle, and the true energy of the neutrino.  Because the neutrino beam is broad band, peaked near 1 GeV but with substantial flux down to several hundred MeV and out to 3 GeV, the oscillation probabilities at each detector are smeared and the predicted signal can cover a broad spectrum of neutrino energies (see Figure~\ref{fig:osc_prob} )
 % tables were made with the help of http://www.tablesgenerator.com/
 
-\begin{figure}[tb]
+\begin{figure}[htbp]
   \centering
   \includegraphics[width=\textwidth]{sbn_figures/osc_prob.pdf}
   \caption[BNB Oscillation Probability]{Oscillation Probability bands as a function of distance from the proton target for the SBN program.  Shown are the bands for two of the global best fit results.}
   \label{fig:osc_prob}
 \end{figure}
 
-\begin{table}[]
+
+\begin{sidewaystable}[htbp]
 \centering
-\small
+
 \caption{Background Rates, broken out by analysis bin and origin, for the SBND experiment for 6.6e20 POT. The signal is from the Giunti {\em et al.} best fit point}
 \label{tab:sbn_event_rates_no_signal}
 \begin{tabular}{r|cccccccccll}
@@ -281,12 +288,12 @@ where L and E are known from the Monte Carlo as the distance the neutrino has tr
 \textbf{2.00-3.00}    & 30                          & 121                         & 39                          & 1                        & 5                          & 0                          & 4                          & 0                        & 0                          & 4                    & 201   \\ \hline
 Total                 & 593                         & 684                         & 177                         & 39                       & 137                        & 8                          & 50                         & 65                       & 10                         & \multicolumn{1}{c}{} &      
 \end{tabular}
-\end{table}
+\end{sidewaystable}
 
 
-\begin{table}[]
+\begin{sidewaystable}[htbp]
 \centering
-\small
+
 \caption{Background Rates, broken out by analysis bin and origin, for the \uboone experiment for 6.6e20 POT. The signal is from the Giunti {\em et al.} best fit point}
 \begin{tabular}{r|cccccccccll}
 \multicolumn{1}{l|}{Bins [GeV]} & \multicolumn{1}{l}{$\mu\rightarrow\nu_e$} & \multicolumn{1}{l}{$K^{\pm}\rightarrow \nu_e$} & \multicolumn{1}{l}{$K^0 \rightarrow \nue$} & \multicolumn{1}{l}{$\nu + e^-$} & \multicolumn{1}{l}{NC~$\pi^0$} & \multicolumn{1}{l}{$\Delta \rightarrow N\gamma$} & \multicolumn{1}{l}{$\nu_{\mu}$~CC} & \multicolumn{1}{l}{Dirt} & \multicolumn{1}{l}{Cosmic} & Signal & Total \\ \hline
@@ -303,12 +310,12 @@ Total                 & 593                         & 684                       
 \textbf{2.00-3.00}        & 18                          & 72                          & 17                          & 0                        & 5                          & 0                          & 4                          & 0                        & 0                          & 1      & 115   \\ \hline
 Total                     & 331                         & 388                         & 91                          & 10                       & 75                         & 5                          & 34                         & 46                       & 11                         &        &      
 \end{tabular}
-\end{table}
+\end{sidewaystable}
 
-\begin{table}[]
+\begin{sidewaystable}[htbp]
 % \begin{adjustbox}{width=q\textwidth}{
 \centering
-\small
+
 \caption{Background Rates, broken out by analysis bin and origin, for the \icarus experiment for 6.6e20 POT. The signal is from the Giunti {\em et al.} best fit point}
 \begin{tabular}{r|cccccccccll}
 \multicolumn{1}{l|}{Bins [Gev]} & \multicolumn{1}{l}{$\mu\rightarrow\nu_e$} & \multicolumn{1}{l}{$K^{\pm}\rightarrow \nu_e$} & \multicolumn{1}{l}{$K^0 \rightarrow \nue$} & \multicolumn{1}{l}{$\nu + e^-$} & \multicolumn{1}{l}{NC~$\pi^0$} & \multicolumn{1}{l}{$\Delta \rightarrow N\gamma$} & \multicolumn{1}{l}{$\nu_{\mu}$~CC} & \multicolumn{1}{l}{Dirt} & \multicolumn{1}{l}{Cosmic} & Signal & Total \\ \hline
@@ -326,7 +333,7 @@ Total                     & 331                         & 388                   
 Total                     & 6721                        & 7260                        & 1776                        & 389                      & 1252                       & 86                         & 486                        & 44                       & 5                          &        &      
 \end{tabular}
 % \end{adjustbox}
-\end{table}
+\end{sidewaystable}
 
 
 
