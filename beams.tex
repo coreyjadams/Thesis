@@ -82,7 +82,16 @@ The estimation of the flux, by neutrino type and by originating particle, at the
   \label{fig:mb_flux_nu}
 \end{figure}
 
-The work covered in this document does not use the \MB detector at all, however it does leverage the \MB flux calculation machinery to simulate the flux at multiple locations for the Short Baseline Neutrino Program.  In this light, the discussion of the systematic uncertainties of the flux prediction are left to Section~\ref{section:flux_uncert}.  However, Table~\ref{tab:mb_flux_uncert} is included here to showcase the precision at which \MB constrained the BNB, an accomplishment that future experiments are building upon.
+The work covered in this document does not use the \MB detector at all, however it does leverage the \MB flux calculation machinery to simulate the flux at multiple locations for the Short Baseline Neutrino Program, shown in Figure~\ref{fig:sbn_flux}.  In this light, the discussion of the systematic uncertainties of the flux prediction are left to Section~\ref{section:flux_uncert}.  However, Table~\ref{tab:mb_flux_uncert} is included here to showcase the precision at which \MB constrained the BNB, an accomplishment that future experiments are building upon.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.45\textwidth]{beams_figures/bnb_flux_nu_100m.eps}
+  \includegraphics[width=0.45\textwidth]{beams_figures/bnb_flux_nu_470m.eps}
+  \includegraphics[width=0.45\textwidth]{beams_figures/bnb_flux_nu_700m.eps}
+  \caption[BNB Fluxes]{The neutrino flux from the Booster Beam at the three locations of the SBN Program.  The flux falls at approximately $1/r^2$, however, the near detector flux is slightly distorted due to its proximity to the decay pipe.}
+  \label{fig:sbn_flux}
+\end{figure}
 
 \begin{table}[tb]
   \caption{Fractional flux uncertainties, by species of neutrino, from the \MB flux calculation.}
@@ -113,7 +122,7 @@ The work covered in this document does not use the \MB detector at all, however 
 \section{Neutrinos from the Main Injector (NuMI Beam)}
 \label{sec:numi_beam}
 
-The Neutrinos from the Main Injector (NuMI) beam was conceived of with the MINOS (Main Injector Neutrino Oscillation Search) experiment at a time when neutrino oscillation parameters were not well constrained.  In particular, there were hints that the atmospheric mass splitting was of the order of magnitude of $10^{-3} eV^2$, but more than that was unknown.  Therefore, the NuMI beam was designed to be configurable and to run in multiple modes of running: Low Energy, Medium Energy, and High Energy.  The various energy spectra are shown in Figure~\ref{fig:numi_spectra.}.  A comprehensive discussion of the design and operation of the NuMI beam is available in Ref. \cite{Adamson:2015dkw}.  This section will be a very brief summary of some important facts about the NuMI beam.
+The Neutrinos from the Main Injector (NuMI) beam was conceived of with the MINOS (Main Injector Neutrino Oscillation Search) experiment at a time when neutrino oscillation parameters were not well constrained.  In particular, there were hints that the atmospheric mass splitting was of the order of magnitude of $10^{-3} eV^2$, but more than that was unknown.  Therefore, the NuMI beam was designed to be configurable and to run in multiple modes of running: Low Energy, Medium Energy, and High Energy.  The various energy spectra are shown in Figure~\ref{fig:numi_spectra}.  A comprehensive discussion of the design and operation of the NuMI beam is available in Ref. \cite{Adamson:2015dkw}.  This section will be a very brief summary of some important facts about the NuMI beam.
 
 \begin{figure}[htbp]
   \centering
@@ -132,7 +141,14 @@ The schematic of the target, horn, and decay pipe are shown in Figures~\ref{fig:
   \label{fig:numi_horn}
 \end{figure}
 
+The NuMI flux is simulated with a FLUKA simulation in a way very similar to the BNB.  It also benefits from the constraints from dedicated hadron production experiments \cite{Nigmanov:2009zz, Alt:2006fr}, and in situ measurements from the detectors along the beam line \cite{Aliaga:2016oaz}.  The flux models in the simulation of the beam are generally accurate to with 10 or 20\%, however experimental constraints and flux tunings can decrease the uncertainty to less than 10\% \cite{Aliaga:2016oaz}.  The flux shown in Figure~\ref{fig:argoneut_flux} is the computed \argoneut flux without the addition of the constraints, in the NuMI Low Energy mode.  Since the result presented in this thesis is not a cross section measurement but a detection of electron neutrinos, the tuned  flux is unnecessary precision for this result.
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.45\textwidth]{beams_figures/argoneutFlux.png}
+  \includegraphics[width=0.45\textwidth]{beams_figures/argoneutFlux_nue.png}
+  \caption[NuMI Flux at \argoneut]{The predicted flux at \argoneut.  (Left) All flavors of neutrino species. (Right) Only the electron neutrino and anti-neutrino flux.}
+  \label{fig:argoneut_flux}
+\end{figure}
 
-History. Numi design and beam set up.  Hadron production, flux prediction.  Constraints from hadron production experiments.  Constraints from NuMI experiments: MINOS, Miner$\nu$a.  Energy mode.
 

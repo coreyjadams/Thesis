@@ -125,15 +125,6 @@ The correlation matrix is an excellent visualization of the power of the covaria
 
 As might be expected, the neutrino flux is highly correlated across the three detectors in the Booster Neutrino Beam.  However, the exact shape of the flux is not identical, especially at the near detector.  Figure~ \ref{fig:sbn_flux} shows the flux at the three detectors.
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.45\textwidth]{sbn_figures/bnb_flux_nu_100m.eps}
-  \includegraphics[width=0.45\textwidth]{sbn_figures/bnb_flux_nu_470m.eps}
-  \includegraphics[width=0.45\textwidth]{sbn_figures/bnb_flux_nu_700m.eps}
-  \caption[BNB Fluxes]{The neutrino flux from the Booster Beam at the three locations of the SBN Program.  The flux falls at approximately $1/r^2$, however, the near detector sees a non-pointlike source due to its proximity to the decay pipe.}
-  \label{fig:sbn_flux}
-\end{figure}
-
 The covariance matrix for the uncertainties from the neutrino flux is built, as described above, using a multi universe approach.  As alluded to in Table~\ref{tab:mb_flux_uncert}, the uncertainties from the neutrino flux are well quantified by \MB.  However, their uncertainty calculations concerned a single detector, while the SBN Program is a multi detector experiment.  To properly quantify the correlated uncertainties between the three detectors, the flux at each detector has to be varied (using the multiple universe reweighting scheme above) consistently: in the $N^{th}$ Universe, the underlying physical parameters that have been changed are changed identically in all three detectors.  The event distributions can be calculated again in each universe, for all three detectors, and from them the covariance distribution is built for the flux uncertainties.
 
 For the results shown here, the following uncertainties are considered in the computation of the flux covariance matrix:
