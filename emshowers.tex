@@ -1,8 +1,8 @@
 \chapter{\label{chp:emshowers} Electron Neutrinos in Liquid Argon}
 
-As seen in Chapter~\ref{chp:sbn}, the detection and measurement of electron neutrinos in the SBN program is essential to its success.  This chapter describes the detector signatures of electromagnetic showers, and presents a method to identify and reconstruct high energy gammas and electron neutrinos.
+As seen in Chapter~\ref{chp:sbn}, the detection and measurement of electron neutrinos in the SBN program is essential to its success.  This chapter describes the detector signatures of electromagnetic showers, and presents a method to identify and reconstruct high energy gammas and electron neutrinos.  This work is the first observation of low energy electron neutrinos in a liquid argon time projection chamber.
 
-Particularly important to detecting \nue signals is the rejection of photons from the electron candidate sample.  This chapter also presents the first demonstration of two methods to reject photons from electron candidates using data from the \argoneut detector: topological separation and calorimetric separation.
+Essential to detecting \nue signals is the rejection of photons from the electron candidate sample.  This chapter also presents the first demonstration of two methods to reject photons from electron candidates using data from the \argoneut detector: topological separation and calorimetric separation.
 
 \section{Electromagnetic Showers in Liquid Argon}
 
@@ -16,24 +16,22 @@ High energy gammas can, in some cases, interact at a sufficiently short distance
 
 % Electron-induced and photon-induced showers have a distinguishing feature in that an electron shower has only one ionizing particle at the start of the shower. Photon-induced showers instead typically have two particles - an electron and positron. Because electrons and positrons are both minimally ionizing particles, the energy deposited in the first few centimeters of a photon induced shower will be approximately double that of an electron induced shower.  
 
-
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=0.5\textwidth]{emshower_figures/photon_conversion_dist_trimmed.png}
-  \caption[Photon Conversion Distance]{The conversion distance of each gamma in the Monte Carlo sample used for this analysis, which is about 7000 gammas in the energy range of several hundred MeV, as modeled by GEANT4 \cite{Agostinelli:2002hh}.}
-  \label{fig:photon_conversion_dist}
-\end{figure}
-
-For the energies typical of the gammas used in this analysis the distribution of gamma conversion distances is shown in Figure \ref{fig:photon_conversion_dist}.  There are gammas that convert very close to the generation point (here, 7\% of the gammas convert within a centimeter).  The definition of ``too close'' depends on the analysis being performed, however, there will always be a fraction of gammas for which a topological based cut is insufficient to tag them as gammas.  In the ArgoNeuT detector, the minimal resolution of a gamma gap is approximately one wire spacing (4~mm). In neutrino interactions with hadronic activity at the vertex it, is possible that other particles can obscure the start of an electromagnetic shower.  In this case, even gaps as large as a few centimeters can become unidentifiable.
-
 \begin{figure}[ht!]
   \centering
   \includegraphics[width=0.65\textwidth]{emshower_figures/photonCrossSection_trimmed.png}
   \caption[Photon Cross Section on Argon]{\label{fig:gamma_xsec} The relative cross sections of high energy gammas on Argon between 1 MeV and 1 GeV. Compton and pair production cross sections are balanced at just above 10 MeV.  Data are obtained from the Xcom database \cite{Xcom}.}
 \end{figure}
 
-The calorimetric separation of electrons and photons, using the amount of ionization measured at the start of the shower, depends on the photon interacting through pair production and not Compton scattering.  As seen in Figure~\ref{fig:gamma_xsec}, the scatter cross section of photons is dominated by pair production above 100 GeV, though the Compton cross section remains relevant up to 1 GeV of photon energy.  Figure~\ref{fig:relative_gamma_xsec} shows the relative probability that a photon will interact through either Compton or pair production channels.  Importantly, a photon that interacts through Compton scatter can not be distinguished via calorimetry from an electron.  Instead, only a topolgical separation can be used on an event-by-event basis.  In most neutrino experiments such as the SBN program \cite{Antonello:2015lea} and DUNE \cite{DUNE}, the high amounts of photons produced compared to expected electron neutrino events makes the fraction of Compton scatter photons a relevant background.  Therefore, both methods of separation are crucial.
+For the energies typical of the gammas used in this analysis the distribution of gamma conversion distances is shown in Figure \ref{fig:photon_conversion_dist}.  There are gammas that convert very close to the generation point (here, 7\% of the gammas convert within a centimeter).  The definition of ``too close'' depends on the analysis being performed, however, there will always be a fraction of gammas for which a topological based cut is insufficient to tag them as gammas.  In the ArgoNeuT detector, the minimal resolution of a gamma gap is approximately one wire spacing (4~mm). In neutrino interactions with hadronic activity at the vertex, it is possible that other particles can obscure the start of an electromagnetic shower.  In this case, even gaps as large as a few centimeters can become unidentifiable.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.75\textwidth]{emshower_figures/photon_conversion_dist_trimmed.png}
+  \caption[Photon Conversion Distance]{The conversion distance of each gamma in the Monte Carlo sample used for this analysis, which is about 7000 gammas in the energy range of several hundred MeV, as modeled by GEANT4 \cite{Agostinelli:2002hh}.}
+  \label{fig:photon_conversion_dist}
+\end{figure}
+
+The calorimetric separation of electrons and photons, using the amount of ionization measured at the start of the shower, depends on the photon interacting through pair production and not Compton scattering.  As seen in Figure~\ref{fig:gamma_xsec}, the scatter cross section of photons is dominated by pair production above 100 GeV, though the Compton cross section remains relevant up to 1 GeV of photon energy.  Figure~\ref{fig:relative_gamma_xsec} shows the relative probability that a photon will interact through either Compton or pair production channels.  Importantly, a photon that interacts through Compton scatter can not be distinguished via calorimetry from an electron.  Instead, only a topological separation can be used on an event-by-event basis for Compton-scatter photons.  In most neutrino experiments such as the SBN program \cite{Antonello:2015lea} and DUNE \cite{DUNE}, the high amounts of photons produced compared to expected electron neutrino events makes the fraction of Compton scatter photons a relevant background.  Therefore, both methods of separation are crucial.
 
 \begin{figure}[ht!]
   \centering
@@ -81,7 +79,7 @@ When a gamma is produced in an interaction in argon, it will travel some distanc
 \caption[Photon Events in \argoneut]{\label{fig:photons} Examples of gamma candidate events.  The top row are the induction views and the bottom row are the collection views of two events. In both cases, the key identifying feature is the gap between the showers and the other activity to which they point backwards.  In the (bottom) collection planes, there is a block of 5 wires that are inactive.}
 \end{figure}
 
-For a sample of electrons, this analysis targeted electron neutrino events as the electron shower candidates.  To maximize purity, an electromagnetic shower is selected as an electron candidate only in events that also exhibited hadronic activity at the vertex {\em without} the presence of a gap between the shower and other particles.  In addition, events with a track like particle matched to a muon in the MINOS near detector are rejected.  This ensures that the contamination from $\nu_\mu$ Charged Current events with high bremsstrahlung activity is negligible.  Examples of electron candidates are shown in Figure~\ref{fig:electrons}. In total, 37 electron candidate showers and 274 gamma candidate showers are selected for this analysis.
+For a sample of electrons, this analysis targeted electron neutrino events as the electron shower candidates.  To maximize purity, an electromagnetic shower is selected as an electron candidate only in events that also exhibited hadronic activity at the vertex {\em without} the presence of a gap between the shower and other particles.  In addition, events with a track like particle matched to a muon in the MINOS near detector are rejected.  This ensures that the contamination from $\nu_\mu$ charged current events with high bremsstrahlung activity is negligible.  Examples of electron candidates are shown in Figure~\ref{fig:electrons}. In total, 37 electron candidate showers and 274 gamma candidate showers are selected for this analysis.
 
 
 
@@ -156,7 +154,7 @@ Here, $\theta$ represents the polar angle in 3D with respect to the z axis (appr
 
 The reconstructed 3D axis is then projected into each plane, and the slope (in 2D) is compared against the slope of the electromagnetic showers in each plane.  Based upon the quality of the match between the projection and the 2D slopes, the 3D axis is adjusted until the best fit is obtained - see Figure~\ref{fig:iterative_start_dir}.  An initial guess, the arrow in black, is made for the start direction based on the 2D start directions (red arrows in each plane).  The start direction in 3D is projected into each plane, and the error in the 3D start direction is calculated.  An additional set of 3D directions (gray arrows) are also projected into each plane.  If the central direction (in black) is chosen as the best fit direction, the angular separation between it and the other (gray) directions is decreased and the algorithm repeats.  This procedure is repeated until the algorithm can no longer improve the accuracy of the 3D start direction.
 
-The angular resolution for electromagnetic showers, shown in Figure~\ref{fig:shower_reco}, is generally quite good though (better than 5 degrees) there is a substantial tail.  However, for this analysis, the poor resolution in a few measurements of the 3D axis has a minimal effect on the dE/dx calculation.  This is due to the fact that the majority of the events are forward going, as shown in Figure \ref{fig:geomety_dists}.  Therefore a moderate uncertainty in the 3D angle leads to only a small uncertainty in the effective wire pitch, described below, and a small uncertainty in dE/dx.
+The angular resolution for electromagnetic showers, shown in Figure~\ref{fig:shower_reco}, is generally quite good (better than 5 degrees) though there is a substantial tail.  However, for this analysis, the poor resolution in a few measurements of the 3D axis has a minimal effect on the dE/dx calculation.  This is due to the fact that the majority of the events are forward going, as shown in Figure \ref{fig:geomety_dists}.  Therefore a moderate uncertainty in the 3D angle leads to only a small uncertainty in the effective wire pitch, described below, and a small uncertainty in dE/dx.
 
 \begin{figure}[htb]
    \centering
@@ -222,11 +220,11 @@ As a final verification of the reconstruction, the measured distribution for the
 
 \section{\label{sec:electrons} Detection of Electron Neutrinos}
 
-To verify that the sample of electron-candidate events are predominantly electron neutrino events, we have studied the kinematic behavior of the electron-candidate sample.  Due to the small active volume of the ArgoNeuT detector, the electromagnetic showers are poorly contained and the reconstructed electron energy is not a measurable quantity.  Instead, we measure the distribution of reconstructed {\em deposited} energy, compared to a simulation of electron neutrino events using the electron neutrino and anti-neutrino flux shown in Figure~\ref{fig:argoneut_flux}.  This flux used to simulate the electron neutrino events is generated with a simulation of the NuMI beam with FLUKA \cite{Aliaga:2016oaz}.  The mean energy of the electron anti-neutrinos is 4.3 GeV, while the mean energy of electron neutrinos is 10.5 GeV.  As seen, the beam is predominately electron anti-neutrinos.
+To verify that the sample of electron-candidate events are predominantly electron neutrino events, I have studied the kinematic behavior of the electron-candidate sample.  Due to the small active volume of the ArgoNeuT detector, the electromagnetic showers are poorly contained and the reconstructed electron energy is not a measurable quantity.  Instead, we measure the distribution of reconstructed {\em deposited} energy, compared to a simulation of electron neutrino events using the electron neutrino and anti-neutrino flux shown in Figure~\ref{fig:argoneut_flux}.  This flux used to simulate the electron neutrino events is generated with a simulation of the NuMI beam with FLUKA \cite{Aliaga:2016oaz}.  The mean energy of the electron anti-neutrinos is 4.3 GeV, while the mean energy of electron neutrinos is 10.5 GeV.  As seen, the beam is predominately electron anti-neutrinos.
 
 Figure~\ref{fig:electron_kinematics} shows the kinematic distribution of the electron events' deposited energy and angle $\theta$.  For both the deposited energy and the polar angle $\theta$, the agreement between data and Monte Carlo is good.  For the measurement of deposited energy, the Monte Carlo deposited energy is scaled by 24.5\% to model the reconstruction inefficiencies as observed above.
 
-In Figure~\ref{fig:electron_kinematics}, both the deposited energy and reconstructed angle are area normalized independently for both data and simulation.  Due to the fact that the electron candidate events were selected manually from a sample of showering events, we are unable accurately estimate the efficiency of electron neutrino selection.  Therefore, an absolute comparison of data and Monte Carlo is not possible, and not presented here.  For the same reason, the measurement of the electron neutrino scatter cross section is also not presented.
+In Figure~\ref{fig:electron_kinematics}, both the deposited energy and reconstructed angle are area normalized independently for both data and simulation.  Due to the fact that the electron candidate events were selected manually from a sample of showering events, we are unable to accurately estimate the efficiency of electron neutrino selection.  Therefore, an absolute comparison of data and Monte Carlo is not possible, and not presented here.  For the same reason, the measurement of the electron neutrino scatter cross section is also not presented.
 
 Regardless, this analysis is the first observation of low energy electron neutrinos in a liquid argon time projection chamber.  This is an essential step towards the successful analyses of \uboone, the SBN Program, and DUNE.
 
@@ -257,7 +255,7 @@ While investigating the methods to convert a sample of hits (per shower) into a 
   \item {\bf Lowest Moving Average}: For the same set of N initial hits, a moving 3 hit average is calculated.  For example, for N hits, the average is calculated of the hits (1,2,3), then the hits (2,3,4), etc. until the hits (N-2, N-1, N).  For all of these average values calculated, the lowest value is used as the $dE/dx$ measure.  This is designed to find regions where the start of the shower is behaving as a minimally ionizing particle for an extended period.
 \end{enumerate}
 
-To determine which metric is the best for separating electrons from gammas, the truth level energy depositions from the Monte Carlo simulation are examined.  For each event, the true energy depositions are binned into ``hits'' with a pitch that corresponds to the pitch of the simulated shower on the collection plane.  Then, the three $dE/dx$ metrics above are computed for the true hits, and this processes is repeated while varying the length of the shower used in the $dE/dx$ calculation.  The number of hits used in the calculation is a function of the distance along the shower, from the start and moving along the axis of the shower, from which the hits are collected.  The distance used is varied from 2 cm up to 20 cm, with a width of 1 cm.  It was found that a width 1cm was sufficient to collect the hits along the trunk of the shower.  The results are provided in Figure~\ref{fig:dedx_metrics}, which show that the median metric is the most robust over a variety of distances used at the start of the shower.  Give this result, the median is chosen as the optimal metric for this paper.
+To determine which metric is the best for separating electrons from gammas, the truth level energy depositions from the Monte Carlo simulation are examined.  For each event, the true energy depositions are binned into ``hits'' with a pitch that corresponds to the pitch of the simulated shower on the collection plane.  Then, the three $dE/dx$ metrics above are computed for the true hits, and this processes is repeated while varying the length of the shower used in the $dE/dx$ calculation.  The number of hits used in the calculation is a function of the distance along the shower, from the start and moving along the axis of the shower, from which the hits are collected.  The distance used is varied from 2 cm up to 20 cm, with a width of 1 cm.  It was found that a width of 1 cm was sufficient to collect the hits along the trunk of the shower.  The results are provided in Figure~\ref{fig:dedx_metrics}, which show that the median metric is the most robust over a variety of distances used at the start of the shower.  Give this result, the median is chosen as the optimal metric for this paper.
 
 In addition, the length of the shower used in this analysis is fixed at 4cm.  As shown in Figure~\ref{fig:dedx_metrics}, even the median metric begins to degrade at longer distances along the shower, though the degradation is much slower than with the other two methods.  The exact distance used is not the most important parameter.  Between 3 and 5 cm of distance along the shower, all distances yield equivalent separation power.
 
@@ -295,6 +293,8 @@ Lastly, to verify that the $dE/dx$ calculation from the reconstruction accuratel
   \caption{The true $dE/dx$ of the beginning of simulated showers, calculated from simulated energy depositions in the TPC, vs the reconstructed $dE/dx$ of the same showers.  The electrons (left) and the gammas (right) both show a strong correlation between true and reconstructed $dE/dx$. There is a small offset arising from reconstruction inefficiencies, below the 10\% level in both electrons and gammas.}
   \label{fig:true_dedx}
 \end{figure*}
+
+\FloatBarrier
 
 \section{\label{sec:argo_dedx} Calorimetric Separation of Electromagnetic Showers}
 
