@@ -519,30 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "corey_adams_thesis.tex",
-			"settings":
-			{
-				"buffer_size": 1344,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "introduction.tex",
-			"settings":
-			{
-				"buffer_size": 29581,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "references.bib",
-			"settings":
-			{
-				"buffer_size": 61658,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/Makefile/Make.sublime-build",
 	"build_system_choices":
@@ -551,17 +527,25 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 192.0,
-		"last_filter": "instal",
+		"height": 112.0,
+		"last_filter": "new fi",
 		"selected_items":
 		[
 			[
-				"instal",
+				"new fi",
+				"Snippet: New figure"
+			],
+			[
+				"install",
 				"Package Control: Install Package"
 			],
 			[
 				"remove",
 				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
 			],
 			[
 				"packag",
@@ -1058,14 +1042,6 @@
 			[
 				"snip",
 				"Snippet: figure"
-			],
-			[
-				"snippetg",
-				"Snippet: Figure"
-			],
-			[
-				"paack",
-				"Package Control: Enable Package"
 			]
 		],
 		"width": 593.0
@@ -1114,6 +1090,18 @@
 	"file_history":
 	[
 		"/home/cadams/.bashrc",
+		"/home/cadams/Dropbox/Thesis/conclusion.tex",
+		"/home/cadams/Dropbox/Thesis/references.bib",
+		"/home/cadams/Dropbox/Thesis/lartpc.tex",
+		"/home/cadams/Dropbox/Thesis/emshowers.tex",
+		"/home/cadams/Dropbox/Thesis/corey_adams_thesis.tex",
+		"/home/cadams/Dropbox/Thesis/overview.tex",
+		"/home/cadams/Dropbox/Thesis/introduction.tex",
+		"/home/cadams/Dropbox/Thesis/sbn.tex",
+		"/home/cadams/Dropbox/Thesis/systematics.tex",
+		"/home/cadams/Dropbox/Thesis/temp/bnb_flux_nu_100m.eps",
+		"/home/cadams/Dropbox/Thesis/temp/bnb_flux_nu_700m.eps",
+		"/home/cadams/Dropbox/Thesis/temp/bnb_flux_nu_100m.",
 		"/Users/Corey/Dropbox/Thesis/lartpc.tex",
 		"/Users/Corey/Dropbox/Thesis/corey_adams_thesis.tex",
 		"/Users/Corey/Dropbox/Thesis/conclusion.tex",
@@ -1126,9 +1114,7 @@
 		"/Users/Corey/Dropbox/Thesis/preamble.tex",
 		"/Users/Corey/Dropbox/Thesis/argo_electrons.tex",
 		"/Users/Corey/Dropbox/Thesis/electrons.tex",
-		"/home/cadams/Dropbox/Thesis/references.bib",
 		"/home/cadams/Dropbox/Thesis/electrons.tex",
-		"/home/cadams/Dropbox/Thesis/lartpc.tex",
 		"/home/cadams/argoneut_06_00_00/srcs/argoneutcode/CCElectrons/nuefcl/standard_sim_t962_nue_electrons.fcl",
 		"/home/cadams/argoneut_06_00_00/srcs/argoneutcode/CMakeLists.txt",
 		"/home/cadams/argoneut_06_00_00/srcs/argoneutcode/T962G4Ana/T962G4Ana_module.cc",
@@ -1230,17 +1216,7 @@
 		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawMatch.cxx",
 		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawHit.h",
 		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawHit.cxx",
-		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawCluster.h",
-		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawCluster.cxx",
-		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawShower.h",
-		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawShower.cxx",
-		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawNeutrino.cxx",
-		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawNeutrino.h",
-		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawVertex.h",
-		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawTrack.h",
-		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawTrack.cxx",
-		"/data_linux/products/gallery-buildcfg-1.02.01",
-		"/data_linux/products/gallery-1.02.01-source_MANIFEST.txt"
+		"/home/cadams/larlite/UserDev/DisplayTool/RecoViewer/DrawCluster.h"
 	],
 	"find":
 	{
@@ -1258,6 +1234,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"75",
+			"flux",
+			"9",
+			"measurement ",
+			"chp:lartpc",
+			"fig:label",
+			"label",
+			"sbn_flux",
+			"flux",
+			"LAr1",
+			"lar",
+			"def",
+			"SBN",
+			"Bartoszek",
 			"future_experiments",
 			"davis",
 			"2012vc",
@@ -1371,21 +1361,7 @@
 			"79100",
 			"47000",
 			"33333",
-			"64500",
-			"076",
-			"022",
-			"_scaled_array",
-			"_orig_array",
-			"storage_manager",
-			"_process",
-			"_wireDrawer",
-			"reader",
-			"image_process",
-			"ana_processor",
-			"reader",
-			"ana_processor",
-			"reader",
-			"ana_processor"
+			"64500"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1403,133 +1379,8 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "corey_adams_thesis.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1344,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								627,
-								627
-							]
-						],
-						"settings":
-						{
-							"WordCount":
-							{
-								"changes": 0,
-								"count": 93,
-								"modified": false,
-								"selection": false,
-								"status": -1,
-								"syntax": "plain text"
-							},
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 450.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "introduction.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 29581,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								17275,
-								17275
-							]
-						],
-						"settings":
-						{
-							"WordCount":
-							{
-								"changes": 21,
-								"count": 3452,
-								"modified": false,
-								"selection": false,
-								"status": -1,
-								"syntax": "plain text"
-							},
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 9979.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "references.bib",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 61658,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								9532,
-								9532
-							]
-						],
-						"settings":
-						{
-							"WordCount":
-							{
-								"changes": 30,
-								"count": 4291,
-								"modified": false,
-								"selection": false,
-								"status": -1,
-								"syntax": "plain text"
-							},
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 6,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 5997.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],

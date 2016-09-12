@@ -37,7 +37,7 @@ In a complex chain of simulation and analysis such as a prediction of event rate
 
 \subsubsection{Reweighing Events}
 
-The the models used in the Monte Carlo simulations of neutrino experiments, there is always a class of parameters that feed the models and simulations:  the neutrino cross sections dictate how many events appear in the detector; the hadron interaction cross section dictates both the amount and variation of hadrons produced in the beam target.  These broad examples are meant to highlight that the Monte Carlo must be based upon not just a physics model but the input parameters to that model.  In the case of hadron production when the protons interact with the target, an assumption must be made about the cross section of that interaction.  While the Monte Carlo is naturally based on the best estimate of the input parameters, it's insufficient to estimate the uncertainty in the simulation without using the uncertainty on the input parameters.
+The models used in the Monte Carlo simulations of neutrino experiments, there is always a class of parameters that feed the models and simulations:  the neutrino cross sections dictate how many events appear in the detector; the hadron interaction cross section dictates both the amount and variation of hadrons produced in the beam target.  These broad examples are meant to highlight that the Monte Carlo must be based upon not just a physics model but the input parameters to that model.  In the case of hadron production when the protons interact with the target, an assumption must be made about the cross section of that interaction.  While the Monte Carlo is naturally based on the best estimate of the input parameters, it's insufficient to estimate the uncertainty in the simulation without using the uncertainty on the input parameters.
 
 As a concrete example, the beam simulation (originally developed by the \MB collaboration) for the Booster Neutrino Beam uses the Sangford-Wang parameterization to model the double differential pion production cross section for secondary particles at the target.  The parameterization, 
 
@@ -290,6 +290,7 @@ Before a final analysis is released, these systematics uncertainties must be car
 
 To evaluate the expect sensitivity of the SBN Program, the above covariance matrices are used as shown in Equation~\ref{eq:tot_cov_mat}.  The $\chi^2$ measure of sensitivity is computed as in Equation~\ref{eq:chi_sq}.  The final sensitivity to \nue is shown in Figure~\ref{fig:sbn_final_sensitivity}.  As an alternative view to this sensitivity, the quoted sensitivity in Figure~\ref{fig:sbn_alt_sensitivity} shows the $\sqrt{\chi^2}$ of calculated along the left edge of the LSND 90\% confidence region.
 
+The sensitivity calculations shown here are the basis for the Short Baseline Neutrino Program proposal, submitted in 2014 to the Fermilab Physics Advisory Committee.  Since then, the proposal has been accepted and the SBND and ICARUS experiments are being designed and constructed (SBND) and refurbished and delivered (ICARUS) to Fermilab.  The full SBN Program should be commissioned and running by 2018.
 
 \begin{figure}[tb]
   \centering

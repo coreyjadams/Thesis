@@ -1,6 +1,6 @@
 \chapter{\label{chp:emshowers} Electron Neutrinos in Liquid Argon}
 
-As seen in Chapter~\ref{chp:sbn}, the detection and measurement of electron neutrinos in the SBN program is essential to its success.  This chapter describes the detector signatures of electromagnetic showers, and presents a method to identify and reconstruct high energy gammas and electron neutrinos.  This work is the first observation of low energy electron neutrinos in a liquid argon time projection chamber.
+As seen in Chapter~\ref{chp:sbn}, the detection and measurement of electron neutrinos in the SBN program (and for DUNE) is essential to its success.  This chapter describes the detector signatures of electromagnetic showers, and presents a method to identify and reconstruct high energy gammas and electron neutrinos.  This work is the first observation of low energy electron neutrinos in a liquid argon time projection chamber.
 
 Essential to detecting \nue signals is the rejection of photons from the electron candidate sample.  This chapter also presents the first demonstration of two methods to reject photons from electron candidates using data from the \argoneut detector: topological separation and calorimetric separation.
 
@@ -49,7 +49,7 @@ To validate the separation of electromagnetic showers in \lartpcs, a study was p
 \centering
 \includegraphics[height=2.in]{emshower_figures/princcomp_area_proper.pdf}
 \includegraphics[height=2.in]{emshower_figures/modhitdensarea_proper.pdf}
-\caption{\label{fig:separation} Principal Component Eigenvalue (top) and ``Modified hit density'' (bottom) calculated for single electron showers(red) and muon tracks (blue).}
+\caption[Discrimination variables for Shower Identification]{\label{fig:separation} Principal Component Eigenvalue (top) and ``Modified hit density'' (bottom) calculated for single electron showers(red) and muon tracks (blue).}
 \end{figure}
 
 Selecting the sub-sample of electromagnetic showers is based on information from the 2-dimensional clusters of charge depositions (hits) in each wire plane. First, empty events and events with only track like particles are removed from the sample using an automated filter. This filter considers two-dimensional clusters of hits made with the LArSoft package \cite{Church:2013hea}, and calculates several parameters of these clusters to differentiate between track-like and shower-like clusters. 
@@ -159,25 +159,25 @@ The angular resolution for electromagnetic showers, shown in Figure~\ref{fig:sho
 \begin{figure}[htb]
    \centering
    \includegraphics[width=0.9\textwidth]{emshower_figures/depositedEnergyCalibration.png}
-   \caption{The reconstructed, deposited energy of an electron shower compared to the true, simulated deposited energy.}
+   \caption[Deposited Electron Energy]{The reconstructed, deposited energy of an electron shower compared to the true, simulated deposited energy.}
    \label{fig:depositedE}
  \end{figure} 
 
 Since an electromagnetic shower is a combination of many single ionizing particles - electrons and positrons - and is not composed of highly ionizing stopping particles - i.e., protons - the measured charge on the sense wires in the peak of the showering activity is a sum of many minimally ionizing particles.  Therefore, to calculate the total energy deposited by an electromagnetic shower, each deposition collected is corrected by a recombination amount that is proportional to a minimally ionizing particle.  All of the energy depositions, once corrected, are summed into a final measure of the reconstructed, deposited energy.  Figure~\ref{fig:depositedE} shows the relationship between the true deposited energy from the simulation and the reconstructed deposited energy of electron showers.  The correlation between the two is quite strong, though there is a significant and consistent deficit of reconstructed energy compared to the true energy.  This deficit arises from the very small ionizations coming from very low energy photons in the argon, which are far from the main shower and either below detection threshold or not spatially associated with the electromagnetic shower.
 
-Lastly, for the calorimetric separation of electrons and gamma to succeed, the dE/dx metric must be well reconstructed. As the charge depositions are measured discretely in 2D on single wires, in each of the wire planes we use the 3D axis of the shower to calculate an ``effective'' wire pitch between hits.  This effective pitch is, in other words, the real distance in the TPC that a particle travels between its two projections (hits) on adjacent wires. Figure \ref{fig:effective_pitch} shows the distributions of effective pitches for the electron and gamma samples.  In the calculation of dE/dx, the effective pitch is used as the estimate of `dx'.
+Lastly, for the calorimetric separation of electrons and gamma to succeed, the dE/dx metric must be well reconstructed. As the charge depositions are measured discretely in 2D on single wires, in each of the wire planes we use the 3D axis of the shower to calculate an ``effective'' wire pitch between hits.  This effective pitch is, in other words, the real distance in the TPC that a particle travels between its two projections (hits) on adjacent wires. Figure \ref{fig:effective_pitch} shows the distributions of effective pitches for the electron and gamma samples.  The effective pitch is at least the wire spacing, which is 0.4 cm in ArgoNeuT.  The gamma distribution shows a slightly higher effective pitch, which is expected from Figure \ref{fig:geomety_dists} showing that the gammas are at slightly higher angles to the wire planes than the electron sample.  In the calculation of dE/dx, the effective pitch is used as the estimate of `dx'.
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.5\textwidth]{emshower_figures/effective_pitch_trimmed.png}
-  \caption[Effective Pitch]{The effective pitch for the electron and gamma samples used in this analysis.  The effective pitch is a measure of how far a particle travels between depositions of charge recorded on adjacent wires.  The effective pitch is at least the wire spacing, which is 0.4 cm in ArgoNeuT.  The gamma distribution shows a slightly higher effective pitch, which is expected from Figure \ref{fig:geomety_dists} showing that the gammas are at slightly higher angles to the wire planes than the electron sample.}
+  \caption[Effective Pitch]{The effective pitch for the electron and gamma samples used in this analysis.  The effective pitch is a measure of how far a particle travels between depositions of charge recorded on adjacent wires.  }
   \label{fig:effective_pitch}
 \end{figure}
 
 \begin{figure}[htb]
   \centering
   \includegraphics[width=0.75\textwidth]{emshower_figures/mcLandaus_trimmed.png}
-  \caption{Distribution of $dE/dx$ for all hits at the start of the shower for the electron and gamma samples using Monte Carlo.}
+  \caption[Simulated Single Hit Distributions for Showers]{Distribution of $dE/dx$ for all hits at the start of the shower for the electron and gamma samples using Monte Carlo.}
   \label{fig:mc_landaus}
  \end{figure} 
 
@@ -186,7 +186,7 @@ A valuable cross-check of this sample of events is the distribution of every $dE
 \begin{figure}[htb]
   \centering
   \includegraphics[width=0.99\textwidth]{emshower_figures/photons_landau_trimmed.png}
-  \caption{Distribution of $dE/dx$ for all hits at the start of the shower for the gamma sample.}
+  \caption[Photon Landau Distribution]{Distribution of $dE/dx$ for all hits at the start of the shower for the gamma sample.}
   \label{fig:photon_landau}
  \end{figure} 
 
@@ -201,7 +201,7 @@ In Figure~\ref{fig:mc_landaus}, the simulated $dE/dx$ distributions for electron
 \begin{figure}[htb]
   \centering
   \includegraphics[width=0.85\textwidth]{emshower_figures/fitted_electron_distribution_trimmed.png}
-  \caption{All $dE/dx$ hits from the electron candidate sample, compared to a sample of Monte Carlo comprised of 80\% electrons and 20\% gamma.}
+  \caption[Electron Landau Distribution]{All $dE/dx$ hits from the electron candidate sample, compared to a sample of Monte Carlo comprised of 80\% electrons and 20\% gamma.}
   \label{fig:electron_landau}
 \end{figure} 
 
@@ -212,7 +212,7 @@ As a final verification of the reconstruction, the measured distribution for the
   \centering
   \includegraphics[width=0.85\textwidth]{emshower_figures/fitted_electron_landau_trimmed.png}
   \includegraphics[width=0.85\textwidth]{emshower_figures/mpv_electrons.pdf}
-  \caption{(Top) Background subtracted distribution of the hits at the start of the electron showers, with a fitted Gaussian-convolved Landau .  (Bottom) Most probable value of ionization as a function of momentum for particles traversing liquid argon.}
+  \caption[Background Subtracted Electron Landau Distribution]{(Top) Background subtracted distribution of the hits at the start of the electron showers, with a fitted Gaussian-convolved Landau .  (Bottom) Most probable value of ionization as a function of momentum for particles traversing liquid argon.}
   \label{fig:mpv_electrons}
  \end{figure} 
 
@@ -220,7 +220,7 @@ As a final verification of the reconstruction, the measured distribution for the
 
 \section{\label{sec:electrons} Detection of Electron Neutrinos}
 
-To verify that the sample of electron-candidate events are predominantly electron neutrino events, I have studied the kinematic behavior of the electron-candidate sample.  Due to the small active volume of the ArgoNeuT detector, the electromagnetic showers are poorly contained and the reconstructed electron energy is not a measurable quantity.  Instead, we measure the distribution of reconstructed {\em deposited} energy, compared to a simulation of electron neutrino events using the electron neutrino and anti-neutrino flux shown in Figure~\ref{fig:argoneut_flux}.  This flux used to simulate the electron neutrino events is generated with a simulation of the NuMI beam with FLUKA \cite{Aliaga:2016oaz}.  The mean energy of the electron anti-neutrinos is 4.3 GeV, while the mean energy of electron neutrinos is 10.5 GeV.  As seen, the beam is predominately electron anti-neutrinos.
+To verify that the sample of electron-candidate events are predominantly electron neutrino events, the kinematic behavior of the electron-candidate sample has been studied.  Due to the small active volume of the ArgoNeuT detector, the electromagnetic showers are poorly contained and the reconstructed electron energy is not a measurable quantity.  Instead, we measure the distribution of reconstructed {\em deposited} energy, compared to a simulation of electron neutrino events using the electron neutrino and anti-neutrino flux shown in Figure~\ref{fig:argoneut_flux}.  This flux used to simulate the electron neutrino events is generated with a simulation of the NuMI beam with FLUKA \cite{Aliaga:2016oaz}.  The mean energy of the electron anti-neutrinos is 4.3 GeV, while the mean energy of electron neutrinos is 10.5 GeV.  As seen, the beam is predominately electron anti-neutrinos.
 
 Figure~\ref{fig:electron_kinematics} shows the kinematic distribution of the electron events' deposited energy and angle $\theta$.  For both the deposited energy and the polar angle $\theta$, the agreement between data and Monte Carlo is good.  For the measurement of deposited energy, the Monte Carlo deposited energy is scaled by 24.5\% to model the reconstruction inefficiencies as observed above.
 
@@ -233,7 +233,7 @@ Regardless, this analysis is the first observation of low energy electron neutri
   \centering
   \includegraphics[width=0.48\textwidth]{emshower_figures/depE_corrected_trimmed.png}
   \includegraphics[width=0.48\textwidth]{emshower_figures/angle_comparison_trimmed.png}
-  \caption{(Left) Electron deposited energy. (Right) Electron polar angle.  In general, these kinematic variables agree with the simulation, despite low data statistics.msd2}
+  \caption[Electron Kinematic Variables]{(Left) Electron deposited energy. (Right) Electron polar angle.  In general, these kinematic variables agree with the simulation, despite low data statistics.msd2}
   \label{fig:electron_kinematics}
 \end{figure}
 
@@ -280,7 +280,7 @@ In addition, the length of the shower used in this analysis is fixed at 4cm.  As
   \includegraphics[width=0.3\textwidth]{emshower_figures/{true_median_10.0cm}.png}
   \includegraphics[width=0.3\textwidth]{emshower_figures/{true_mean_10.0cm}.png}
   \includegraphics[width=0.3\textwidth]{emshower_figures/{true_LMA_10.0cm}.png}
-  \caption{The separation power of the three $dE/dx$ metrics, using a variable amount of the start of the shower in the calculation.  As can be seen, all three metrics show promise at shortest distances.  However, at long distances, the Modified Mean develops a large tail in the electron distribution, and the Lowest Moving Average shifts many gammas into the electron peak.}
+  \caption[$dE/dx$ Calculation Metrics]{The separation power of the three $dE/dx$ metrics, using a variable amount of the start of the shower in the calculation.  As can be seen, all three metrics show promise at shortest distances.  However, at long distances, the Modified Mean develops a large tail in the electron distribution, and the Lowest Moving Average shifts many gammas into the electron peak.}
   \label{fig:dedx_metrics}
 \end{figure*}
 
@@ -290,7 +290,7 @@ Lastly, to verify that the $dE/dx$ calculation from the reconstruction accuratel
   \centering
   \includegraphics[width=0.45\textwidth]{emshower_figures/e_true_reco_dedx_4cm.png}
   \includegraphics[width=0.45\textwidth]{emshower_figures/p_true_reco_dedx_4cm.png}
-  \caption{The true $dE/dx$ of the beginning of simulated showers, calculated from simulated energy depositions in the TPC, vs the reconstructed $dE/dx$ of the same showers.  The electrons (left) and the gammas (right) both show a strong correlation between true and reconstructed $dE/dx$. There is a small offset arising from reconstruction inefficiencies, below the 10\% level in both electrons and gammas.}
+  \caption[$dE/dx$ Reconstruction/Monte Carlo Comparision]{The true $dE/dx$ of the beginning of simulated showers, calculated from simulated energy depositions in the TPC, vs the reconstructed $dE/dx$ of the same showers.  The electrons (left) and the gammas (right) both show a strong correlation between true and reconstructed $dE/dx$. There is a small offset arising from reconstruction inefficiencies, below the 10\% level in both electrons and gammas.}
   \label{fig:true_dedx}
 \end{figure*}
 
@@ -314,7 +314,7 @@ The value of the cut used above, 2.9 MeV/cm, is also somewhat arbitrary and must
 
 As seen in figure~\ref{fig:electrons} and figure~\ref{fig:photons}, the high granularity of a LArTPC allows precision topological discrimination of gammas and electrons.  A purely topological cut produced a sample of electron events with an estimated 80 $\pm$ 15\% purity.  Further, full reconstruction of an event can improve gamma rejection.  For example, identification of two electromagnetic showers that reconstruct with an invariant mass consistent with the $\pi^0$ mass can remove both showers as electron candidates, even if there is not a gap present for one shower and the dE/dx cut fails.
 
-The analysis in this chapter has shown that a metric based on the dE/dx deposition in the beginning part of the shower is valid method of separating electron-neutrino charged current events from gamma backgrounds. The full gamma background rejection capability of liquid argon detectors will be enhanced by adding to this a topological cut. This represents the first experimental proof of applying the calorimetric cut to separate electrons from gammas in a liquid argon detector using neutrino events.
+The analysis in this chapter has shown, using data, that a metric based on the dE/dx deposition in the beginning part of the shower is a valid method of separating electron-neutrino charged current events from gamma backgrounds. The full gamma background rejection capability of liquid argon detectors will be enhanced by adding to this a topological cut. This represents the first experimental proof of applying the calorimetric cut to separate electrons from gammas in a liquid argon detector using neutrino events.
 
 One should note that the efficiency and misidentification rates presented here do not represent the full capability of liquid argon TPCs to discriminate gamma backgrounds from electron signals. The final separation power of LArTPCs leverages multiple identification techniques, of which calorimetry is just one.  Further, the exact efficiencies and misidentification rates depend heavily on the energy spectrum of the electromagnetic showers: the Compton scattering gammas, a major source of impurity, appear predominately at energies below 200 MeV.
 
